@@ -1,0 +1,75 @@
+{
+    "annotations": {
+        "list": [
+
+        ]
+    },
+    "editable": true,
+    "hideControls": false,
+    "id": 154,
+    "links": [
+
+    ],
+    "originalTitle": "Wikidata",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "editable": true,
+                    "error": false,
+                    "id": 1,
+                    "limit": 100,
+                    "links": [
+
+                    ],
+                    "mode": "search",
+                    "query": "",
+                    "span": 12,
+                    "tags": [
+                        "wikidata"
+                    ],
+                    "title": "Wikidata Dashboards",
+                    "type": "dashlist"
+                }
+            ],
+            "title": "Dashboards"
+        }
+    ],
+    "schemaVersion": 7,
+    "sharedCrosshair": false,
+    "style": "dark",
+    "tags": [
+        "wikidata"
+    ],
+    "templating": {
+        "list": [
+
+        ]
+    },
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "timepicker": {
+        "refresh_intervals": [
+            ""
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "browser",
+    "title": "Wikidata",
+    "version": 2
+}

@@ -1,0 +1,667 @@
+{
+    "annotations": {
+        "list": [
+
+        ]
+    },
+    "editable": true,
+    "hideControls": true,
+    "id": 159,
+    "links": [
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "keepTime": false,
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
+        }
+    ],
+    "originalTitle": "Wikidata :: Social Followers",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "Metrics generated daily.",
+                    "editable": true,
+                    "error": false,
+                    "id": 12,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 3,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " subscribers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.email.wikidata.subscribers"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Wikidata ML",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 5,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " subscribers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.email.wikidata-tech.subscribers"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Wikidata Tech ML",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 10,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " subscribers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.newsletter.subscribers"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Newsletter",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 11,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " members",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.irc.members"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "IRC #wikidata",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 7,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " followers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.twitter.followers",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Twitter",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 6,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " likes",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.facebook.likes"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Facebook",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 8,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " followers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.googleplus.followers"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Google+",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 9,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " followers",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 3,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "daily.wikidata.social.identica.followers"
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Identica",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "showTitle": false,
+            "title": "Mailing Lists"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 1,
+                    "leftYAxisLabel": "",
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.social.*.*, -2, -1)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(daily.wikidata.social.email.*.subscribers, -2, -1)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 2,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 4,
+                    "leftYAxisLabel": "log (base2)",
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.social.*.*, 3, -1)"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(daily.wikidata.social.email.*.subscribers, -2, -1)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "showTitle": false,
+            "title": "Social Followers"
+        }
+    ],
+    "schemaVersion": 7,
+    "sharedCrosshair": true,
+    "style": "dark",
+    "tags": [
+        "wikidata"
+    ],
+    "templating": {
+        "list": [
+
+        ]
+    },
+    "time": {
+        "from": "now-2y",
+        "to": "now"
+    },
+    "timepicker": {
+        "now": true,
+        "refresh_intervals": [
+            ""
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "browser",
+    "title": "Wikidata :: Social Followers",
+    "version": 5
+}

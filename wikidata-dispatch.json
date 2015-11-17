@@ -1,0 +1,856 @@
+{
+    "annotations": {
+        "list": [
+
+        ]
+    },
+    "editable": true,
+    "hideControls": true,
+    "id": 156,
+    "links": [
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "keepTime": false,
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
+        }
+    ],
+    "originalTitle": "Wikidata :: Dispatch",
+    "refresh": false,
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "hideTimeOverride": false,
+                    "id": 7,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.freshest.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Freshest Lag",
+                    "transparent": false,
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "id": 6,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.average.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Average Lag",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "id": 8,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.stalest.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Stalest Lag",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "title": "Overview"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "height": "",
+                    "hideTimeOverride": false,
+                    "id": 9,
+                    "leftYAxisLabel": "dispatch lag",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikidata.dispatch.*.lag, 2)"
+                        }
+                    ],
+                    "timeFrom": "7d",
+                    "timeShift": null,
+                    "title": "Dispatch Lag (7 days)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "s",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "height": "",
+                    "id": 11,
+                    "leftYAxisLabel": "dispatch lag",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikidata.dispatch.*.pending, 2)"
+                        }
+                    ],
+                    "timeFrom": "7d",
+                    "timeShift": null,
+                    "title": "Dispatch Pending (7 days)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "none",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Dispatch History"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 1,
+                    "leftYAxisLabel": "dispatch lag",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikidata.dispatch.*.lag, 2)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Dispatch Lag",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "s",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Dispatch Lag"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 2,
+                    "leftYAxisLabel": "Entities pending dispatch",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikidata.dispatch.*.pending, 2)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Dispatch Pending",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Dispatch Pending"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 5,
+                    "leftYAxisLabel": "load",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "D",
+                            "target": "aliasByNode(servers.terbium.loadavg.01, 1)"
+                        },
+                        {
+                            "refId": "E",
+                            "target": "aliasByNode(servers.terbium.loadavg.05, 1, -1)"
+                        },
+                        {
+                            "refId": "F",
+                            "target": "aliasByNode(servers.terbium.loadavg.15, 1, -1)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Dispatchers (terbium) Load",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 10,
+                    "leftYAxisLabel": "load",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(servers.terbium.cpu.*.*, 4)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Dispatchers (terbium) CPU",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Dispatchers"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 3,
+                    "leftYAxisLabel": "pages \/ minute",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(jobrunner.pop.wikibase-addUsagesForPage.ok.*.count, 4)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "addUsagesForPage job pop ok",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 12,
+                    "leftYAxisLabel": "pages \/ minute",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(jobrunner.pop.ChangeNotification.ok.*.count, 4)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "ChangeNotification job pop ok",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Jobs"
+        }
+    ],
+    "schemaVersion": 7,
+    "sharedCrosshair": true,
+    "style": "dark",
+    "tags": [
+        "wikidata"
+    ],
+    "templating": {
+        "list": [
+
+        ]
+    },
+    "time": {
+        "from": "now-12h",
+        "to": "now"
+    },
+    "timepicker": {
+        "now": true,
+        "refresh_intervals": [
+            "5s",
+            "10s",
+            "30s",
+            "1m",
+            "5m",
+            "15m",
+            "30m",
+            "1h",
+            "2h",
+            "1d"
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "browser",
+    "title": "Wikidata :: Dispatch",
+    "version": 1
+}
