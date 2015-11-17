@@ -15,6 +15,30 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "150px",
+            "panels": [
+                {
+                    "content": "Welcome to the Wikidata grafana dashboards.\n\nPlease navigate using the list below.",
+                    "editable": true,
+                    "error": false,
+                    "id": 2,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Wikidata dashboards",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -31,7 +55,7 @@
                     "tags": [
                         "wikidata"
                     ],
-                    "title": "Wikidata Dashboards",
+                    "title": "List",
                     "type": "dashlist"
                 }
             ],
@@ -71,5 +95,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 2
+    "version": 3
 }
