@@ -3818,6 +3818,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata :: Entity Usage",
-    "version": 14
+    "title": "Wikidata Entity Usage",
+    "version": 15
 }

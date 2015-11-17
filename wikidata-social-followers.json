@@ -662,6 +662,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata :: Social Followers",
-    "version": 5
+    "title": "Wikidata Social Followers",
+    "version": 6
 }

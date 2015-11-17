@@ -175,7 +175,8 @@
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "api"
     ],
     "templating": {
         "list": [
@@ -213,6 +214,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata :: Api :: wbgetclaims",
-    "version": 2
+    "title": "Wikidata API wbgetclaims",
+    "version": 4
 }

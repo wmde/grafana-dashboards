@@ -211,6 +211,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata :: Page views (per domain)",
-    "version": 1
+    "title": "Wikidata Page views (per domain)",
+    "version": 2
 }

@@ -331,7 +331,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "labs"
     ],
     "templating": {
         "list": [
@@ -369,6 +370,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata :: Labs Builder",
-    "version": 1
+    "title": "Wikidata Labs Builder",
+    "version": 2
 }
