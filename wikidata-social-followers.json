@@ -19,7 +19,7 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata :: Social Followers",
+    "originalTitle": "Wikidata Social Followers",
     "rows": [
         {
             "collapse": false,
@@ -67,7 +67,12 @@
                     "id": 3,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Mailing List",
+                            "type": "absolute",
+                            "url": "https:\/\/lists.wikimedia.org\/mailman\/listinfo\/wikidata"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -90,7 +95,7 @@
                         }
                     ],
                     "thresholds": "",
-                    "title": "Wikidata ML",
+                    "title": "Wikidata Mailing List",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -119,7 +124,13 @@
                     "id": 5,
                     "interval": null,
                     "links": [
-
+                        {
+                            "params": "",
+                            "targetBlank": true,
+                            "title": "Mailing List",
+                            "type": "absolute",
+                            "url": "https:\/\/lists.wikimedia.org\/mailman\/listinfo\/wikidata-tech"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -142,7 +153,7 @@
                         }
                     ],
                     "thresholds": "",
-                    "title": "Wikidata Tech ML",
+                    "title": "Wikidata Tech Mailing List",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -171,7 +182,12 @@
                     "id": 10,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Status updates",
+                            "type": "absolute",
+                            "url": "https:\/\/www.wikidata.org\/wiki\/Wikidata:Status_updates"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -246,7 +262,7 @@
                         }
                     ],
                     "thresholds": "",
-                    "title": "IRC #wikidata",
+                    "title": "IRC #wikidata @ freenode",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -275,7 +291,12 @@
                     "id": 7,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Twitter",
+                            "type": "absolute",
+                            "url": "https:\/\/twitter.com\/wikidata"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -328,7 +349,12 @@
                     "id": 6,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Facebook",
+                            "type": "absolute",
+                            "url": "https:\/\/www.facebook.com\/Wikidata"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -380,7 +406,12 @@
                     "id": 8,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Google+",
+                            "type": "absolute",
+                            "url": "https:\/\/plus.google.com\/105776413863749545202"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -432,7 +463,12 @@
                     "id": 9,
                     "interval": null,
                     "links": [
-
+                        {
+                            "targetBlank": true,
+                            "title": "Identica",
+                            "type": "absolute",
+                            "url": "https:\/\/identi.ca\/wikidata"
+                        }
                     ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
@@ -527,12 +563,13 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.social.*.*, -2, -1)",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.*.*), -2, -1)",
                             "textEditor": false
                         },
                         {
+                            "hide": false,
                             "refId": "B",
-                            "target": "aliasByNode(daily.wikidata.social.email.*.subscribers, -2, -1)",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.email.*.subscribers), -2, -1)",
                             "textEditor": false
                         }
                     ],
@@ -602,11 +639,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.social.*.*, 3, -1)"
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.*.*), 3, -1)",
+                            "textEditor": false
                         },
                         {
                             "refId": "B",
-                            "target": "aliasByNode(daily.wikidata.social.email.*.subscribers, -2, -1)"
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.email.*.subscribers), -2, -1)"
                         }
                     ],
                     "timeFrom": null,
@@ -663,5 +701,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 6
+    "version": 10
 }
