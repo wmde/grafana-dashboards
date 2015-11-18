@@ -9,16 +9,6 @@
     "id": 156,
     "links": [
         {
-            "asDropdown": true,
-            "icon": "external link",
-            "keepTime": false,
-            "tags": [
-                "wikidata"
-            ],
-            "title": "Wikidata dashboards",
-            "type": "dashboards"
-        },
-        {
             "icon": "external link",
             "tags": [
 
@@ -27,6 +17,16 @@
             "title": "Special:DispatchStats",
             "type": "link",
             "url": "http:\/\/wikidata.org\/wiki\/Special:DispatchStats"
+        },
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "keepTime": false,
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
         }
     ],
     "originalTitle": "Wikidata Dispatch",
@@ -1016,5 +1016,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 6
+    "version": 7
 }
