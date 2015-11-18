@@ -39,7 +39,7 @@
         {
             "collapse": false,
             "editable": true,
-            "height": "250px",
+            "height": "450px",
             "panels": [
                 {
                     "editable": true,
@@ -51,15 +51,15 @@
                     ],
                     "mode": "search",
                     "query": "",
-                    "span": 6,
+                    "span": 4,
                     "tags": [
                         "wikidata"
                     ],
-                    "title": "Wikidata Specific Dashboards",
+                    "title": "Our Dashboards",
                     "type": "dashlist"
                 },
                 {
-                    "content": "    <div class=\"panel-content\">\n        <div class=\"dashlist ng-scope\">\n            <!-- start dash entry -->\n            <div class=\"dashlist-item ng-scope\">\n                <a class=\"dashlist-link dashlist-link-dash-db\" href=\"dashboard\/db\/scribunto?var-wiki=wikidatawiki\">\n                    <span class=\"dashlist-title ng-binding\">Wikidata Scribunto<\/span>\n                <\/a>\n            <\/div>\n            <!-- end dash entry -->\n        <\/div>\n    <\/div>",
+                    "content": "<div class=\"panel-content\">\n    <div class=\"dashlist ng-scope\">\n        <!-- start dash entry -->\n        <div class=\"dashlist-item ng-scope\">\n            <a target=\"_blank\" class=\"dashlist-link dashlist-link-dash-db\" href=\"dashboard\/db\/scribunto?var-wiki=wikidatawiki\">\n                <span class=\"dashlist-title ng-binding\">Wikidata Scribunto<\/span>\n            <\/a>\n        <\/div>\n        <!-- end dash entry -->\n    <\/div>\n<\/div>",
                     "editable": true,
                     "error": false,
                     "id": 3,
@@ -67,11 +67,27 @@
 
                     ],
                     "mode": "html",
-                    "span": 6,
+                    "span": 4,
                     "style": [
 
                     ],
-                    "title": "Wikidata Stolen Dashboards",
+                    "title": "Stolen Dashboards",
+                    "type": "text"
+                },
+                {
+                    "content": "<div class=\"panel-content\">\n    <div class=\"dashlist ng-scope\">\n        <!-- start dash entry -->\n        <div class=\"dashlist-item ng-scope\">\n            <a target=\"_blank\" class=\"dashlist-link dashlist-link-dash-db\" href=\"http:\/\/discovery.wmflabs.org\/wdqs\/#wdqs_usage\">\n                <span class=\"dashlist-title ng-binding\">WDQS Usage<\/span>\n                <span style=\"float:right;\"><small>discovery.wmflabs.org<\/small><\/span>\n            <\/a>\n        <\/div>\n        <!-- end dash entry -->\n        <!-- start dash entry -->\n        <div class=\"dashlist-item ng-scope\">\n            <a target=\"_blank\" class=\"dashlist-link dashlist-link-dash-db\" href=\"http:\/\/tools.wmflabs.org\/wikidata-todo\/stats.php\">\n                <span class=\"dashlist-title ng-binding\">Wikidata-Todo Stats<\/span>\n                <span style=\"float:right;\"><small>tools.wmflabs.org\/wikidata-todo<\/small><\/span>\n            <\/a>\n        <\/div>\n        <!-- end dash entry -->\n    <\/div>\n<\/div>",
+                    "editable": true,
+                    "error": false,
+                    "id": 4,
+                    "links": [
+
+                    ],
+                    "mode": "html",
+                    "span": 4,
+                    "style": [
+
+                    ],
+                    "title": "External Dashboards",
                     "type": "text"
                 }
             ],
@@ -111,5 +127,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 5
+    "version": 7
 }
