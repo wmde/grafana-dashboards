@@ -5,7 +5,7 @@
         ]
     },
     "editable": true,
-    "hideControls": true,
+    "hideControls": false,
     "id": 159,
     "links": [
         {
@@ -43,12 +43,12 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "title": "Social Following"
         },
         {
             "collapse": false,
             "editable": true,
-            "height": "100px",
+            "height": "150px",
             "panels": [
                 {
                     "cacheTimeout": null,
@@ -77,11 +77,11 @@
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
-                    "postfix": " subscribers",
-                    "postfixFontSize": "50%",
+                    "postfix": " members",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -91,11 +91,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "daily.wikidata.social.email.wikidata.subscribers"
+                            "target": "daily.wikidata.social.email.wikidata.subscribers",
+                            "textEditor": false
                         }
                     ],
                     "thresholds": "",
-                    "title": "Wikidata Mailing List",
+                    "title": "Wikidata List",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -135,11 +136,11 @@
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
-                    "postfix": " subscribers",
-                    "postfixFontSize": "50%",
+                    "postfix": " members",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -153,7 +154,7 @@
                         }
                     ],
                     "thresholds": "",
-                    "title": "Wikidata Tech Mailing List",
+                    "title": "Tech List",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -190,13 +191,14 @@
                         }
                     ],
                     "maxDataPoints": 100,
+                    "minSpan": 1,
                     "nullPointMode": "connected",
                     "nullText": null,
-                    "postfix": " subscribers",
-                    "postfixFontSize": "50%",
+                    "postfix": " members",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -206,7 +208,8 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "daily.wikidata.social.newsletter.subscribers"
+                            "target": "daily.wikidata.social.newsletter.subscribers",
+                            "textEditor": false
                         }
                     ],
                     "thresholds": "",
@@ -248,7 +251,7 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -262,7 +265,7 @@
                         }
                     ],
                     "thresholds": "",
-                    "title": "IRC #wikidata @ freenode",
+                    "title": "IRC",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -302,10 +305,10 @@
                     "nullPointMode": "connected",
                     "nullText": null,
                     "postfix": " followers",
-                    "postfixFontSize": "50%",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -360,10 +363,10 @@
                     "nullPointMode": "connected",
                     "nullText": null,
                     "postfix": " likes",
-                    "postfixFontSize": "50%",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -417,10 +420,10 @@
                     "nullPointMode": "connected",
                     "nullText": null,
                     "postfix": " followers",
-                    "postfixFontSize": "50%",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -474,10 +477,10 @@
                     "nullPointMode": "connected",
                     "nullText": null,
                     "postfix": " followers",
-                    "postfixFontSize": "50%",
+                    "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
-                    "span": 3,
+                    "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
                         "full": true,
@@ -505,7 +508,447 @@
                 }
             ],
             "showTitle": false,
-            "title": "Mailing Lists"
+            "title": "Social Following Change"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "150px",
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 17,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.email.wikidata.subscribers, timeShift(daily.wikidata.social.email.wikidata.subscribers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Wikidata List $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 18,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.email.wikidata-tech.subscribers, timeShift(daily.wikidata.social.email.wikidata-tech.subscribers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Tech List $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 19,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.newsletter.subscribers, timeShift(daily.wikidata.social.newsletter.subscribers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Newsletter $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 24,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.irc.members, timeShift(daily.wikidata.social.irc.members,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "IRC $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 21,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.twitter.followers, timeShift(daily.wikidata.social.twitter.followers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Twitter $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 22,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.facebook.likes, timeShift(daily.wikidata.social.facebook.likes,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Facebook $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 23,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.googleplus.followers, timeShift(daily.wikidata.social.googleplus.followers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Google+ $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 20,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 1,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(daily.wikidata.social.identica.followers, timeShift(daily.wikidata.social.identica.followers,\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Identica $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "title": "New row"
         },
         {
             "collapse": false,
@@ -584,8 +1027,8 @@
                     "x-axis": true,
                     "y-axis": true,
                     "y_formats": [
-                        "short",
-                        "short"
+                        "none",
+                        "none"
                     ]
                 },
                 {
@@ -675,11 +1118,51 @@
     ],
     "templating": {
         "list": [
+            {
+                "allFormat": "glob",
+                "current": {
+                    "tags": [
 
+                    ],
+                    "text": "-7d",
+                    "value": "-7d"
+                },
+                "datasource": null,
+                "includeAll": false,
+                "label": "Delta",
+                "multi": false,
+                "multiFormat": "glob",
+                "name": "delta",
+                "options": [
+                    {
+                        "selected": false,
+                        "text": "-1d",
+                        "value": "-1d"
+                    },
+                    {
+                        "selected": true,
+                        "text": "-7d",
+                        "value": "-7d"
+                    },
+                    {
+                        "selected": false,
+                        "text": "-14d",
+                        "value": "-14d"
+                    },
+                    {
+                        "selected": false,
+                        "text": "-30d",
+                        "value": "-30d"
+                    }
+                ],
+                "query": "-1d,-7d,-14d,-30d",
+                "refresh_on_load": false,
+                "type": "interval"
+            }
         ]
     },
     "time": {
-        "from": "now-2y",
+        "from": "now-3d",
         "to": "now"
     },
     "timepicker": {
@@ -701,5 +1184,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 10
+    "version": 11
 }
