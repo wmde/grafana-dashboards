@@ -20,7 +20,7 @@
             "url": ""
         }
     ],
-    "originalTitle": "Wikidata :: Page views (per domain)",
+    "originalTitle": "Wikidata Page views (per domain)",
     "rows": [
         {
             "collapse": false,
@@ -181,7 +181,7 @@
         ]
     },
     "time": {
-        "from": "now-2y",
+        "from": "now-30d",
         "to": "now"
     },
     "timepicker": {
@@ -212,5 +212,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 2
+    "version": 3
 }

@@ -505,6 +505,60 @@
                         }
                     ],
                     "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 25,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " ",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*)",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "",
+                    "title": "Total",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
                 }
             ],
             "showTitle": false,
@@ -946,6 +1000,60 @@
                         }
                     ],
                     "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 26,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " change",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "diffSeries(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"$delta\"))",
+                            "textEditor": true
+                        }
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "title": "Total $delta",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
                 }
             ],
             "title": "New row"
@@ -1006,14 +1114,8 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.*.*), -2, -1)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": false,
-                            "refId": "B",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.email.*.subscribers), -2, -1)",
-                            "textEditor": false
+                            "target": "aliasByNode(sortByMaxima(group(daily.wikidata.social.*.*,daily.wikidata.social.*.*.*)), -2, -1)",
+                            "textEditor": true
                         }
                     ],
                     "timeFrom": null,
@@ -1041,7 +1143,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 2,
+                        "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -1053,7 +1155,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 4,
-                    "leftYAxisLabel": "log (base2)",
+                    "leftYAxisLabel": "log",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1082,12 +1184,8 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.*.*), 3, -1)",
-                            "textEditor": false
-                        },
-                        {
-                            "refId": "B",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.social.email.*.subscribers), -2, -1)"
+                            "target": "aliasByNode(sortByMaxima(group(daily.wikidata.social.*.*,daily.wikidata.social.*.*.*)), 3, -1)",
+                            "textEditor": true
                         }
                     ],
                     "timeFrom": null,
@@ -1167,6 +1265,7 @@
     },
     "timepicker": {
         "now": true,
+        "nowDelay": "",
         "refresh_intervals": [
             ""
         ],
@@ -1184,5 +1283,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 11
+    "version": 16
 }
