@@ -15,22 +15,22 @@
         {
             "collapse": false,
             "editable": true,
-            "height": "150px",
+            "height": "250px",
             "panels": [
                 {
-                    "content": "Welcome to the Wikidata grafana dashboards.\n\nPlease navigate using the list below.",
+                    "content": "<img style=\"float:right;\" src=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/66\/Wikidata-logo-en.svg\/250px-Wikidata-logo-en.svg.png\"><\/img>\n<h3>Welcome to the <strong>Wikidata<\/strong> dashboards.<\/h3>\n<p>Below you can find a collection of all dashboard relating to Wikidata.<\/p>\n<p>These include external dashboards as well as grafana boards.<\/p>\n<p>If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a>.<\/p>",
                     "editable": true,
                     "error": false,
                     "id": 2,
                     "links": [
 
                     ],
-                    "mode": "markdown",
+                    "mode": "html",
                     "span": 12,
                     "style": [
 
                     ],
-                    "title": "Wikidata dashboards",
+                    "title": "",
                     "type": "text"
                 }
             ],
@@ -127,5 +127,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 8
+    "version": 9
 }
