@@ -5,7 +5,7 @@
         ]
     },
     "editable": true,
-    "hideControls": true,
+    "hideControls": false,
     "id": 156,
     "links": [
         {
@@ -17,181 +17,25 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Special:DispatchStats",
+            "type": "link",
+            "url": "http:\/\/wikidata.org\/wiki\/Special:DispatchStats"
         }
     ],
-    "originalTitle": "Wikidata :: Dispatch",
+    "originalTitle": "Wikidata Dispatch",
     "refresh": false,
     "rows": [
         {
             "collapse": false,
             "editable": true,
-            "height": "100px",
-            "panels": [
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(50, 172, 45, 0.97)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(245, 54, 54, 0.9)"
-                    ],
-                    "datasource": null,
-                    "decimals": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "s",
-                    "hideTimeOverride": false,
-                    "id": 7,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": true
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "wikidata.dispatch.freshest.lag"
-                        }
-                    ],
-                    "thresholds": "0,60,300",
-                    "title": "Freshest Lag",
-                    "transparent": false,
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "current"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(50, 172, 45, 0.97)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(245, 54, 54, 0.9)"
-                    ],
-                    "datasource": null,
-                    "decimals": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "s",
-                    "id": 6,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": true
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "wikidata.dispatch.average.lag"
-                        }
-                    ],
-                    "thresholds": "0,60,300",
-                    "title": "Average Lag",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "current"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(50, 172, 45, 0.97)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(245, 54, 54, 0.9)"
-                    ],
-                    "datasource": null,
-                    "decimals": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "s",
-                    "id": 8,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": true
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "wikidata.dispatch.stalest.lag"
-                        }
-                    ],
-                    "thresholds": "0,60,300",
-                    "title": "Stalest Lag",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "current"
-                }
-            ],
-            "title": "Overview"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "250px",
+            "height": "200px",
             "panels": [
                 {
                     "aliasColors": [
@@ -215,7 +59,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)",
                         "thresholdLine": false
                     },
-                    "height": "",
+                    "height": "220px",
                     "hideTimeOverride": false,
                     "id": 9,
                     "leftYAxisLabel": "dispatch lag",
@@ -226,7 +70,7 @@
                         "max": false,
                         "min": false,
                         "rightSide": true,
-                        "show": true,
+                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -243,13 +87,13 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata.dispatch.*.lag, 2)"
+                            "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.lag), 2)"
                         }
                     ],
                     "timeFrom": "7d",
@@ -288,7 +132,7 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "height": "",
+                    "height": "220px",
                     "id": 11,
                     "leftYAxisLabel": "dispatch lag",
                     "legend": {
@@ -298,7 +142,7 @@
                         "max": false,
                         "min": false,
                         "rightSide": true,
-                        "show": true,
+                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -315,13 +159,13 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata.dispatch.*.pending, 2)"
+                            "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.pending), 2)"
                         }
                     ],
                     "timeFrom": "7d",
@@ -338,9 +182,329 @@
                         "none",
                         "short"
                     ]
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "height": "100px",
+                    "hideTimeOverride": false,
+                    "id": 7,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.freshest.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Current Freshest Lag",
+                    "transparent": false,
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "height": "100px",
+                    "id": 6,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.average.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Current Average Lag",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "height": "100px",
+                    "id": 8,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.stalest.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Current Stalest Lag",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "s",
+                    "height": "100px",
+                    "id": 15,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(189, 169, 31, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(193, 139, 31)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.stalest.lag"
+                        }
+                    ],
+                    "thresholds": "0,60,300",
+                    "title": "Max Lag",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "max"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "height": "100px",
+                    "id": 16,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(189, 143, 31, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(193, 173, 31)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikidata.dispatch.stalest.pending"
+                        }
+                    ],
+                    "thresholds": "0,1000,2000",
+                    "title": "Max Pending",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "max"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "decimals": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "height": "100px",
+                    "id": 17,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(189, 156, 31, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(193, 152, 31)",
+                        "show": true
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "servers.terbium.loadavg.01"
+                        }
+                    ],
+                    "thresholds": "0,3,4",
+                    "title": "Max Dispatcher Load",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "max"
                 }
             ],
-            "title": "Dispatch History"
+            "title": "Overview"
         },
         {
             "collapse": false,
@@ -400,7 +564,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata.dispatch.*.lag, 2)"
+                            "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.lag), 2)"
                         }
                     ],
                     "timeFrom": null,
@@ -479,7 +643,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata.dispatch.*.pending, 2)"
+                            "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.pending), 2)"
                         }
                     ],
                     "timeFrom": null,
@@ -552,7 +716,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -631,7 +795,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -710,7 +874,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": true,
                     "steppedLine": false,
                     "targets": [
@@ -781,7 +945,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": true,
                     "steppedLine": false,
                     "targets": [
@@ -821,7 +985,7 @@
         ]
     },
     "time": {
-        "from": "now-12h",
+        "from": "now-6h",
         "to": "now"
     },
     "timepicker": {
@@ -852,5 +1016,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 2
+    "version": 6
 }
