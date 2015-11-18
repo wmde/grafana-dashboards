@@ -5,9 +5,19 @@
         ]
     },
     "editable": true,
-    "hideControls": true,
+    "hideControls": false,
     "id": 158,
     "links": [
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Vital Signs Page Views",
+            "type": "link",
+            "url": "https:\/\/vital-signs.wmflabs.org\/#projects=wikidatawiki\/metrics=Pageviews"
+        },
         {
             "asDropdown": true,
             "icon": "external link",
@@ -37,7 +47,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 2,
+                        "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -49,16 +59,18 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 1,
-                    "leftYAxisLabel": "log (base 2)",
+                    "leftYAxisLabel": "views (log scale)",
                     "legend": {
-                        "avg": false,
+                        "alignAsTable": true,
+                        "avg": true,
                         "current": false,
                         "hideEmpty": true,
                         "max": false,
                         "min": false,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -79,12 +91,13 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(reqstats.*wikidata*.pageviews, 1)"
+                            "target": "aliasByNode(sortByMaxima(reqstats.*wikidata*.pageviews), 1)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Page views",
+                    "title": "Page views (per min)",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -107,7 +120,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
+                        "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -118,15 +131,19 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 2,
+                    "id": 5,
+                    "leftYAxisLabel": "views (log scale)",
                     "legend": {
-                        "avg": false,
+                        "alignAsTable": true,
+                        "avg": true,
                         "current": false,
+                        "hideEmpty": true,
                         "max": false,
                         "min": false,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -147,12 +164,13 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(exclude(reqstats.*wikidata*.pageviews, 'reqstats.www_wikidata_org.pageviews'), 1)"
+                            "target": "aliasByNode(sortByMaxima(summarize(reqstats.*wikidata*.pageviews, '1d', 'sum', false)), 1)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Page views (excluding www.wd.o)",
+                    "title": "Page views (per day)",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -212,5 +230,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 3
+    "version": 4
 }
