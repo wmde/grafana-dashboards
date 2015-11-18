@@ -5,9 +5,31 @@
         ]
     },
     "editable": true,
-    "hideControls": true,
+    "hideControls": false,
     "id": 157,
     "links": [
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Builds on Gerrit",
+            "tooltip": "Go to gerrit",
+            "type": "link",
+            "url": "https:\/\/gerrit.wikimedia.org\/r\/#\/q\/owner:WikidataBuilder,n,z"
+        },
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Project on Wikitech",
+            "tooltip": "Go to Wikitech",
+            "type": "link",
+            "url": "https:\/\/wikitech.wikimedia.org\/wiki\/Nova_Resource:Wikidata-build"
+        },
         {
             "asDropdown": true,
             "icon": "external link",
@@ -19,7 +41,7 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata :: Labs Builder",
+    "originalTitle": "Wikidata Labs Builder",
     "refresh": false,
     "rows": [
         {
@@ -71,7 +93,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -94,15 +116,7 @@
                         "short",
                         "short"
                     ]
-                }
-            ],
-            "title": "Network"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "250px",
-            "panels": [
+                },
                 {
                     "aliasColors": [
 
@@ -147,7 +161,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -172,7 +186,7 @@
                     ]
                 }
             ],
-            "title": "CPU"
+            "title": "Network"
         },
         {
             "collapse": false,
@@ -223,7 +237,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -246,15 +260,7 @@
                         "short",
                         "short"
                     ]
-                }
-            ],
-            "title": "Disk"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "250px",
-            "panels": [
+                },
                 {
                     "aliasColors": [
 
@@ -299,7 +305,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -324,7 +330,7 @@
                     ]
                 }
             ],
-            "title": "Memory"
+            "title": "Disk"
         }
     ],
     "schemaVersion": 7,
@@ -371,5 +377,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Labs Builder",
-    "version": 2
+    "version": 3
 }
