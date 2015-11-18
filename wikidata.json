@@ -51,12 +51,28 @@
                     ],
                     "mode": "search",
                     "query": "",
-                    "span": 12,
+                    "span": 6,
                     "tags": [
                         "wikidata"
                     ],
-                    "title": "List",
+                    "title": "Wikidata Specific Dashboards",
                     "type": "dashlist"
+                },
+                {
+                    "content": "    <div class=\"panel-content\">\n        <div class=\"dashlist ng-scope\">\n            <!-- start dash entry -->\n            <div class=\"dashlist-item ng-scope\">\n                <a class=\"dashlist-link dashlist-link-dash-db\" href=\"dashboard\/db\/scribunto?var-wiki=wikidatawiki\">\n                    <span class=\"dashlist-title ng-binding\">Wikidata Scribunto<\/span>\n                <\/a>\n            <\/div>\n            <!-- end dash entry -->\n        <\/div>\n    <\/div>",
+                    "editable": true,
+                    "error": false,
+                    "id": 3,
+                    "links": [
+
+                    ],
+                    "mode": "html",
+                    "span": 6,
+                    "style": [
+
+                    ],
+                    "title": "Wikidata Stolen Dashboards",
+                    "type": "text"
                 }
             ],
             "title": "Dashboards"
@@ -95,5 +111,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 3
+    "version": 5
 }
