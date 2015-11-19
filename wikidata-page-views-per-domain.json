@@ -31,6 +31,7 @@
         }
     ],
     "originalTitle": "Wikidata Page views (per domain)",
+    "refresh": false,
     "rows": [
         {
             "collapse": false,
@@ -65,7 +66,7 @@
                         "avg": true,
                         "current": false,
                         "hideEmpty": true,
-                        "max": false,
+                        "max": true,
                         "min": false,
                         "rightSide": true,
                         "show": true,
@@ -114,7 +115,7 @@
                     "aliasColors": [
 
                     ],
-                    "bars": false,
+                    "bars": true,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -138,19 +139,92 @@
                         "avg": true,
                         "current": false,
                         "hideEmpty": true,
-                        "max": false,
+                        "max": true,
                         "min": false,
                         "rightSide": true,
                         "show": true,
                         "total": false,
                         "values": true
                     },
-                    "lines": true,
+                    "lines": false,
                     "linewidth": 2,
                     "links": [
 
                     ],
                     "nullPointMode": "connected",
+                    "percentage": true,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMinima(summarize(reqstats.*wikidata*.pageviews, '1d', 'sum', false)), 1)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Page views % (per day)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 6,
+                    "leftYAxisLabel": "views",
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": true,
+                        "current": false,
+                        "hideEmpty": true,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -159,7 +233,7 @@
 
                     ],
                     "span": 12,
-                    "stack": false,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -170,10 +244,10 @@
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Page views (per day)",
+                    "title": "Page views total (per day)",
                     "tooltip": {
                         "shared": true,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "x-axis": true,
@@ -230,5 +304,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 4
+    "version": 5
 }
