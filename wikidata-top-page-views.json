@@ -1,0 +1,492 @@
+{
+    "annotations": {
+        "list": [
+
+        ]
+    },
+    "editable": true,
+    "hideControls": false,
+    "id": 163,
+    "links": [
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Pageview API",
+            "type": "link",
+            "url": "https:\/\/wikimedia.org\/api\/rest_v1\/?doc#!\/Pageviews_data\/get_metrics_pageviews_top_project_access_year_month_day"
+        },
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
+        }
+    ],
+    "originalTitle": "Wikidata top page views",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "This dashboard uses the pageview API to display and allow comparison of the top page views on Wikidata for two separate days.\n\nTODO, other sites? Allow use of the time picker rather than custom vars.",
+                    "editable": true,
+                    "error": false,
+                    "id": 3,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "content": "<div id=\"wd-top-article-list-1\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo1;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesJson = responseObject.items[0].articles;\n  articlesJson = articlesJson.replace(\/([^{,:(article|views|rank)])\"([^},:])\/gi, '$1\\\\\\\"$2');\n  articlesJson = articlesJson.replace(\/\"\"\/g, '\\\\\\\"\"')\n  var articlesObject = JSON.parse(articlesJson);\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-1\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + (targetDate .getMonth() + 1) + \"\/\" + targetDate .getDate();\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-1\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
+                    "editable": true,
+                    "error": false,
+                    "id": 1,
+                    "links": [
+
+                    ],
+                    "mode": "html",
+                    "span": 6,
+                    "style": [
+
+                    ],
+                    "title": "Top page views - list 1",
+                    "type": "text"
+                },
+                {
+                    "content": "<div id=\"wd-top-article-list-2\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo2;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesJson = responseObject.items[0].articles;\n  articlesJson = articlesJson.replace(\/([^{,:(article|views|rank)])\"([^},:])\/gi, '$1\\\\\\\"$2');\n  articlesJson = articlesJson.replace(\/\"\"\/g, '\\\\\\\"\"')\n  var articlesObject = JSON.parse(articlesJson);\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-2\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + (targetDate .getMonth() + 1) + \"\/\" + targetDate .getDate();\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-2\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
+                    "editable": true,
+                    "error": false,
+                    "id": 2,
+                    "links": [
+
+                    ],
+                    "mode": "html",
+                    "span": 6,
+                    "style": [
+
+                    ],
+                    "title": "Top page views - list 2",
+                    "type": "text"
+                }
+            ],
+            "title": "Top page views"
+        }
+    ],
+    "schemaVersion": 7,
+    "sharedCrosshair": false,
+    "style": "dark",
+    "tags": [
+        "wikidata"
+    ],
+    "templating": {
+        "list": [
+            {
+                "allFormat": "glob",
+                "current": {
+                    "tags": [
+
+                    ],
+                    "text": "1",
+                    "value": "1"
+                },
+                "datasource": null,
+                "includeAll": false,
+                "label": "Target days ago #1",
+                "multi": false,
+                "multiFormat": "glob",
+                "name": "daysAgo1",
+                "options": [
+                    {
+                        "selected": false,
+                        "text": "None",
+                        "value": "None"
+                    },
+                    {
+                        "selected": true,
+                        "text": "1",
+                        "value": "1"
+                    },
+                    {
+                        "selected": false,
+                        "text": "2",
+                        "value": "2"
+                    },
+                    {
+                        "selected": false,
+                        "text": "3",
+                        "value": "3"
+                    },
+                    {
+                        "selected": false,
+                        "text": "4",
+                        "value": "4"
+                    },
+                    {
+                        "selected": false,
+                        "text": "5",
+                        "value": "5"
+                    },
+                    {
+                        "selected": false,
+                        "text": "6",
+                        "value": "6"
+                    },
+                    {
+                        "selected": false,
+                        "text": "7",
+                        "value": "7"
+                    },
+                    {
+                        "selected": false,
+                        "text": "8",
+                        "value": "8"
+                    },
+                    {
+                        "selected": false,
+                        "text": "9",
+                        "value": "9"
+                    },
+                    {
+                        "selected": false,
+                        "text": "10",
+                        "value": "10"
+                    },
+                    {
+                        "selected": false,
+                        "text": "11",
+                        "value": "11"
+                    },
+                    {
+                        "selected": false,
+                        "text": "12",
+                        "value": "12"
+                    },
+                    {
+                        "selected": false,
+                        "text": "13",
+                        "value": "13"
+                    },
+                    {
+                        "selected": false,
+                        "text": "14",
+                        "value": "14"
+                    },
+                    {
+                        "selected": false,
+                        "text": "15",
+                        "value": "15"
+                    },
+                    {
+                        "selected": false,
+                        "text": "16",
+                        "value": "16"
+                    },
+                    {
+                        "selected": false,
+                        "text": "17",
+                        "value": "17"
+                    },
+                    {
+                        "selected": false,
+                        "text": "18",
+                        "value": "18"
+                    },
+                    {
+                        "selected": false,
+                        "text": "19",
+                        "value": "19"
+                    },
+                    {
+                        "selected": false,
+                        "text": "20",
+                        "value": "20"
+                    },
+                    {
+                        "selected": false,
+                        "text": "21",
+                        "value": "21"
+                    },
+                    {
+                        "selected": false,
+                        "text": "22",
+                        "value": "22"
+                    },
+                    {
+                        "selected": false,
+                        "text": "23",
+                        "value": "23"
+                    },
+                    {
+                        "selected": false,
+                        "text": "24",
+                        "value": "24"
+                    },
+                    {
+                        "selected": false,
+                        "text": "25",
+                        "value": "25"
+                    },
+                    {
+                        "selected": false,
+                        "text": "26",
+                        "value": "26"
+                    },
+                    {
+                        "selected": false,
+                        "text": "27",
+                        "value": "27"
+                    },
+                    {
+                        "selected": false,
+                        "text": "28",
+                        "value": "28"
+                    },
+                    {
+                        "selected": false,
+                        "text": "29",
+                        "value": "29"
+                    },
+                    {
+                        "selected": false,
+                        "text": "30",
+                        "value": "30"
+                    }
+                ],
+                "query": "None,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
+                "refresh_on_load": false,
+                "type": "custom"
+            },
+            {
+                "allFormat": "glob",
+                "current": {
+                    "tags": [
+
+                    ],
+                    "text": "2",
+                    "value": "2"
+                },
+                "datasource": null,
+                "includeAll": false,
+                "label": "Target days ago #2",
+                "multi": false,
+                "multiFormat": "glob",
+                "name": "daysAgo2",
+                "options": [
+                    {
+                        "selected": false,
+                        "text": "None",
+                        "value": "None"
+                    },
+                    {
+                        "selected": false,
+                        "text": "1",
+                        "value": "1"
+                    },
+                    {
+                        "selected": true,
+                        "text": "2",
+                        "value": "2"
+                    },
+                    {
+                        "selected": false,
+                        "text": "3",
+                        "value": "3"
+                    },
+                    {
+                        "selected": false,
+                        "text": "4",
+                        "value": "4"
+                    },
+                    {
+                        "selected": false,
+                        "text": "5",
+                        "value": "5"
+                    },
+                    {
+                        "selected": false,
+                        "text": "6",
+                        "value": "6"
+                    },
+                    {
+                        "selected": false,
+                        "text": "7",
+                        "value": "7"
+                    },
+                    {
+                        "selected": false,
+                        "text": "8",
+                        "value": "8"
+                    },
+                    {
+                        "selected": false,
+                        "text": "9",
+                        "value": "9"
+                    },
+                    {
+                        "selected": false,
+                        "text": "10",
+                        "value": "10"
+                    },
+                    {
+                        "selected": false,
+                        "text": "11",
+                        "value": "11"
+                    },
+                    {
+                        "selected": false,
+                        "text": "12",
+                        "value": "12"
+                    },
+                    {
+                        "selected": false,
+                        "text": "13",
+                        "value": "13"
+                    },
+                    {
+                        "selected": false,
+                        "text": "14",
+                        "value": "14"
+                    },
+                    {
+                        "selected": false,
+                        "text": "15",
+                        "value": "15"
+                    },
+                    {
+                        "selected": false,
+                        "text": "16",
+                        "value": "16"
+                    },
+                    {
+                        "selected": false,
+                        "text": "17",
+                        "value": "17"
+                    },
+                    {
+                        "selected": false,
+                        "text": "18",
+                        "value": "18"
+                    },
+                    {
+                        "selected": false,
+                        "text": "19",
+                        "value": "19"
+                    },
+                    {
+                        "selected": false,
+                        "text": "20",
+                        "value": "20"
+                    },
+                    {
+                        "selected": false,
+                        "text": "21",
+                        "value": "21"
+                    },
+                    {
+                        "selected": false,
+                        "text": "22",
+                        "value": "22"
+                    },
+                    {
+                        "selected": false,
+                        "text": "23",
+                        "value": "23"
+                    },
+                    {
+                        "selected": false,
+                        "text": "24",
+                        "value": "24"
+                    },
+                    {
+                        "selected": false,
+                        "text": "25",
+                        "value": "25"
+                    },
+                    {
+                        "selected": false,
+                        "text": "26",
+                        "value": "26"
+                    },
+                    {
+                        "selected": false,
+                        "text": "27",
+                        "value": "27"
+                    },
+                    {
+                        "selected": false,
+                        "text": "28",
+                        "value": "28"
+                    },
+                    {
+                        "selected": false,
+                        "text": "29",
+                        "value": "29"
+                    },
+                    {
+                        "selected": false,
+                        "text": "30",
+                        "value": "30"
+                    }
+                ],
+                "query": "None,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
+                "refresh_on_load": false,
+                "type": "custom"
+            }
+        ]
+    },
+    "time": {
+        "from": "now-6h",
+        "to": "now"
+    },
+    "timepicker": {
+        "refresh_intervals": [
+            "5s",
+            "10s",
+            "30s",
+            "1m",
+            "5m",
+            "15m",
+            "30m",
+            "1h",
+            "2h",
+            "1d"
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "browser",
+    "title": "Wikidata top page views",
+    "version": 6
+}

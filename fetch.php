@@ -13,6 +13,7 @@ $dashboards = array(
 	'wikidata-social-followers',
 	'wikidata-entity-usage',
 	'wikidata-site-stats',
+	'wikidata-top-page-views',
 );
 
 foreach( $dashboards as $dashboard ) {
