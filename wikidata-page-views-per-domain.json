@@ -36,6 +36,30 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "content": "This data is taken from the cache logs **sampled** at [1:5000 resolution](https:\/\/github.com\/wikimedia\/operations-puppet\/blob\/812f280d16acfe3083259e8dfa7ce12ebf71da87\/files\/udp2log\/sqstat.pl#L153).\n\nPage views here are defined as either requests to \/wiki or index.php\n\nThis is good for comparing the use of the desktop site vs the mobile site (and test site)",
+                    "editable": true,
+                    "error": false,
+                    "id": 7,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Info",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -183,79 +207,6 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": true,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 6,
-                    "leftYAxisLabel": "views",
-                    "legend": {
-                        "alignAsTable": true,
-                        "avg": true,
-                        "current": false,
-                        "hideEmpty": true,
-                        "max": false,
-                        "min": false,
-                        "rightSide": true,
-                        "show": true,
-                        "total": true,
-                        "values": true
-                    },
-                    "lines": false,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "null as zero",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 12,
-                    "stack": true,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(summarize(reqstats.*wikidata*.pageviews, '1d', 'sum', false)), 1)",
-                            "textEditor": false
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Page views total (per day)",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "individual"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
                 }
             ],
             "title": "Page Views"
@@ -304,5 +255,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 5
+    "version": 6
 }
