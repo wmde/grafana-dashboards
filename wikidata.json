@@ -282,7 +282,8 @@
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "featured"
     ],
     "templating": {
         "list": [
@@ -312,5 +313,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 13
+    "version": 15
 }
