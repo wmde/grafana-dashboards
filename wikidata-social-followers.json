@@ -1109,7 +1109,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -1179,7 +1179,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -1261,8 +1261,8 @@
         ]
     },
     "time": {
-        "from": "2015-10-06T09:29:57.152Z",
-        "to": "2015-11-23T09:29:57.152Z"
+        "from": "now-1y",
+        "to": "now"
     },
     "timepicker": {
         "now": true,
@@ -1284,5 +1284,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 17
+    "version": 19
 }
