@@ -29,7 +29,7 @@
         }
     ],
     "originalTitle": "Wikidata Query Service",
-    "refresh": "1m",
+    "refresh": "30s",
     "rows": [
         {
             "collapse": false,
@@ -86,7 +86,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(derivative(servers.wdqs*.BlazegraphCollector.Query_Engine.queryDoneCount), 1)"
+                            "target": "aliasByNode(scale(perSecond(servers.wdqs*.BlazegraphCollector.Query_Engine.queryDoneCount), 60), 1)"
                         }
                     ],
                     "timeFrom": null,
@@ -154,7 +154,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(derivative(servers.wdqs*.BlazegraphCollector.Query_Engine.queryErrorCount), 1)"
+                            "target": "aliasByNode(scale(perSecond(servers.wdqs*.BlazegraphCollector.Query_Engine.queryErrorCount), 60), 1)"
                         }
                     ],
                     "timeFrom": null,
@@ -173,7 +173,7 @@
                     ]
                 },
                 {
-                    "content": "Rates created from queryDoneCount and queryErrorCount\n\n    queryDoneCount - queryErrorCount = querySuccessCount\n\n-------------\n\nLag & Tripple counts retrieved using a SPARQL query\n\n-------------\n\nOther metrics are direct from blazegraph",
+                    "content": "Rates created from queryDoneCount and queryErrorCount\n\n    queryDoneCount - queryErrorCount = querySuccessCount\n\n-------------\n\nLag & Tripple counts retrieved using a SPARQL query\n\n(jumping perhaps explained by queries executing on different nodes)\n\n-------------\n\nOther metrics are direct from blazegraph",
                     "editable": true,
                     "error": false,
                     "id": 9,
@@ -514,7 +514,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": true,
+                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -608,7 +608,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -629,6 +629,74 @@
                     "y-axis": true,
                     "y_formats": [
                         "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 11,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(servers.wdqs*.network.eth0.tx_byte, 1)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Bytes out",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "bytes",
                         "short"
                     ]
                 }
@@ -679,5 +747,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 7
+    "version": 10
 }

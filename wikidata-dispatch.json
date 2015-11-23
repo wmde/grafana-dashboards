@@ -30,7 +30,7 @@
         }
     ],
     "originalTitle": "Wikidata Dispatch",
-    "refresh": false,
+    "refresh": "1m",
     "rows": [
         {
             "collapse": false,
@@ -1016,5 +1016,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 7
+    "version": 8
 }
