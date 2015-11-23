@@ -20,6 +20,7 @@
         }
     ],
     "originalTitle": "Wikidata Social Followers",
+    "refresh": false,
     "rows": [
         {
             "collapse": false,
@@ -606,7 +607,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.email.wikidata.subscribers, timeShift(daily.wikidata.social.email.wikidata.subscribers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.email.wikidata.subscribers), timeShift(daily.wikidata.social.email.wikidata.subscribers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -660,7 +661,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.email.wikidata-tech.subscribers, timeShift(daily.wikidata.social.email.wikidata-tech.subscribers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.email.wikidata-tech.subscribers), timeShift(daily.wikidata.social.email.wikidata-tech.subscribers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -714,7 +715,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.newsletter.subscribers, timeShift(daily.wikidata.social.newsletter.subscribers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.newsletter.subscribers), timeShift(daily.wikidata.social.newsletter.subscribers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -768,7 +769,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.irc.members, timeShift(daily.wikidata.social.irc.members,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.irc.members), timeShift(daily.wikidata.social.irc.members,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -822,7 +823,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.twitter.followers, timeShift(daily.wikidata.social.twitter.followers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.twitter.followers), timeShift(daily.wikidata.social.twitter.followers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -876,7 +877,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.facebook.likes, timeShift(daily.wikidata.social.facebook.likes,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.facebook.likes), timeShift(daily.wikidata.social.facebook.likes,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -930,7 +931,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.googleplus.followers, timeShift(daily.wikidata.social.googleplus.followers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.googleplus.followers), timeShift(daily.wikidata.social.googleplus.followers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -984,7 +985,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(daily.wikidata.social.identica.followers, timeShift(daily.wikidata.social.identica.followers,\"$delta\"))",
+                            "target": "diffSeries(keepLastValue(daily.wikidata.social.identica.followers), timeShift(daily.wikidata.social.identica.followers,\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -1038,7 +1039,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"$delta\"))",
+                            "target": "diffSeries(sumSeries(keepLastValue(daily.wikidata.social.*.*.*),keepLastValue(daily.wikidata.social.*.*)), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"$delta\"))",
                             "textEditor": true
                         }
                     ],
@@ -1260,8 +1261,8 @@
         ]
     },
     "time": {
-        "from": "now-3d",
-        "to": "now"
+        "from": "2015-10-06T09:29:57.152Z",
+        "to": "2015-11-23T09:29:57.152Z"
     },
     "timepicker": {
         "now": true,
@@ -1283,5 +1284,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 16
+    "version": 17
 }

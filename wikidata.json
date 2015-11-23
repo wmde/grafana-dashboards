@@ -140,7 +140,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"-7d\"))",
+                            "target": "diffSeries(sumSeries(keepLastValue(daily.wikidata.social.*.*.*),keepLastValue(daily.wikidata.social.*.*)), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"-7d\"))",
                             "textEditor": true
                         }
                     ],
@@ -312,5 +312,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 12
+    "version": 13
 }
