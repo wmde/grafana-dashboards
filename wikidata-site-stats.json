@@ -34,30 +34,6 @@
         {
             "collapse": false,
             "editable": true,
-            "height": "100px",
-            "panels": [
-                {
-                    "content": "<p>All data here is taken directly from Mediawiki.<\/p>\n<p>Please see the following pages:<\/p>\n<ul>\n<li><a href=\"https:\/\/www.mediawiki.org\/wiki\/Manual:User_groups_table\" >Manual:User groups table<\/a><\/li>\n<li><a href=\"https:\/\/www.mediawiki.org\/wiki\/Manual:Site_stats_table\" >Manual:Site stats table<\/a><\/li>\n<\/ul>",
-                    "editable": true,
-                    "error": false,
-                    "id": 7,
-                    "links": [
-
-                    ],
-                    "mode": "html",
-                    "span": 12,
-                    "style": [
-
-                    ],
-                    "title": "Introduction",
-                    "type": "text"
-                }
-            ],
-            "title": "Introduction"
-        },
-        {
-            "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -501,7 +477,7 @@
                     "type": "text"
                 }
             ],
-            "title": "Pages"
+            "title": "Edits & Articles"
         },
         {
             "collapse": false,
@@ -714,7 +690,153 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Pages"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 12,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(daily.wikidata.site_stats.babel_users, 'Babel users')",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Babel users",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "none",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 13,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.site_stats.language_usage.*), 4)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "User languages",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Languages"
         }
     ],
     "schemaVersion": 7,
@@ -760,5 +882,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 4
+    "version": 5
 }
