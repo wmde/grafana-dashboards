@@ -85,7 +85,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -144,7 +144,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -202,7 +202,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -255,7 +255,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -312,7 +312,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -370,7 +370,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -427,7 +427,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -484,7 +484,7 @@
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -536,7 +536,7 @@
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
+                        "full": false,
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
@@ -544,7 +544,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.social.*.*.*),keepLastValue(daily.wikidata.social.*.*))",
                             "textEditor": true
                         }
                     ],
@@ -1109,7 +1109,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -1179,7 +1179,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -1192,6 +1192,75 @@
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 27,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(keepLastValue(daily.wikidata.social.*.*),keepLastValue(daily.wikidata.social.*.*.*)), 'Total following')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total following",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -1261,7 +1330,7 @@
         ]
     },
     "time": {
-        "from": "now-1y",
+        "from": "now-6M",
         "to": "now"
     },
     "timepicker": {
@@ -1284,5 +1353,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 19
+    "version": 23
 }

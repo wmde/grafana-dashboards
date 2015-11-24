@@ -167,7 +167,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.L_*)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.L_*))",
                             "textEditor": true
                         }
                     ],
@@ -220,7 +220,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.S)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.S))",
                             "textEditor": true
                         }
                     ],
@@ -273,7 +273,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.T)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.T))",
                             "textEditor": true
                         }
                     ],
@@ -326,7 +326,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.O)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.O))",
                             "textEditor": true
                         }
                     ],
@@ -379,7 +379,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.X)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.X))",
                             "textEditor": true
                         }
                     ],
@@ -432,7 +432,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(daily.wikidata.entity_usage.*.*)",
+                            "target": "sumSeries(keepLastValue(daily.wikidata.entity_usage.*.*))",
                             "textEditor": true
                         }
                     ],
@@ -477,18 +477,15 @@
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 16,
+                    "id": 18,
                     "legend": {
-                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "rightSide": false,
-                        "show": true,
+                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -510,14 +507,13 @@
                     "steppedLine": false,
                     "targets": [
                         {
-                            "hide": false,
                             "refId": "A",
-                            "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 10), 2)"
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage.*.*), 'Total entity usage')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Total usage per site (top 10)",
+                    "title": "Total Entity Usage",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -603,13 +599,85 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Total"
         },
         {
             "collapse": false,
             "editable": true,
             "height": "250px",
             "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "id": 16,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 10), 2)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total usage per site (top 10)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
                 {
                     "aliasColors": [
 
@@ -705,7 +773,7 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Compare"
         }
     ],
     "schemaVersion": 7,
@@ -751,5 +819,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 18
+    "version": 20
 }

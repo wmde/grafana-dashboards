@@ -134,7 +134,7 @@
                     },
                     "height": "220px",
                     "id": 11,
-                    "leftYAxisLabel": "dispatch lag",
+                    "leftYAxisLabel": "pending",
                     "legend": {
                         "alignAsTable": true,
                         "avg": false,
@@ -759,7 +759,7 @@
                     "fill": 1,
                     "grid": {
                         "leftLogBase": 1,
-                        "leftMax": null,
+                        "leftMax": 100,
                         "leftMin": null,
                         "rightLogBase": 1,
                         "rightMax": null,
@@ -1016,5 +1016,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 8
+    "version": 9
 }
