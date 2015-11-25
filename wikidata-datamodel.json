@@ -8,7 +8,15 @@
     "hideControls": false,
     "id": 167,
     "links": [
-
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
+        }
     ],
     "originalTitle": "Wikidata Datamodel",
     "rows": [
@@ -223,7 +231,7 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Entities"
         },
         {
             "collapse": false,
@@ -377,7 +385,7 @@
                     ]
                 }
             ],
-            "title": "Row"
+            "title": "Entity Sizes"
         },
         {
             "collapse": false,
@@ -592,7 +600,7 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Terms"
         },
         {
             "collapse": false,
@@ -668,7 +676,7 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "title": "Properties"
         }
     ],
     "schemaVersion": 7,
@@ -714,5 +722,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 3
+    "version": 4
 }
