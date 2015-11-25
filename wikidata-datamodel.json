@@ -6,104 +6,17 @@
     },
     "editable": true,
     "hideControls": false,
-    "id": 162,
+    "id": 167,
     "links": [
-        {
-            "icon": "external link",
-            "tags": [
 
-            ],
-            "targetBlank": true,
-            "title": "Special:Statistics",
-            "type": "link",
-            "url": "https:\/\/www.wikidata.org\/wiki\/Special:Statistics"
-        },
-        {
-            "asDropdown": true,
-            "icon": "external link",
-            "tags": [
-                "wikidata"
-            ],
-            "title": "Wikidata dashboards",
-            "type": "dashboards"
-        }
     ],
-    "originalTitle": "Wikidata Site Stats",
-    "refresh": false,
+    "originalTitle": "Wikidata Datamodel",
     "rows": [
         {
             "collapse": false,
             "editable": true,
             "height": "250px",
             "panels": [
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 2,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 5,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.users, 3)"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Users",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
                 {
                     "aliasColors": [
 
@@ -125,92 +38,14 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 1,
-                    "leftYAxisLabel": "log scale",
-                    "legend": {
-                        "alignAsTable": true,
-                        "avg": false,
-                        "current": true,
-                        "max": true,
-                        "min": true,
-                        "rightSide": true,
-                        "show": true,
-                        "total": false,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 7,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.site_stats.user_groups.*), 4)"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "User Groups",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                }
-            ],
-            "title": "Users"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "250px",
-            "panels": [
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
                     "id": 3,
+                    "leftYAxisLabel": "log scale",
                     "legend": {
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -233,12 +68,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.total_edits, 3)"
+                            "target": "aliasSub(aliasSub(aliasByNode(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 4), '120', 'properties'), '0', 'items')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Total Edits",
+                    "title": "Entities by type (non redirects)",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -263,7 +98,7 @@
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": null,
+                        "leftMin": 0,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -295,18 +130,18 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 3,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.total_pages, 3)"
+                            "target": "aliasSub(aliasSub(aliasByNode(daily.wikidata.site_stats.pages_by_namespace.{0,120}.redirects, 4), '120', 'Properties'), '0', 'Items')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Total Pages",
+                    "title": "Entity redirects",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -331,7 +166,7 @@
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": null,
+                        "leftMin": 0,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -363,18 +198,18 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 3,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.good_articles, 3)"
+                            "target": "alias(daily.wikidata.site_stats.pages_by_namespace.1.total, 'Item talk pages')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Good Articles",
+                    "title": "Item talk pages",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -386,25 +221,9 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "content": "Good pages are defined by the Content::isCountable() method.\n\nFor Wikitext Articles this is true when not a redirect and the contents text is countable according to $wgArticleCountMethod\n\nFor **Items & Properties** this is true when not a redirect and not empty.",
-                    "editable": true,
-                    "error": false,
-                    "id": 8,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 2,
-                    "style": [
-
-                    ],
-                    "title": "Pages Explanation",
-                    "type": "text"
                 }
             ],
-            "title": "Edits & Articles"
+            "title": "New row"
         },
         {
             "collapse": false,
@@ -432,13 +251,13 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 12,
+                    "id": 1,
                     "legend": {
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -461,13 +280,18 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(daily.wikidata.site_stats.babel_users, 'Babel users')",
+                            "target": "alias(daily.wikidata.site_stats.page_length.0.avg, 'Item Size')",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(daily.wikidata.site_stats.page_length.120.avg, 'Property Size')",
                             "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Babel users",
+                    "title": "Average entity sizes",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -476,7 +300,7 @@
                     "x-axis": true,
                     "y-axis": true,
                     "y_formats": [
-                        "none",
+                        "bytes",
                         "short"
                     ]
                 },
@@ -490,7 +314,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 10,
+                        "leftLogBase": 1,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -501,14 +325,13 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 13,
-                    "leftYAxisLabel": "log scale",
+                    "id": 2,
                     "legend": {
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -531,13 +354,231 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.site_stats.language_usage.*), 4)",
-                            "textEditor": false
+                            "target": "alias(daily.wikidata.site_stats.page_length.0.max, 'Item size')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(daily.wikidata.site_stats.page_length.120.max, 'Property size')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "User languages",
+                    "title": "Max entity sizes",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "bytes",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "Row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 7,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.label.*), 'Labels')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Entity labels",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 8,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.description.*), 'Descriptions')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Entity descriptions",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 9,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.alias.*), 'Aliases')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Entity aliases",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -551,11 +592,87 @@
                     ]
                 }
             ],
-            "title": "Languages"
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 6,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.datamodel.property.datatype.*, 5)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Property data types",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "New row"
         }
     ],
     "schemaVersion": 7,
-    "sharedCrosshair": true,
+    "sharedCrosshair": false,
     "style": "dark",
     "tags": [
         "wikidata"
@@ -566,7 +683,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-7d",
         "to": "now"
     },
     "timepicker": {
@@ -596,6 +713,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata Site Stats",
-    "version": 7
+    "title": "Wikidata Datamodel",
+    "version": 3
 }

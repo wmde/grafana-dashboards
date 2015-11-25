@@ -15,6 +15,7 @@ $dashboards = array(
 	'wikidata-site-stats',
 	'wikidata-top-page-views',
 	'wikidata-query-service',
+	'wikidata-datamodel',
 );
 
 foreach( $dashboards as $dashboard ) {
