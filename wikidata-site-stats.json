@@ -80,7 +80,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 3,
+                    "span": 5,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -114,81 +114,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 6,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-                        {
-                            "dashboard": "https:\/\/www.wikidata.org\/wiki\/Special:Statistics",
-                            "targetBlank": true,
-                            "title": "Users who have performed an action in the last 30 days",
-                            "type": "absolute",
-                            "url": "https:\/\/www.wikidata.org\/wiki\/Special:Statistics"
-                        }
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 3,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.active_users, 3)"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Active Users",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
+                        "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -200,6 +126,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 1,
+                    "leftYAxisLabel": "log scale",
                     "legend": {
                         "alignAsTable": true,
                         "avg": false,
@@ -224,7 +151,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 7,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -776,7 +703,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
+                        "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -788,6 +715,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 13,
+                    "leftYAxisLabel": "log scale",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -882,5 +810,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 5
+    "version": 6
 }
