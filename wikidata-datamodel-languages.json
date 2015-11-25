@@ -8,9 +8,17 @@
     "hideControls": false,
     "id": 168,
     "links": [
-
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "Wikidata"
+            ],
+            "title": "Wikidata dashboards",
+            "type": "dashboards"
+        }
     ],
-    "originalTitle": "New dashboard",
+    "originalTitle": "Wikidata Datamodel Languages",
     "rows": [
         {
             "collapse": false,
@@ -271,5 +279,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Languages",
-    "version": 0
+    "version": 1
 }
