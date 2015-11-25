@@ -16,6 +16,7 @@ $dashboards = array(
 	'wikidata-top-page-views',
 	'wikidata-query-service',
 	'wikidata-datamodel',
+	'wikidata-datamodel-languages',
 );
 
 foreach( $dashboards as $dashboard ) {
