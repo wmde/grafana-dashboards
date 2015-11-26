@@ -18,7 +18,7 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "New dashboard",
+    "originalTitle": "Wikidata API",
     "rows": [
         {
             "collapse": false,
@@ -62,7 +62,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -131,7 +131,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -210,5 +210,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 1
+    "version": 2
 }
