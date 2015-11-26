@@ -6,10 +6,10 @@
 
 $dashboards = array(
 	'wikidata',
+	'wikidata-edits',
 	'wikidata-api',
 	'wikidata-api-wbgetclaims',
 	'wikidata-dispatch',
-	'wikidata-labs-builder',
 	'wikidata-page-views-per-domain',
 	'wikidata-social-followers',
 	'wikidata-entity-usage',

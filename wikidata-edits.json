@@ -6,43 +6,20 @@
     },
     "editable": true,
     "hideControls": false,
-    "id": 157,
+    "id": 170,
     "links": [
-        {
-            "icon": "external link",
-            "tags": [
-
-            ],
-            "targetBlank": true,
-            "title": "Builds on Gerrit",
-            "tooltip": "Go to gerrit",
-            "type": "link",
-            "url": "https:\/\/gerrit.wikimedia.org\/r\/#\/q\/owner:WikidataBuilder,n,z"
-        },
-        {
-            "icon": "external link",
-            "tags": [
-
-            ],
-            "targetBlank": true,
-            "title": "Project on Wikitech",
-            "tooltip": "Go to Wikitech",
-            "type": "link",
-            "url": "https:\/\/wikitech.wikimedia.org\/wiki\/Nova_Resource:Wikidata-build"
-        },
         {
             "asDropdown": true,
             "icon": "external link",
-            "keepTime": false,
             "tags": [
                 "wikidata"
             ],
-            "title": "Wikidata Dashboards",
+            "title": "Wikidata dashboards",
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata Labs Builder",
-    "refresh": false,
+    "originalTitle": "Wikidata Edits",
+    "refresh": "30s",
     "rows": [
         {
             "collapse": false,
@@ -54,7 +31,153 @@
 
                     ],
                     "bars": false,
-                    "datasource": "wmflabs-graphite",
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 6,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot}), 3)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": "7d",
+                    "timeShift": null,
+                    "title": "Edits",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 1,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot}), 3)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Edits",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -85,7 +208,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -99,12 +222,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata-build.wikidata-builder1.network.*.*, 4)"
+                            "target": "alias(wikidata.rc.edits.length, 'Size change')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Network",
+                    "title": "Size change",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -113,80 +236,12 @@
                     "x-axis": true,
                     "y-axis": true,
                     "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": "wmflabs-graphite",
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 1,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(wikidata-build.wikidata-builder1.cpu.total.*, 4)"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "CPU",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
+                        "bytes",
                         "short"
                     ]
                 }
             ],
-            "title": "Network"
+            "title": "Row"
         },
         {
             "collapse": false,
@@ -198,14 +253,14 @@
 
                     ],
                     "bars": false,
-                    "datasource": "wmflabs-graphite",
+                    "datasource": null,
                     "editable": true,
                     "error": false,
                     "fill": 1,
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": null,
+                        "leftMin": 0,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -216,8 +271,10 @@
                     },
                     "id": 2,
                     "legend": {
+                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
+                        "hideEmpty": true,
                         "max": false,
                         "min": false,
                         "show": true,
@@ -229,7 +286,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -243,12 +300,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata-build.wikidata-builder1.diskspace.root.*, 4)"
+                            "target": "aliasByNode(sortByMaxima(aliasSub(aliasSub(aliasSub(wikidata.rc.edits.oauth.*, '93', 'Widar13'), '168', 'reCh10'), '336', 'Kasper11')), 4)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Disk",
+                    "title": "Oauth",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -266,14 +323,14 @@
 
                     ],
                     "bars": false,
-                    "datasource": "wmflabs-graphite",
+                    "datasource": null,
                     "editable": true,
                     "error": false,
                     "fill": 1,
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": null,
+                        "leftMin": 0,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -282,12 +339,16 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
+                    "height": "",
                     "id": 4,
                     "legend": {
+                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
+                        "hideEmpty": true,
                         "max": false,
                         "min": false,
+                        "rightSide": false,
                         "show": true,
                         "total": false,
                         "values": false
@@ -297,7 +358,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -311,12 +372,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikidata-build.wikidata-builder1.memory.*, 3)"
+                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.summary.*), 4)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Memory",
+                    "title": "Edit type",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -330,15 +391,14 @@
                     ]
                 }
             ],
-            "title": "Disk"
+            "title": "New row"
         }
     ],
     "schemaVersion": 7,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata",
-        "labs"
+        "wikidata"
     ],
     "templating": {
         "list": [
@@ -346,7 +406,7 @@
         ]
     },
     "time": {
-        "from": "now-12h",
+        "from": "now-6h",
         "to": "now"
     },
     "timepicker": {
@@ -376,6 +436,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata Labs Builder",
-    "version": 3
+    "title": "Wikidata Edits",
+    "version": 17
 }

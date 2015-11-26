@@ -35,6 +35,74 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 3,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.api.formats.*), 'Calls')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Calls",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
                         "leftLogBase": 10,
                         "leftMax": null,
                         "leftMin": null,
@@ -70,7 +138,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -139,7 +207,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -168,7 +236,7 @@
         }
     ],
     "schemaVersion": 7,
-    "sharedCrosshair": false,
+    "sharedCrosshair": true,
     "style": "dark",
     "tags": [
         "wikidata"
@@ -210,5 +278,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 2
+    "version": 4
 }

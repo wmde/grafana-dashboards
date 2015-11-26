@@ -12,7 +12,7 @@
             "asDropdown": true,
             "icon": "external link",
             "tags": [
-                "Wikidata"
+                "wikidata"
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
@@ -29,7 +29,7 @@
                     "aliasColors": [
 
                     ],
-                    "bars": false,
+                    "bars": true,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -57,13 +57,13 @@
                         "total": false,
                         "values": true
                     },
-                    "lines": true,
+                    "lines": false,
                     "linewidth": 2,
                     "links": [
 
                     ],
                     "nullPointMode": "connected",
-                    "percentage": false,
+                    "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
@@ -71,7 +71,7 @@
 
                     ],
                     "span": 4,
-                    "stack": false,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -98,7 +98,7 @@
                     "aliasColors": [
 
                     ],
-                    "bars": false,
+                    "bars": true,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -126,13 +126,13 @@
                         "total": false,
                         "values": true
                     },
-                    "lines": true,
+                    "lines": false,
                     "linewidth": 2,
                     "links": [
 
                     ],
                     "nullPointMode": "connected",
-                    "percentage": false,
+                    "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
@@ -140,7 +140,7 @@
 
                     ],
                     "span": 4,
-                    "stack": false,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -167,7 +167,7 @@
                     "aliasColors": [
 
                     ],
-                    "bars": false,
+                    "bars": true,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -195,13 +195,13 @@
                         "total": false,
                         "values": true
                     },
-                    "lines": true,
+                    "lines": false,
                     "linewidth": 2,
                     "links": [
 
                     ],
                     "nullPointMode": "connected",
-                    "percentage": false,
+                    "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
@@ -209,7 +209,7 @@
 
                     ],
                     "span": 4,
-                    "stack": false,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -279,5 +279,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Languages",
-    "version": 1
+    "version": 3
 }
