@@ -201,7 +201,8 @@
     "style": "dark",
     "tags": [
         "wikidata",
-        "api"
+        "api",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -240,5 +241,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 6
+    "version": 7
 }

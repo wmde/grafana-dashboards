@@ -239,7 +239,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -278,5 +279,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 4
+    "version": 5
 }

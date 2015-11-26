@@ -713,7 +713,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "live"
     ],
     "templating": {
         "list": [
@@ -752,5 +753,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 13
+    "version": 14
 }

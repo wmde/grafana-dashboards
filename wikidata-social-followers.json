@@ -1282,7 +1282,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -1353,5 +1354,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 23
+    "version": 24
 }

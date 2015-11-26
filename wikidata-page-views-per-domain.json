@@ -216,7 +216,8 @@
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "live"
     ],
     "templating": {
         "list": [
@@ -255,5 +256,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 6
+    "version": 7
 }

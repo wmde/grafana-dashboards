@@ -398,7 +398,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "live"
     ],
     "templating": {
         "list": [
@@ -437,5 +438,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 17
+    "version": 18
 }

@@ -977,7 +977,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "live"
     ],
     "templating": {
         "list": [
@@ -1016,5 +1017,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 9
+    "version": 12
 }

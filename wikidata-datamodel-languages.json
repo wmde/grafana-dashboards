@@ -240,7 +240,8 @@
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -279,5 +280,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Languages",
-    "version": 3
+    "version": 4
 }

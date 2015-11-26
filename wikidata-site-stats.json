@@ -626,7 +626,8 @@
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -665,5 +666,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 10
+    "version": 11
 }

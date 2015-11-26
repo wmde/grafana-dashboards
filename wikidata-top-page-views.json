@@ -99,7 +99,8 @@
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata"
+        "wikidata",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -488,5 +489,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata top page views",
-    "version": 7
+    "version": 8
 }
