@@ -115,17 +115,12 @@
                     "id": 5,
                     "interval": null,
                     "links": [
-                        {
-                            "dashUri": "db\/wikidata-social-followers",
-                            "dashboard": "Wikidata Social Followers",
-                            "title": "Wikidata Social Followers",
-                            "type": "dashboard"
-                        }
+
                     ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
-                    "postfix": " change",
+                    "postfix": " ",
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
@@ -140,82 +135,36 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(sumSeries(keepLastValue(daily.wikidata.social.*.*.*),keepLastValue(daily.wikidata.social.*.*)), timeShift(sumSeries(daily.wikidata.social.*.*.*,daily.wikidata.social.*.*),\"-7d\"))",
+                            "target": "sumSeries(#B, #C,#D)",
                             "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "sumSeries(daily.wikidata.social.email.*.*)",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "C",
+                            "target": "sumSeries(daily.wikidata.social.*.*)",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "D",
+                            "target": "daily.wikidata.site_stats.active_users"
                         }
                     ],
                     "thresholds": "-9999999,0,+1",
                     "timeFrom": "1w",
-                    "title": "Social following",
+                    "title": "WIP Community KPI",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
+
                     ],
                     "valueName": "current"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(50, 172, 45, 0.97)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(245, 54, 54, 0.9)"
-                    ],
-                    "datasource": null,
-                    "decimals": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "s",
-                    "height": "100px",
-                    "id": 6,
-                    "interval": null,
-                    "links": [
-                        {
-                            "dashUri": "db\/wikidata-dispatch",
-                            "dashboard": "Wikidata Dispatch",
-                            "title": "Wikidata Dispatch",
-                            "type": "dashboard"
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": true
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "wikidata.dispatch.stalest.lag"
-                        }
-                    ],
-                    "thresholds": "0,60,300",
-                    "timeFrom": "1w",
-                    "title": "Avg Stalest Dispatch Lag",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
                 },
                 {
                     "cacheTimeout": null,
@@ -227,48 +176,103 @@
                         "rgba(50, 172, 45, 0.97)"
                     ],
                     "datasource": null,
-                    "decimals": 3,
+                    "decimals": 0,
                     "editable": true,
                     "error": false,
-                    "format": "short",
-                    "id": 7,
+                    "format": "none",
+                    "id": 6,
                     "interval": null,
                     "links": [
-                        {
-                            "dashUri": "db\/wikidata-entity-usage",
-                            "dashboard": "Wikidata Entity Usage",
-                            "title": "Wikidata Entity Usage",
-                            "type": "dashboard"
-                        }
+
                     ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
-                    "postfix": " change",
+                    "postfix": " ",
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
                     "span": 4,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
+                        "full": true,
                         "lineColor": "rgb(31, 120, 193)",
-                        "show": true
+                        "show": false
                     },
                     "targets": [
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "diffSeries(sumSeries(daily.wikidata.entity_usage.*.*), timeShift(sumSeries(daily.wikidata.entity_usage.*.*),\"-7d\"))",
-                            "textEditor": true
+                            "target": "scale(sumSeries(#B, #C,#D), 0.00001)",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "wikidata.query.triples"
+                        },
+                        {
+                            "hide": true,
+                            "refId": "D",
+                            "target": "daily.wikidata.datamodel.*.{label,description}.*"
+                        },
+                        {
+                            "hide": true,
+                            "refId": "C",
+                            "target": "daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects"
                         }
                     ],
                     "thresholds": "-9999999,0,+1",
                     "timeFrom": "1w",
-                    "title": "Client Entity Usage",
-                    "transparent": false,
+                    "title": "WIP Content KPI",
                     "type": "singlestat",
-                    "valueFontSize": "70%",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": false,
+                    "colorValue": true,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 0,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "id": 7,
+                    "interval": null,
+                    "links": [
+
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": " ",
+                    "postfixFontSize": "30%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": true,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+
+                    ],
+                    "thresholds": "-9999999,0,+1",
+                    "timeFrom": "1w",
+                    "title": "WIP Usage KPI",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
                     "valueMaps": [
 
                     ],
@@ -313,5 +317,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 16
+    "version": 17
 }
