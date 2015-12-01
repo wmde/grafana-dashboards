@@ -131,7 +131,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -153,8 +153,9 @@
                     "steppedLine": false,
                     "targets": [
                         {
-                            "refId": "A",
-                            "target": "alias(daily.wikidata.site_stats.active_users, 'Users')"
+                            "refId": "B",
+                            "target": "aliasByNode(daily.wikidata.site_stats.active_users.*, 4)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -666,5 +667,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 11
+    "version": 12
 }
