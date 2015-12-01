@@ -386,11 +386,6 @@
                             "refId": "A",
                             "target": "aliasByNode(wikidata.query.lag.*, 3)",
                             "textEditor": false
-                        },
-                        {
-                            "refId": "B",
-                            "target": "alias(wikidata.query.lag, 'query')",
-                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -541,14 +536,9 @@
                     "steppedLine": false,
                     "targets": [
                         {
-                            "refId": "A",
-                            "target": "alias(wikidata.query.triples, 'query')",
-                            "textEditor": false
-                        },
-                        {
                             "refId": "B",
                             "target": "aliasByNode(wikidata.query.triples.*, 3)",
-                            "textEditor": true
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -758,5 +748,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 15
+    "version": 16
 }

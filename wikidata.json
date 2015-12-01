@@ -152,7 +152,8 @@
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "scale(keepLastValue(wikidata.query.triples, 10), 0.00001)"
+                            "target": "scale(averageSeries(keepLastValue(wikidata.query.triples.*, 10)), 0.00001)",
+                            "textEditor": false
                         },
                         {
                             "hide": true,
@@ -337,5 +338,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 18
+    "version": 19
 }
