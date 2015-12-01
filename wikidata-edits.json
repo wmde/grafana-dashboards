@@ -153,7 +153,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot}), 3)",
+                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot,anon}), 3)",
                             "textEditor": false
                         }
                     ],
@@ -438,5 +438,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 18
+    "version": 19
 }
