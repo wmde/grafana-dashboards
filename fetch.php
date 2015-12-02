@@ -8,6 +8,7 @@ $dashboards = array(
 	'wikidata',
 	'wikidata-edits',
 	'wikidata-ci',
+	'wikidata-tasks',
 	'wikidata-api',
 	'wikidata-api-wbgetclaims',
 	'wikidata-dispatch',
