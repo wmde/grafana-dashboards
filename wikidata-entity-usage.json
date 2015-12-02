@@ -482,12 +482,12 @@
                     "id": 18,
                     "legend": {
                         "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -552,13 +552,13 @@
                     "legend": {
                         "alignAsTable": false,
                         "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
                         "rightSide": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -574,7 +574,7 @@
 
                     ],
                     "span": 6,
-                    "stack": true,
+                    "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -819,5 +819,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 23
+    "version": 24
 }
