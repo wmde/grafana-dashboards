@@ -96,7 +96,7 @@
                         {
                             "hide": true,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users, 10), 0.5)"
+                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.5)"
                         }
                     ],
                     "thresholds": "-9999999,0,+1",
@@ -338,5 +338,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 19
+    "version": 21
 }
