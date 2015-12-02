@@ -508,12 +508,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.entity_usage.*.*), 'Total entity usage')"
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage.*.*), 'Total entity flags')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Total Entity Usage",
+                    "title": "Total Entity Usage Flags",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -578,14 +578,13 @@
                     "steppedLine": false,
                     "targets": [
                         {
-                            "hide": false,
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 2)"
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.*), 'Pages')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Total Stacked usage",
+                    "title": "Total Entity Usage Pages (excluding sitelinks)",
                     "tooltip": {
                         "shared": false,
                         "value_type": "individual"
@@ -820,5 +819,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 21
+    "version": 23
 }
