@@ -773,9 +773,90 @@
                 }
             ],
             "title": "Compare"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "columns": [
+
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "hideTimeOverride": false,
+                    "id": 19,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": 50,
+                    "scroll": false,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 2,
+                        "desc": true
+                    },
+                    "span": 12,
+                    "styles": [
+                        {
+                            "dateFormat": "YYYY-MM-DD",
+                            "pattern": "Time",
+                            "type": "date"
+                        },
+                        {
+                            "colorMode": "cell",
+                            "colors": [
+                                "rgba(245, 54, 54, 0.47)",
+                                "rgba(255, 115, 0, 0.47)",
+                                "rgba(255, 255, 255, 0)"
+                            ],
+                            "decimals": 0,
+                            "pattern": "Value",
+                            "thresholds": [
+                                "-1",
+                                "0",
+                                "20"
+                            ],
+                            "type": "number",
+                            "unit": "none"
+                        },
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "decimals": 2,
+                            "pattern": "Metric",
+                            "thresholds": [
+
+                            ],
+                            "type": "string",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "groupByNode(daily.wikidata.entity_usage.*.*, 3, 'sum')"
+                        }
+                    ],
+                    "timeFrom": "24h",
+                    "timeShift": null,
+                    "title": "Total Entity Usage",
+                    "transform": "timeseries_to_rows",
+                    "type": "table"
+                }
+            ],
+            "title": "New row"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -819,5 +900,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 24
+    "version": 25
 }
