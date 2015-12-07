@@ -9,6 +9,16 @@
     "id": 160,
     "links": [
         {
+            "icon": "dashboard",
+            "tags": [
+
+            ],
+            "title": "Per project breakdown",
+            "tooltip": "",
+            "type": "link",
+            "url": "\/dashboard\/db\/wikidata-entity-usage-project"
+        },
+        {
             "asDropdown": true,
             "icon": "external link",
             "tags": [
@@ -900,5 +910,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 25
+    "version": 26
 }
