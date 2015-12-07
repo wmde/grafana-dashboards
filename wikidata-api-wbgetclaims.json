@@ -103,7 +103,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.api.wbgetclaims.properties.*, 5)"
+                            "target": "aliasByNode(exclude(exclude(exclude(exclude(daily.wikidata.api.wbgetclaims.properties.*, 'SLEEP'), 'WAIT'), 'CP'), '_'), 5)"
                         }
                     ],
                     "timeFrom": null,
@@ -167,7 +167,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 12,
+                    "span": 6,
                     "stack": true,
                     "steppedLine": false,
                     "targets": [
@@ -191,12 +191,83 @@
                         "short",
                         "short"
                     ]
+                },
+                {
+                    "columns": [
+
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "id": 6,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": null,
+                    "scroll": true,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 2,
+                        "desc": true
+                    },
+                    "span": 6,
+                    "styles": [
+                        {
+                            "dateFormat": "YYYY-MM-DD",
+                            "pattern": "Time",
+                            "type": "date"
+                        },
+                        {
+                            "colorMode": "cell",
+                            "colors": [
+                                "rgba(245, 54, 54, 0)",
+                                "rgba(255, 115, 0, 0)",
+                                "rgba(255, 193, 0, 0.56)"
+                            ],
+                            "decimals": 2,
+                            "pattern": "\/.*\/",
+                            "thresholds": [
+                                "0",
+                                "0",
+                                "1000000"
+                            ],
+                            "type": "number",
+                            "unit": "short"
+                        },
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "decimals": 2,
+                            "pattern": "Value",
+                            "thresholds": [
+
+                            ],
+                            "type": "string",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.api.wbgetclaims.properties.*, 5)"
+                        }
+                    ],
+                    "timeFrom": "3d",
+                    "title": "Property calls",
+                    "transform": "timeseries_to_rows",
+                    "type": "table"
                 }
             ],
             "title": "Usage"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -241,5 +312,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 7
+    "version": 10
 }
