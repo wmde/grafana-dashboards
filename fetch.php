@@ -20,6 +20,7 @@ $dashboards = array(
 	'wikidata-query-service',
 	'wikidata-datamodel',
 	'wikidata-datamodel-terms',
+	'wikidata-datamodel-statements',
 );
 
 foreach( $dashboards as $dashboard ) {
