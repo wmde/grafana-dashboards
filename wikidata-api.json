@@ -119,9 +119,10 @@
                         "avg": false,
                         "current": false,
                         "hideEmpty": true,
+                        "hideZero": true,
                         "max": false,
                         "min": false,
-                        "show": true,
+                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -188,6 +189,8 @@
                     "legend": {
                         "avg": false,
                         "current": false,
+                        "hideEmpty": true,
+                        "hideZero": true,
                         "max": false,
                         "min": false,
                         "show": true,
@@ -233,9 +236,88 @@
                 }
             ],
             "title": "Row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "columns": [
+
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "id": 4,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": 25,
+                    "scroll": false,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 2,
+                        "desc": true
+                    },
+                    "span": 12,
+                    "styles": [
+                        {
+                            "dateFormat": "YYYY-MM-DD",
+                            "pattern": "Time",
+                            "type": "date"
+                        },
+                        {
+                            "colorMode": "cell",
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.1)",
+                                "rgba(50, 172, 45, 0.1)"
+                            ],
+                            "decimals": 2,
+                            "pattern": "\/.*\/",
+                            "thresholds": [
+                                "0",
+                                "1",
+                                "1"
+                            ],
+                            "type": "number",
+                            "unit": "short"
+                        },
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "decimals": 2,
+                            "pattern": "Value",
+                            "thresholds": [
+
+                            ],
+                            "type": "string",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(transformNull(daily.wikidata.api.actions.*, 0), 4)"
+                        }
+                    ],
+                    "timeFrom": "3d",
+                    "title": "API Module calls",
+                    "transform": "timeseries_to_rows",
+                    "type": "table"
+                }
+            ],
+            "title": "New row"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -279,5 +361,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 5
+    "version": 6
 }
