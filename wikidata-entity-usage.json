@@ -548,7 +548,7 @@
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": 0,
+                        "leftMin": null,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -910,5 +910,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 26
+    "version": 27
 }
