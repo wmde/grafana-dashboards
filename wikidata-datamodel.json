@@ -672,6 +672,126 @@
                         "short",
                         "short"
                     ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 14,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.datamodel.item.sitelinks.count.*), 6)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Sitelinks per Item",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "columns": [
+                        {
+                            "text": "Current",
+                            "value": "current"
+                        }
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "id": 15,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": null,
+                    "scroll": true,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 1,
+                        "desc": true
+                    },
+                    "span": 6,
+                    "styles": [
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "decimals": 2,
+                            "pattern": "\/Current\/",
+                            "thresholds": [
+
+                            ],
+                            "type": "number",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.datamodel.item.sitelinks.count.*, 6)"
+                        }
+                    ],
+                    "title": "Sitelinks per Item",
+                    "transform": "timeseries_aggregations",
+                    "type": "table"
                 }
             ],
             "title": "Sitelinks"
@@ -721,5 +841,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 16
+    "version": 17
 }
