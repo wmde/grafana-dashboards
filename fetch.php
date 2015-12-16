@@ -23,6 +23,7 @@ $dashboards = array(
 	'wikidata-datamodel-terms',
 	'wikidata-datamodel-statements',
 	'wikidata-datamodel-references',
+	'wikidata-kpis',
 );
 
 foreach( $dashboards as $dashboard ) {

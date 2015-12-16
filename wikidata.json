@@ -18,7 +18,7 @@
             "height": "200px",
             "panels": [
                 {
-                    "content": "<img style=\"float:right;\" src=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/66\/Wikidata-logo-en.svg\/250px-Wikidata-logo-en.svg.png\"><\/img>\n<h3>Welcome to the <strong>Wikidata<\/strong> dashboards.<\/h3>\n<p>Below you can find a collection of all dashboard relating to Wikidata.<\/p>\n<p>These include external dashboards as well as grafana boards.<\/p>\n<p>If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a>.<\/p>",
+                    "content": "<img style=\"float:right;\" src=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/66\/Wikidata-logo-en.svg\/250px-Wikidata-logo-en.svg.png\"><\/img>\n<h3>Welcome to the <strong>Wikidata<\/strong> dashboards.<\/h3>\n<p>Below you can find a collection of all dashboard relating to Wikidata.<\/p>\n<p>These include external dashboards as well as grafana boards.<\/p>\n<p>If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a>.<\/p>\n<p><h4><a href=\"\/dashboard\/db\/wikidata-kpis\"><span style=\"color:#990000\">View<\/span> <span style=\"color:#339966\">our<\/span> <span style=\"color:#006699\">KPIs<\/span> <span style=\"color:#339966\">here<\/span><\/a><\/h4><\/p>",
                     "editable": true,
                     "error": false,
                     "id": 2,
@@ -32,212 +32,6 @@
                     ],
                     "title": "",
                     "type": "text"
-                }
-            ],
-            "title": "New row"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "100px",
-            "panels": [
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "decimals": 0,
-                    "editable": true,
-                    "error": false,
-                    "format": "none",
-                    "id": 5,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": "",
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": " ",
-                    "postfixFontSize": "30%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "hide": false,
-                            "refId": "A",
-                            "target": "sumSeries(#B, #C,#D)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
-                            "refId": "B",
-                            "target": "keepLastValue(daily.wikidata.social.email.*.*, 10)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
-                            "refId": "C",
-                            "target": "keepLastValue(daily.wikidata.social.*.*, 10)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
-                            "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.5)"
-                        }
-                    ],
-                    "thresholds": "-9999999,0,+1",
-                    "timeFrom": "1w",
-                    "title": "WIP Community KPI",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
-                    "valueName": "current"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "decimals": 0,
-                    "editable": true,
-                    "error": false,
-                    "format": "none",
-                    "id": 6,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": "",
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": " ",
-                    "postfixFontSize": "30%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "hide": false,
-                            "refId": "A",
-                            "target": "sumSeries(#B, #C, #D)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": true,
-                            "refId": "B",
-                            "target": "scale(averageSeries(keepLastValue(wikidata.query.triples.*, 10)), 0.00001)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": true,
-                            "refId": "D",
-                            "target": "scale(sumSeries(keepLastValue(daily.wikidata.datamodel.*.{label,description}.*, 10)), 0.00001)"
-                        },
-                        {
-                            "hide": true,
-                            "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001)"
-                        }
-                    ],
-                    "thresholds": "-9999999,0,+1",
-                    "timeFrom": "1w",
-                    "title": "WIP Content KPI",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
-                    "valueName": "current"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": true,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "decimals": 0,
-                    "editable": true,
-                    "error": false,
-                    "format": "none",
-                    "id": 7,
-                    "interval": null,
-                    "links": [
-
-                    ],
-                    "maxDataPoints": "",
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": " ",
-                    "postfixFontSize": "30%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "span": 4,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": true,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "hide": false,
-                            "refId": "A",
-                            "target": "sumSeries(#B, #C)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": true,
-                            "refId": "B",
-                            "target": "scale(keepLastValue(daily.wikidata.entity_usage.*.*, 10), 0.0001)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": true,
-                            "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.api.actions.wbget*, 10), 0.0001)",
-                            "textEditor": false
-                        }
-                    ],
-                    "thresholds": "-9999999,0,+1",
-                    "timeFrom": "1w",
-                    "title": "WIP Usage KPI",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
-                    "valueName": "current"
                 }
             ],
             "title": "New row"
@@ -303,7 +97,7 @@
             "title": "Dashboards"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -338,5 +132,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 23
+    "version": 25
 }
