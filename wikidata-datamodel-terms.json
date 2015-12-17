@@ -18,7 +18,7 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata Datamodel Languages",
+    "originalTitle": "Wikidata Datamodel Terms",
     "rows": [
         {
             "collapse": false,
@@ -52,7 +52,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -95,9 +95,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Descriptions": "#EAB839"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -121,7 +121,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -164,9 +164,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Aliases": "#6ED0E0"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -190,7 +190,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -495,5 +495,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Terms",
-    "version": 5
+    "version": 6
 }

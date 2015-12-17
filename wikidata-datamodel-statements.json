@@ -26,9 +26,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Statements": "#447EBC"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -95,9 +95,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Statements": "#C15C17"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -316,9 +316,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "statements": "#447EBC"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -384,9 +384,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "statements": "#C15C17"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -452,9 +452,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "statements": "#447EBC"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -520,9 +520,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "statements": "#C15C17"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -764,5 +764,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Statements",
-    "version": 3
+    "version": 4
 }

@@ -25,30 +25,6 @@
         {
             "collapse": false,
             "editable": true,
-            "height": "25px",
-            "panels": [
-                {
-                    "content": "Metrics generated daily.",
-                    "editable": true,
-                    "error": false,
-                    "id": 12,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 12,
-                    "style": [
-
-                    ],
-                    "title": "",
-                    "type": "text"
-                }
-            ],
-            "title": "Social Following"
-        },
-        {
-            "collapse": false,
-            "editable": true,
             "height": "150px",
             "panels": [
                 {
@@ -1205,9 +1181,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Total following": "#E5AC0E"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1231,7 +1207,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -1278,7 +1254,7 @@
             "title": "Social Followers"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -1354,5 +1330,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 24
+    "version": 26
 }

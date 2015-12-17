@@ -253,9 +253,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Edits": "#447EBC"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -279,7 +279,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -302,7 +302,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.total_edits, 3)"
+                            "target": "alias(daily.wikidata.site_stats.total_edits, 'Edits')"
                         }
                     ],
                     "timeFrom": null,
@@ -321,9 +321,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Pages": "#C15C17"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -347,7 +347,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -370,7 +370,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.total_pages, 3)"
+                            "target": "alias(daily.wikidata.site_stats.total_pages, 'Pages')"
                         }
                     ],
                     "timeFrom": null,
@@ -389,9 +389,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Articles": "#6D1F62"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -415,7 +415,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -438,7 +438,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.site_stats.good_articles, 3)"
+                            "target": "alias(daily.wikidata.site_stats.good_articles, 'Articles')"
                         }
                     ],
                     "timeFrom": null,
@@ -481,9 +481,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Babel users": "#CCA300"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -507,7 +507,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -524,7 +524,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -594,7 +594,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -606,7 +606,7 @@
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "User languages",
+                    "title": "Active user languages",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -618,12 +618,67 @@
                         "short",
                         "short"
                     ]
+                },
+                {
+                    "columns": [
+                        {
+                            "text": "Current",
+                            "value": "current"
+                        }
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "id": 15,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": null,
+                    "scroll": true,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 1,
+                        "desc": true
+                    },
+                    "span": 4,
+                    "styles": [
+                        {
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "pattern": "Time",
+                            "type": "date"
+                        },
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "decimals": 2,
+                            "pattern": "\/.*\/",
+                            "thresholds": [
+
+                            ],
+                            "type": "number",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.wikidata.site_stats.language_usage.*, 4)"
+                        }
+                    ],
+                    "title": "Active user languages",
+                    "transform": "timeseries_aggregations",
+                    "type": "table"
                 }
             ],
             "title": "Languages"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -667,5 +722,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 12
+    "version": 13
 }

@@ -18,7 +18,7 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "New dashboard",
+    "originalTitle": "Wikidata Tasks",
     "rows": [
         {
             "collapse": false,
@@ -94,9 +94,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Tasks": "#F2C96D"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -165,7 +165,7 @@
             "title": "Row"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -209,5 +209,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Tasks",
-    "version": 0
+    "version": 1
 }

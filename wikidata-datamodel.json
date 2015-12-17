@@ -122,7 +122,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -190,7 +190,7 @@
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -462,9 +462,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Entities": "#6ED0E0"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -538,9 +538,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Sitelinks": "#F9934E"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -606,9 +606,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Item": "#967302"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -674,9 +674,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Sitelinks": "#E5AC0E"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -910,5 +910,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 19
+    "version": 20
 }

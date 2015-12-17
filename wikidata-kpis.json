@@ -118,13 +118,13 @@
                     "id": 5,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
+                        "avg": true,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -145,7 +145,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(#B, #C, #D), 'value')",
+                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
                             "textEditor": false
                         },
                         {
@@ -276,9 +276,9 @@
                     "valueName": "current"
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Value": "#EAB839"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -299,13 +299,13 @@
                     "id": 2,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
+                        "avg": true,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -326,7 +326,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(#B, #C, #D), 'value')",
+                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
                             "textEditor": false
                         },
                         {
@@ -453,9 +453,9 @@
                     "valueName": "current"
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Value": "#6ED0E0"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -476,13 +476,13 @@
                     "id": 6,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": false,
+                        "avg": true,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -504,7 +504,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "alias(sumSeries(#B, #C), 'value')",
+                            "target": "alias(sumSeries(#B, #C), 'Value')",
                             "textEditor": false
                         },
                         {
@@ -601,5 +601,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata KPIs",
-    "version": 3
+    "version": 4
 }

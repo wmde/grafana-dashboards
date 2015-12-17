@@ -469,9 +469,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Total entity flags": "#806EB7"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -537,9 +537,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Pages": "#D683CE"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -910,5 +910,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 27
+    "version": 28
 }

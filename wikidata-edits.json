@@ -173,9 +173,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Size change": "#D683CE"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -249,9 +249,11 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "Kasper11": "#9AC48A",
+                        "Widar13": "#962D82",
+                        "reCh10": "#614D93"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -399,9 +401,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "recent changes": "#1F78C1"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -515,5 +517,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 20
+    "version": 21
 }

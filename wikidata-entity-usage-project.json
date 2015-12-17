@@ -217,9 +217,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "S": "#EAB839"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -293,9 +293,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "T": "#6ED0E0"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -369,9 +369,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "O": "#EF843C"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -445,9 +445,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "X": "#E24D42"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -521,9 +521,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "flags": "#806EB7"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -587,159 +587,6 @@
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 18,
-                    "legend": {
-                        "avg": false,
-                        "current": true,
-                        "max": true,
-                        "min": true,
-                        "show": true,
-                        "total": false,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "scopedVars": {
-                        "project": {
-                            "selected": true,
-                            "text": "dewiki",
-                            "value": "dewiki"
-                        }
-                    },
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 4,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Total Entity Usage Flags",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
-                    "id": 17,
-                    "legend": {
-                        "alignAsTable": false,
-                        "avg": false,
-                        "current": true,
-                        "max": true,
-                        "min": true,
-                        "rightSide": false,
-                        "show": true,
-                        "total": false,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "scopedVars": {
-                        "project": {
-                            "selected": true,
-                            "text": "dewiki",
-                            "value": "dewiki"
-                        }
-                    },
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 4,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Total Entity Usage Pages (excluding sitelinks)",
-                    "tooltip": {
-                        "shared": false,
-                        "value_type": "individual"
                     },
                     "type": "graph",
                     "x-axis": true,
@@ -851,8 +698,172 @@
                     ]
                 },
                 {
-                    "columns": [
+                    "aliasColors": {
+                        "Total entity flags": "#806EB7"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 18,
+                    "legend": {
+                        "avg": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
 
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "scopedVars": {
+                        "project": {
+                            "selected": true,
+                            "text": "dewiki",
+                            "value": "dewiki"
+                        }
+                    },
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total Entity Usage Flags",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "Pages": "#D683CE"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "id": 17,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "scopedVars": {
+                        "project": {
+                            "selected": true,
+                            "text": "dewiki",
+                            "value": "dewiki"
+                        }
+                    },
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total Entity Usage Pages (excluding sitelinks)",
+                    "tooltip": {
+                        "shared": false,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "columns": [
+                        {
+                            "text": "Min",
+                            "value": "min"
+                        },
+                        {
+                            "text": "Max",
+                            "value": "max"
+                        },
+                        {
+                            "text": "Current",
+                            "value": "current"
+                        }
                     ],
                     "editable": true,
                     "error": false,
@@ -927,7 +938,7 @@
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage",
-                    "transform": "timeseries_to_columns",
+                    "transform": "timeseries_aggregations",
                     "type": "table"
                 }
             ],
@@ -1024,9 +1035,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "S": "#EAB839"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1100,9 +1111,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "T": "#6ED0E0"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1176,9 +1187,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "O": "#EF843C"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1252,9 +1263,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "X": "#E24D42"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1328,9 +1339,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": {
+                        "flags": "#806EB7"
+                    },
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1411,159 +1422,6 @@
                     "datasource": null,
                     "editable": true,
                     "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
-                    "id": 32,
-                    "legend": {
-                        "avg": false,
-                        "current": true,
-                        "max": true,
-                        "min": true,
-                        "show": true,
-                        "total": false,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "scopedVars": {
-                        "project": {
-                            "selected": true,
-                            "text": "enwiki",
-                            "value": "enwiki"
-                        }
-                    },
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 4,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Total Entity Usage Flags",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
-                    "id": 33,
-                    "legend": {
-                        "alignAsTable": false,
-                        "avg": false,
-                        "current": true,
-                        "max": true,
-                        "min": true,
-                        "rightSide": false,
-                        "show": true,
-                        "total": false,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "scopedVars": {
-                        "project": {
-                            "selected": true,
-                            "text": "enwiki",
-                            "value": "enwiki"
-                        }
-                    },
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 4,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Total Entity Usage Pages (excluding sitelinks)",
-                    "tooltip": {
-                        "shared": false,
-                        "value_type": "individual"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
                     "fill": 0,
                     "grid": {
                         "leftLogBase": 1,
@@ -1577,7 +1435,7 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 34,
+                    "id": 32,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1658,8 +1516,172 @@
                     ]
                 },
                 {
-                    "columns": [
+                    "aliasColors": {
+                        "Total entity flags": "#806EB7"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 33,
+                    "legend": {
+                        "avg": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
 
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "scopedVars": {
+                        "project": {
+                            "selected": true,
+                            "text": "enwiki",
+                            "value": "enwiki"
+                        }
+                    },
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total Entity Usage Flags",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "Pages": "#D683CE"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "id": 34,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": true,
+                        "max": true,
+                        "min": true,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "scopedVars": {
+                        "project": {
+                            "selected": true,
+                            "text": "enwiki",
+                            "value": "enwiki"
+                        }
+                    },
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total Entity Usage Pages (excluding sitelinks)",
+                    "tooltip": {
+                        "shared": false,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "columns": [
+                        {
+                            "text": "Min",
+                            "value": "min"
+                        },
+                        {
+                            "text": "Max",
+                            "value": "max"
+                        },
+                        {
+                            "text": "Current",
+                            "value": "current"
+                        }
                     ],
                     "editable": true,
                     "error": false,
@@ -1734,12 +1756,12 @@
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage",
-                    "transform": "timeseries_to_columns",
+                    "transform": "timeseries_aggregations",
                     "type": "table"
                 }
             ],
             "repeat": null,
-            "repeatIteration": 1449482404439,
+            "repeatIteration": 1450356833910,
             "repeatRowId": 2,
             "scopedVars": {
                 "project": {
@@ -4942,5 +4964,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage Project",
-    "version": 3
+    "version": 5
 }
