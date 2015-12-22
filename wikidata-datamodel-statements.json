@@ -215,7 +215,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 5,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -283,7 +283,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -295,6 +295,74 @@
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Ranks",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "Qualifiers": "#EA6460"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 11,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(daily.wikidata.datamodel.qualifiers, 'Qualifiers')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Qualifiers",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -764,5 +832,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Statements",
-    "version": 4
+    "version": 5
 }
