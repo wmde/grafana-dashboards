@@ -296,7 +296,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 2,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -364,7 +364,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 3,
+                    "span": 2,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -444,6 +444,75 @@
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Good Articles",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "Articles": "#6D1F62",
+                        "Items": "#B7DBAB"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 16,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(daily.wikidata.showcaseItems, 'Items')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Showcase Items",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -722,5 +791,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Site Stats",
-    "version": 13
+    "version": 14
 }
