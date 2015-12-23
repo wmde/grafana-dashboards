@@ -24,6 +24,7 @@ $dashboards = array(
 	'wikidata-datamodel-statements',
 	'wikidata-datamodel-references',
 	'wikidata-kpis',
+	'wikidata-special-entitydata',
 );
 
 foreach( $dashboards as $dashboard ) {
