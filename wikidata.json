@@ -18,7 +18,7 @@
             "height": "200px",
             "panels": [
                 {
-                    "content": "<img style=\"float:right;\" src=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/66\/Wikidata-logo-en.svg\/250px-Wikidata-logo-en.svg.png\"><\/img>\n<h3>Welcome to the <strong>Wikidata<\/strong> dashboards.<\/h3>\n<p>Below you can find a collection of all dashboard relating to Wikidata.<\/p>\n<p>These include external dashboards as well as grafana boards.<\/p>\n<p>If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a>.<\/p>\n<p><h4><a href=\"\/dashboard\/db\/wikidata-kpis\"><span style=\"color:#990000\">View<\/span> <span style=\"color:#339966\">our<\/span> <span style=\"color:#006699\">KPIs<\/span> <span style=\"color:#339966\">here<\/span><\/a><\/h4><\/p>",
+                    "content": "<img style=\"float:right;\" src=\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/6\/66\/Wikidata-logo-en.svg\/250px-Wikidata-logo-en.svg.png\"><\/img>\n<h3>Welcome to the <strong>Wikidata<\/strong> dashboards.<\/h3>\n<p>\n  Below you can find a collection of all dashboard relating to Wikidata.\n  These include external dashboards as well as grafana boards.\n  If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a>.\n<\/p>\n<p>\n  <strong>Live<\/strong> dashboards are maintained by WMDE and display minutely data.\n  <strong>Daily<\/strong> dashboards are maintained by WMDE and display daily data.\n  <strong>External<\/strong> dashboards are maintained by others including external applications.\n<\/p>\n<p><h4><a href=\"\/dashboard\/db\/wikidata-kpis\"><span style=\"color:#990000\">View<\/span> <span style=\"color:#339966\">our<\/span> <span style=\"color:#006699\">KPIs<\/span> <span style=\"color:#339966\">here<\/span><\/a><\/h4><\/p>",
                     "editable": true,
                     "error": false,
                     "id": 2,
@@ -132,5 +132,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata",
-    "version": 25
+    "version": 26
 }
