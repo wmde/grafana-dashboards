@@ -89,6 +89,7 @@
                     "links": [
 
                     ],
+                    "maxDataPoints": "",
                     "nullPointMode": "null",
                     "percentage": true,
                     "pointradius": 5,
@@ -103,7 +104,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(exclude(exclude(exclude(exclude(daily.wikidata.api.wbgetclaims.properties.*, 'SLEEP'), 'WAIT'), 'CP'), '_'), 5)"
+                            "target": "aliasByNode(exclude(exclude(exclude(exclude(exclude(daily.wikidata.api.wbgetclaims.properties.*, 'SLEEP'), 'WAIT'), 'CP'), '_'), 'R'), 5)"
                         }
                     ],
                     "timeFrom": null,
@@ -208,8 +209,8 @@
                     "scroll": true,
                     "showHeader": true,
                     "sort": {
-                        "col": 2,
-                        "desc": true
+                        "col": null,
+                        "desc": false
                     },
                     "span": 6,
                     "styles": [
@@ -312,5 +313,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 10
+    "version": 12
 }
