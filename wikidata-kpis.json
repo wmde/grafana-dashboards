@@ -426,8 +426,8 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "sumSeries(#B, #C)",
-                            "textEditor": false
+                            "target": "sumSeries(#B, #C, #D)",
+                            "textEditor": true
                         },
                         {
                             "hide": true,
@@ -440,6 +440,11 @@
                             "refId": "C",
                             "target": "scale(keepLastValue(daily.wikidata.api.actions.wbget*, 10), 0.0001)",
                             "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "D",
+                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.001)"
                         }
                     ],
                     "thresholds": "-9999999,0,+1",
@@ -504,8 +509,8 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "alias(sumSeries(#B, #C), 'Value')",
-                            "textEditor": false
+                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
+                            "textEditor": true
                         },
                         {
                             "hide": true,
@@ -517,6 +522,12 @@
                             "hide": true,
                             "refId": "C",
                             "target": "scale(keepLastValue(daily.wikidata.api.actions.wbget*, 10), 0.0001)",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "D",
+                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.001)",
                             "textEditor": true
                         }
                     ],
@@ -536,7 +547,7 @@
                     ]
                 },
                 {
-                    "content": "Currently made of:\n\n - Entity usage flags\n - Call to wbget* API methods\n\nTODO:\n\n - Use of dumps - [T119070](https:\/\/phabricator.wikimedia.org\/T119070)\n - Use of Special:EntityData - [T64874](https:\/\/phabricator.wikimedia.org\/T64874)",
+                    "content": "Currently made of:\n\n - Entity usage flags\n - Call to wbget* API methods\n - Use of Special:EntityData\n\nTODO:\n\n - Use of dumps - [T119070](https:\/\/phabricator.wikimedia.org\/T119070)",
                     "editable": true,
                     "error": false,
                     "id": 9,
@@ -601,5 +612,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata KPIs",
-    "version": 4
+    "version": 5
 }
