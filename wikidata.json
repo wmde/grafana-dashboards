@@ -1,15 +1,11 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
     "id": 154,
-    "links": [
-
-    ],
+    "links": [],
     "originalTitle": "Wikidata",
     "rows": [
         {
@@ -22,14 +18,10 @@
                     "editable": true,
                     "error": false,
                     "id": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "html",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "",
                     "type": "text"
                 }
@@ -46,9 +38,7 @@
                     "error": false,
                     "id": 1,
                     "limit": 100,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "search",
                     "query": "",
                     "span": 4,
@@ -64,9 +54,7 @@
                     "error": false,
                     "id": 8,
                     "limit": 100,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "search",
                     "query": "",
                     "span": 4,
@@ -82,14 +70,10 @@
                     "editable": true,
                     "error": false,
                     "id": 4,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "html",
                     "span": 4,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "External Dashboards",
                     "type": "text"
                 }
@@ -105,9 +89,7 @@
         "featured"
     ],
     "templating": {
-        "list": [
-
-        ]
+        "list": []
     },
     "time": {
         "from": "now-7d",
