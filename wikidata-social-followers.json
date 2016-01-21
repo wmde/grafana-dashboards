@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -218,9 +216,7 @@
                     "format": "none",
                     "id": 11,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -499,9 +495,7 @@
                     "format": "none",
                     "id": 25,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -562,9 +556,7 @@
                     "format": "none",
                     "id": 17,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -616,9 +608,7 @@
                     "format": "none",
                     "id": 18,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -670,9 +660,7 @@
                     "format": "none",
                     "id": 19,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -724,9 +712,7 @@
                     "format": "none",
                     "id": 24,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -778,9 +764,7 @@
                     "format": "none",
                     "id": 21,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -832,9 +816,7 @@
                     "format": "none",
                     "id": 22,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -886,9 +868,7 @@
                     "format": "none",
                     "id": 23,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -940,9 +920,7 @@
                     "format": "none",
                     "id": 20,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -994,9 +972,7 @@
                     "format": "none",
                     "id": 26,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -1041,9 +1017,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1074,17 +1048,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1111,9 +1081,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1144,17 +1112,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1213,17 +1177,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1266,9 +1226,7 @@
             {
                 "allFormat": "glob",
                 "current": {
-                    "tags": [
-
-                    ],
+                    "tags": [],
                     "text": "-7d",
                     "value": "-7d"
                 },

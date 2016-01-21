@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -26,9 +24,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -58,17 +54,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -126,17 +118,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -173,9 +161,7 @@
         "daily"
     ],
     "templating": {
-        "list": [
-
-        ]
+        "list": []
     },
     "time": {
         "from": "now-7d",
