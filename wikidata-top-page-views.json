@@ -1,6 +1,8 @@
 {
     "annotations": {
-        "list": []
+        "list": [
+
+        ]
     },
     "editable": true,
     "hideControls": false,
@@ -8,7 +10,9 @@
     "links": [
         {
             "icon": "external link",
-            "tags": [],
+            "tags": [
+
+            ],
             "targetBlank": true,
             "title": "Pageview API",
             "type": "link",
@@ -36,10 +40,14 @@
                     "editable": true,
                     "error": false,
                     "id": 3,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "Description",
                     "type": "text"
                 }
@@ -56,10 +64,14 @@
                     "editable": true,
                     "error": false,
                     "id": 1,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "html",
                     "span": 6,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "Top page views - list 1",
                     "type": "text"
                 },
@@ -68,10 +80,14 @@
                     "editable": true,
                     "error": false,
                     "id": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "html",
                     "span": 6,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "Top page views - list 2",
                     "type": "text"
                 }
@@ -91,7 +107,9 @@
             {
                 "allFormat": "glob",
                 "current": {
-                    "tags": [],
+                    "tags": [
+
+                    ],
                     "text": "1",
                     "value": "1"
                 },
@@ -265,7 +283,9 @@
             {
                 "allFormat": "glob",
                 "current": {
-                    "tags": [],
+                    "tags": [
+
+                    ],
                     "text": "2",
                     "value": "2"
                 },

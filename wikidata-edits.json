@@ -1,6 +1,8 @@
 {
     "annotations": {
-        "list": []
+        "list": [
+
+        ]
     },
     "editable": true,
     "hideControls": false,
@@ -25,7 +27,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [],
+                    "aliasColors": [
+
+                    ],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -55,13 +59,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -96,7 +104,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [],
+                    "aliasColors": [
+
+                    ],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -126,13 +136,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -191,13 +205,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -267,13 +285,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -299,7 +321,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [],
+                    "aliasColors": [
+
+                    ],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -333,13 +357,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -406,13 +434,17 @@
                     },
                     "lines": false,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": true,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -449,7 +481,9 @@
         "live"
     ],
     "templating": {
-        "list": []
+        "list": [
+
+        ]
     },
     "time": {
         "from": "now-6h",

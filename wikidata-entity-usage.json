@@ -1,6 +1,8 @@
 {
     "annotations": {
-        "list": []
+        "list": [
+
+        ]
     },
     "editable": true,
     "hideControls": false,
@@ -8,7 +10,9 @@
     "links": [
         {
             "icon": "dashboard",
-            "tags": [],
+            "tags": [
+
+            ],
             "title": "Per project breakdown",
             "tooltip": "",
             "type": "link",
@@ -37,10 +41,14 @@
                     "editable": true,
                     "error": false,
                     "id": 9,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "L - Labels",
                     "type": "text"
                 },
@@ -49,10 +57,14 @@
                     "editable": true,
                     "error": false,
                     "id": 11,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "S - Sitelinks",
                     "type": "text"
                 },
@@ -61,10 +73,14 @@
                     "editable": true,
                     "error": false,
                     "id": 10,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "T - Titles",
                     "type": "text"
                 },
@@ -73,10 +89,14 @@
                     "editable": true,
                     "error": false,
                     "id": 12,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "O - Other",
                     "type": "text"
                 },
@@ -85,10 +105,14 @@
                     "editable": true,
                     "error": false,
                     "id": 8,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "X - All",
                     "type": "text"
                 },
@@ -97,10 +121,14 @@
                     "editable": true,
                     "error": false,
                     "id": 14,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [],
+                    "style": [
+
+                    ],
                     "title": "Total",
                     "type": "text"
                 }
@@ -129,7 +157,9 @@
                     "format": "short",
                     "id": 3,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -180,7 +210,9 @@
                     "format": "short",
                     "id": 5,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -231,7 +263,9 @@
                     "format": "short",
                     "id": 4,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -282,7 +316,9 @@
                     "format": "short",
                     "id": 6,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -333,7 +369,9 @@
                     "format": "short",
                     "id": 2,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -384,7 +422,9 @@
                     "format": "short",
                     "id": 13,
                     "interval": null,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -461,13 +501,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -528,13 +572,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -568,7 +616,9 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [],
+                    "aliasColors": [
+
+                    ],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -601,13 +651,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -634,7 +688,9 @@
                     ]
                 },
                 {
-                    "aliasColors": [],
+                    "aliasColors": [
+
+                    ],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -664,13 +720,17 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+
+                    ],
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -730,14 +790,18 @@
             "height": "250px",
             "panels": [
                 {
-                    "columns": [],
+                    "columns": [
+
+                    ],
                     "editable": true,
                     "error": false,
                     "fontSize": "100%",
                     "hideTimeOverride": false,
                     "id": 19,
                     "isNew": true,
-                    "links": [],
+                    "links": [
+
+                    ],
                     "pageSize": 50,
                     "scroll": false,
                     "showHeader": true,
@@ -779,7 +843,9 @@
                             "dateFormat": "YYYY-MM-DD HH:mm:ss",
                             "decimals": 2,
                             "pattern": "Metric",
-                            "thresholds": [],
+                            "thresholds": [
+
+                            ],
                             "type": "string",
                             "unit": "short"
                         }
@@ -808,7 +874,9 @@
         "daily"
     ],
     "templating": {
-        "list": []
+        "list": [
+
+        ]
     },
     "time": {
         "from": "now-30d",
