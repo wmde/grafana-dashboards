@@ -1,7 +1,16 @@
 {
     "annotations": {
         "list": [
-
+            {
+                "datasource": "graphite",
+                "enable": false,
+                "iconColor": "#C0C6BE",
+                "iconSize": 13,
+                "lineColor": "rgba(255, 96, 96, 0.592157)",
+                "name": "Deployments",
+                "showLine": true,
+                "target": "exclude(aliasByNode(deploy.*.count,-2),\"all\")"
+            }
         ]
     },
     "editable": true,
@@ -461,20 +470,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(servers.wdqs*.loadavg.01, 1, -1)"
-                        },
-                        {
-                            "refId": "B",
-                            "target": "aliasByNode(servers.wdqs*.loadavg.05, 1, -1)"
-                        },
-                        {
-                            "refId": "C",
-                            "target": "aliasByNode(servers.wdqs*.loadavg.15, 1, -1)"
+                            "target": "aliasByNode(servers.wdqs*.BlazegraphCollector.Query_Engine.queriesPerSecond, 1)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "WDQS Load",
+                    "title": "Queries per second (QPS)",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -585,7 +586,7 @@
                         "threshold2": null,
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
-                    "id": 6,
+                    "id": 12,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -608,18 +609,26 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(servers.wdqs*.BlazegraphCollector.Query_Engine.queriesPerSecond, 1)"
+                            "target": "aliasByNode(servers.wdqs*.loadavg.01, 1, -1)"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(servers.wdqs*.loadavg.05, 1, -1)"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "aliasByNode(servers.wdqs*.loadavg.15, 1, -1)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Queries per second (QPS)",
+                    "title": "WDQS Load",
                     "tooltip": {
                         "shared": true,
                         "value_type": "cumulative"
@@ -676,7 +685,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -699,12 +708,82 @@
                         "bytes",
                         "short"
                     ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 13,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.GET.p99, 3, 4, 5)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Varnish Latency",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "short"
+                    ]
                 }
             ],
             "title": "New row"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -748,5 +827,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 16
+    "version": 18
 }

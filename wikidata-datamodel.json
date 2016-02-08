@@ -36,7 +36,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 10,
+                        "leftLogBase": 1,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -48,7 +48,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 3,
-                    "leftYAxisLabel": "log scale",
+                    "leftYAxisLabel": "",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -69,15 +69,22 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [
-
+                        {
+                            "alias": "properties",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Properties",
+                            "yaxis": 2
+                        }
                     ],
-                    "span": 4,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasSub(aliasSub(aliasByNode(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 4), '120', 'properties'), '0', 'items')"
+                            "target": "aliasSub(aliasSub(aliasByNode(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 4), '120', 'Properties'), '0', 'Items')"
                         }
                     ],
                     "timeFrom": null,
@@ -107,7 +114,7 @@
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": 0,
+                        "leftMin": null,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -139,7 +146,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -175,7 +182,7 @@
                     "grid": {
                         "leftLogBase": 1,
                         "leftMax": null,
-                        "leftMin": 0,
+                        "leftMin": null,
                         "rightLogBase": 1,
                         "rightMax": null,
                         "rightMin": null,
@@ -207,7 +214,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -281,7 +288,10 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [
-
+                        {
+                            "alias": "Property Size",
+                            "yaxis": 2
+                        }
                     ],
                     "span": 6,
                     "stack": false,
@@ -355,7 +365,10 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [
-
+                        {
+                            "alias": "Property size",
+                            "yaxis": 1
+                        }
                     ],
                     "span": 6,
                     "stack": false,
@@ -910,5 +923,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 20
+    "version": 21
 }

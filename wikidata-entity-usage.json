@@ -623,78 +623,6 @@
                     "datasource": null,
                     "editable": true,
                     "error": false,
-                    "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
-                    "id": 16,
-                    "legend": {
-                        "alignAsTable": false,
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "rightSide": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [
-
-                    ],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "hide": false,
-                            "refId": "A",
-                            "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 10), 2)"
-                        }
-                    ],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Total usage per site (top 10)",
-                    "tooltip": {
-                        "shared": true,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
-                    ]
-                },
-                {
-                    "aliasColors": [
-
-                    ],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
                     "fill": 0,
                     "grid": {
                         "leftLogBase": 1,
@@ -731,7 +659,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 6,
+                    "span": 2,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -780,6 +708,151 @@
                         "short",
                         "short"
                     ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "id": 16,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 5,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 20), 2)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total usage per site (top 20)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
+                    },
+                    "id": 20,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 5,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage_pages.*, 2), 3)), 20), 2)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Total usage pages per site (top 20)",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
                 }
             ],
             "title": "Compare"
@@ -809,29 +882,12 @@
                         "col": 2,
                         "desc": true
                     },
-                    "span": 12,
+                    "span": 6,
                     "styles": [
                         {
                             "dateFormat": "YYYY-MM-DD",
                             "pattern": "Time",
                             "type": "date"
-                        },
-                        {
-                            "colorMode": "cell",
-                            "colors": [
-                                "rgba(245, 54, 54, 0.47)",
-                                "rgba(255, 115, 0, 0.47)",
-                                "rgba(255, 255, 255, 0)"
-                            ],
-                            "decimals": 0,
-                            "pattern": "Value",
-                            "thresholds": [
-                                "-1",
-                                "0",
-                                "20"
-                            ],
-                            "type": "number",
-                            "unit": "none"
                         },
                         {
                             "colorMode": null,
@@ -859,6 +915,63 @@
                     "timeFrom": "24h",
                     "timeShift": null,
                     "title": "Total Entity Usage",
+                    "transform": "timeseries_to_rows",
+                    "type": "table"
+                },
+                {
+                    "columns": [
+
+                    ],
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "100%",
+                    "hideTimeOverride": false,
+                    "id": 21,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "pageSize": 50,
+                    "scroll": false,
+                    "showHeader": true,
+                    "sort": {
+                        "col": 2,
+                        "desc": true
+                    },
+                    "span": 6,
+                    "styles": [
+                        {
+                            "dateFormat": "YYYY-MM-DD",
+                            "pattern": "Time",
+                            "type": "date"
+                        },
+                        {
+                            "colorMode": null,
+                            "colors": [
+                                "rgba(245, 54, 54, 0.9)",
+                                "rgba(237, 129, 40, 0.89)",
+                                "rgba(50, 172, 45, 0.97)"
+                            ],
+                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "decimals": 2,
+                            "pattern": "Metric",
+                            "thresholds": [
+
+                            ],
+                            "type": "string",
+                            "unit": "short"
+                        }
+                    ],
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "groupByNode(daily.wikidata.entity_usage_pages.*, 3, 'sum')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": "24h",
+                    "timeShift": null,
+                    "title": "Total Entity Usage Pages",
                     "transform": "timeseries_to_rows",
                     "type": "table"
                 }
@@ -910,5 +1023,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 30
+    "version": 33
 }

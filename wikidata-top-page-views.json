@@ -60,7 +60,7 @@
             "height": "100px",
             "panels": [
                 {
-                    "content": "<div id=\"wd-top-article-list-1\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo1;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesObject = responseObject.items[0].articles;\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-1\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + (targetDate .getMonth() + 1) + \"\/\" + targetDate .getDate();\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-1\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
+                    "content": "<div id=\"wd-top-article-list-1\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo1;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesObject = responseObject.items[0].articles;\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-1\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction uglyPad( num, size ) {\n    var s = num+\"\";\n    while (s.length < size) s = \"0\" + s;\n    return s;\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + uglyPad( (targetDate .getMonth() + 1), 2 ) + \"\/\" + uglyPad( targetDate .getDate(), 2 );\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-1\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
                     "editable": true,
                     "error": false,
                     "id": 1,
@@ -76,7 +76,7 @@
                     "type": "text"
                 },
                 {
-                    "content": "<div id=\"wd-top-article-list-2\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo2;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesObject = responseObject.items[0].articles;\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-2\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + (targetDate .getMonth() + 1) + \"\/\" + targetDate .getDate();\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-2\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
+                    "content": "<div id=\"wd-top-article-list-2\">Please select a target above<\/div>\n\n<script>\nvar daysAgo = $daysAgo2;\n\nvar generateTopArticleList = function(response) {\n  var responseObject = JSON.parse(response);\n  var articlesObject = responseObject.items[0].articles;\n \n  var html = '<table><tr><th>Rank<\/th><th>Views<\/th><th>Page<\/th><\/tr>';\n\n  var arrayLength = articlesObject.length;\n  for (var i = 0; i < arrayLength; i++) {\n    var article = articlesObject[i];\n    html = html + '<tr>';\n    html = html + '<td>' + article.rank + '<\/td>';\n    html = html + '<td>' + article.views + '<\/td>';\n    html = html + '<td><a href=\"\/\/www.wikidata.org\/wiki\/' + article.article + '\">' + article.article + '<\/a><\/td>';\n    html = html +'<\/tr>' ;\n  }\n  \n  html = html + '<\/table>'\n\n  document.getElementById(\"wd-top-article-list-2\").innerHTML = html;\n}\n\nfunction httpGetAsync(theUrl, callback) {\n  var xmlHttp = new XMLHttpRequest();\n  xmlHttp.onreadystatechange = function() {\n    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)\n      callback(xmlHttp.responseText);\n  }\n  xmlHttp.open(\"GET\", theUrl, true); \/\/ true for asynchronous \n  xmlHttp.send(null);\n}\n\nfunction uglyPad( num, size ) {\n    var s = num+\"\";\n    while (s.length < size) s = \"0\" + s;\n    return s;\n}\n\nfunction getPreviousDateFormatted( daysAgo ) {\n  var targetDate = new Date();\n  targetDate .setDate(targetDate .getDate() - daysAgo);\n  return targetDate .getFullYear() + \"\/\" + uglyPad( (targetDate .getMonth() + 1), 2 ) + \"\/\" + uglyPad( targetDate .getDate(), 2 );\n}\n\nif( daysAgo == \"None\" ) {\n    document.getElementById(\"wd-top-article-list-2\").innerHTML = \"Please select a target above\";\n} else {\n    httpGetAsync(\n  \"https:\/\/wikimedia.org\/api\/rest_v1\/metrics\/pageviews\/top\/wikidata\/all-access\/\" + getPreviousDateFormatted( daysAgo ),\n  generateTopArticleList\n);\n}\n\n<\/script>",
                     "editable": true,
                     "error": false,
                     "id": 2,
@@ -95,7 +95,7 @@
             "title": "Top page views"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -110,8 +110,8 @@
                     "tags": [
 
                     ],
-                    "text": "1",
-                    "value": "1"
+                    "text": "2",
+                    "value": "2"
                 },
                 "datasource": null,
                 "includeAll": false,
@@ -126,12 +126,12 @@
                         "value": "None"
                     },
                     {
-                        "selected": true,
+                        "selected": false,
                         "text": "1",
                         "value": "1"
                     },
                     {
-                        "selected": false,
+                        "selected": true,
                         "text": "2",
                         "value": "2"
                     },
@@ -286,8 +286,8 @@
                     "tags": [
 
                     ],
-                    "text": "2",
-                    "value": "2"
+                    "text": "1",
+                    "value": "1"
                 },
                 "datasource": null,
                 "includeAll": false,
@@ -302,12 +302,12 @@
                         "value": "None"
                     },
                     {
-                        "selected": false,
+                        "selected": true,
                         "text": "1",
                         "value": "1"
                     },
                     {
-                        "selected": true,
+                        "selected": false,
                         "text": "2",
                         "value": "2"
                     },
@@ -489,5 +489,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata top page views",
-    "version": 8
+    "version": 10
 }

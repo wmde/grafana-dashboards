@@ -1,7 +1,16 @@
 {
     "annotations": {
         "list": [
-
+            {
+                "datasource": "graphite",
+                "enable": false,
+                "iconColor": "#C0C6BE",
+                "iconSize": 13,
+                "lineColor": "rgba(255, 96, 96, 0.592157)",
+                "name": "Deployments",
+                "showLine": true,
+                "target": "exclude(aliasByNode(deploy.*.count,-2),\"all\")"
+            }
         ]
     },
     "editable": true,
@@ -973,7 +982,7 @@
             "title": "Jobs"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -1017,5 +1026,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 12
+    "version": 13
 }
