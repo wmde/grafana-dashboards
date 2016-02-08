@@ -1,0 +1,659 @@
+{
+    "annotations": {
+        "enable": true,
+        "list": [
+            {
+                "datasource": "graphite",
+                "enable": false,
+                "iconColor": "#C0C6BE",
+                "iconSize": 13,
+                "lineColor": "rgba(255, 96, 96, 0.592157)",
+                "name": "Deployments",
+                "showLine": true,
+                "target": "exclude(aliasByNode(deploy.*.count,-2),\"all\")"
+            }
+        ]
+    },
+    "editable": true,
+    "hideControls": false,
+    "id": 209,
+    "links": [
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Wikidata Berlin",
+            "tooltip": "Open Item",
+            "type": "link",
+            "url": "https:\/\/www.wikidata.org\/wiki\/Q64"
+        },
+        {
+            "icon": "external link",
+            "tags": [
+
+            ],
+            "targetBlank": true,
+            "title": "Beta Italy",
+            "tooltip": "Open Item",
+            "type": "link",
+            "url": "http:\/\/wikidata.beta.wmflabs.org\/wiki\/Q15905"
+        },
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata Dashboards",
+            "type": "dashboards"
+        }
+    ],
+    "originalTitle": "Wikidata WebPageTest",
+    "refresh": "5m",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 42,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 7)",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": false,
+                            "refId": "B",
+                            "target": "alias(offset(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'Loaded')",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Page Timings",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 46,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{wb*,mw*}.median, 7)",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "JS Timings",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": 0,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 47,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "percent",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Percent of all JS",
+                            "yaxis": 2
+                        }
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.wbInitStart.median",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.wbInitEnd.median",
+                            "textEditor": true
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(diffSeries(#B, #A), 'Time')"
+                        },
+                        {
+                            "refId": "D",
+                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Percent of all JS')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Wikidata JS time",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "percent"
+                    ]
+                }
+            ],
+            "showTitle": true,
+            "title": "Wikidata Berlin (Q64)"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 45,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 7)"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(offset(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'Loaded')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Page Timings",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 40,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{wb*,mw*}.median, 7)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "JS Timings",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": 0,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 43,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "percent",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Percent of all JS",
+                            "yaxis": 2
+                        }
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.wbInitStart.median"
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.wbInitEnd.median"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(diffSeries(#B, #A), 'Time')"
+                        },
+                        {
+                            "refId": "D",
+                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Percent of all JS')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Wikidata JS time",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "ms",
+                        "percent"
+                    ]
+                }
+            ],
+            "showTitle": true,
+            "title": "Beta Italy (Q15905)"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "content": "WebPageTest\n=======\n\nAll the data showed in these graphs are collected using WebPageTest. You can read more about how we use it at [Wikitech](https:\/\/wikitech.wikimedia.org\/wiki\/WebPageTest). \n\nImportant: The desktop sites are tested using latest Chrome, Firefox and Internet Explorer 11. To verify the versions running, you can check the logs in [Jenkins](https:\/\/integration.wikimedia.org\/ci\/job\/performance-webpagetest-wmf\/). *Important*: Internet Explorer 11 runs on Windows 7 so it will not use SPDY. Firefox + WPT can't generate TTFB using SPDY TTFB is always 0 for Firefox.\n\nThey are tested from the Amazon location *us-east-1* and the connection type is set to *Cable* (5\/1 Mbps, 28ms RTT).",
+                    "editable": true,
+                    "error": false,
+                    "id": 39,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        }
+    ],
+    "schemaVersion": 8,
+    "sharedCrosshair": true,
+    "style": "light",
+    "tags": [
+        "performance",
+        "wikidata",
+        "live"
+    ],
+    "templating": {
+        "enable": true,
+        "list": [
+            {
+                "allFormat": "glob",
+                "current": {
+                    "tags": [
+
+                    ],
+                    "text": "Google_Chrome",
+                    "value": "Google_Chrome"
+                },
+                "datasource": null,
+                "includeAll": true,
+                "label": "Browser",
+                "multi": false,
+                "multiFormat": "glob",
+                "name": "browser",
+                "options": [
+                    {
+                        "selected": false,
+                        "text": "All",
+                        "value": "{Firefox,Google_Chrome,Internet_Explorer}"
+                    },
+                    {
+                        "selected": false,
+                        "text": "Firefox",
+                        "value": "Firefox"
+                    },
+                    {
+                        "selected": true,
+                        "text": "Google_Chrome",
+                        "value": "Google_Chrome"
+                    },
+                    {
+                        "selected": false,
+                        "text": "Internet_Explorer",
+                        "value": "Internet_Explorer"
+                    }
+                ],
+                "query": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.*",
+                "refresh": false,
+                "regex": "",
+                "type": "query"
+            }
+        ]
+    },
+    "time": {
+        "from": "now-7d",
+        "to": "now"
+    },
+    "timepicker": {
+        "collapse": false,
+        "enable": true,
+        "notice": false,
+        "now": true,
+        "nowDelay": "",
+        "refresh_intervals": [
+            "5m",
+            "15m",
+            "30m",
+            "1h"
+        ],
+        "status": "Stable",
+        "time_options": [
+            "1h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "14d",
+            "30d",
+            "4M"
+        ],
+        "type": "timepicker"
+    },
+    "timezone": "utc",
+    "title": "Wikidata WebPageTest",
+    "version": 6
+}
