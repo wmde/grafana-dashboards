@@ -221,7 +221,8 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(daily.wikidata.datamodel.instanceof.*, 4)"
+                            "target": "aliasByNode( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( aliasSub( daily.wikidata.datamodel.instanceof.*,  'Q11173', 'Chemical_compound'), 'Q11266439', 'WM_Template'), 'Q11424', 'Film'), 'Q1190554', 'Event'), 'Q13406463', 'WM_List'), 'Q15184295', 'WM_Module'), 'Q16521', 'Taxon'), 'Q16686448', 'Artificial_entity'), 'Q4167410', 'WM_Disambig'), 'Q4167836', 'WM_Category'), 'Q83620', 'Thoroughfare'), 'Q811979', 'Architectural_structure'), 'Q6999', 'Astronomical_object'), 'Q56061', 'Territorial_entity'), 'Q5', 'Human'), 4)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -832,5 +833,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Statements",
-    "version": 5
+    "version": 6
 }
