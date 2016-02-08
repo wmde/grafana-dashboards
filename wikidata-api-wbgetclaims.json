@@ -26,7 +26,7 @@
             "height": "100px",
             "panels": [
                 {
-                    "content": "Every page load of the Russian Wikipedia calls the wbgetclaims API module.\n\nThe calls look something like this https:\/\/www.wikidata.org\/w\/api.php?callback=jQuery111304616818514186889_1447866764683&format=json&action=wbgetclaims&property=P373&entity=Q64&_=1447866764684\n\nThis call is used to change the link in the sidebar from an article to the commons category.\n\nThis single usage of the API module makes up the majority of calls as can be seen below.",
+                    "content": "Every page load of the Russian Wikipedia (and some other projects) calls the wbgetclaims API module.\n\nThe calls look something like this https:\/\/www.wikidata.org\/w\/api.php?callback=jQuery111304616818514186889_1447866764683&format=json&action=wbgetclaims&property=P373&entity=Q64&_=1447866764684\n\nThis call is used to change the link in the sidebar from an article to the Commons category.\n\nThis single usage of the API module makes up the majority of calls as can be seen below.",
                     "editable": true,
                     "error": false,
                     "id": 4,
@@ -313,5 +313,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 12
+    "version": 13
 }

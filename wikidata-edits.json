@@ -33,6 +33,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "content": "<p>Shows live information about current edits happening on Wikidata. This information is taken from the RecentChanges for Wikidata via the API.<\/p>\n\n<ul>\n <li> <strong>Edits<\/strong> - Number of edits in a given minute, split by bot, anon & total. <\/li>\n <li> <strong>Size change<\/strong> - Sum of the changes in bytes for a given minute. <\/li>\n <li> <strong>Oauth<\/strong> - Edits made though Oauth clients. <small>(if numbers appear the OauthId is new)<\/small> <\/li>\n <li> <strong>Edit type<\/strong> - Edits split by what type of edit has been made based upon the automatic edit summary used. <\/li>\n<\/ul>",
+                    "editable": true,
+                    "error": false,
+                    "id": 8,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "html",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -526,5 +551,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 22
+    "version": 23
 }

@@ -24,6 +24,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "content": "Data about the top level data model.\n\nData is generated via a combination of the WDQS, JSON dumps and SQL queries.",
+                    "editable": true,
+                    "error": false,
+                    "id": 17,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -923,5 +948,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 21
+    "version": 24
 }

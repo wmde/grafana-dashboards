@@ -23,6 +23,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "The number of phabricator tasks that are open for the Wikidata project.\n\nThis tracking is done by screen scraping the board for the project.",
+                    "editable": true,
+                    "error": false,
+                    "id": 3,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -209,5 +234,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Tasks",
-    "version": 1
+    "version": 2
 }

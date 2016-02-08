@@ -23,6 +23,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "150px",
+            "panels": [
+                {
+                    "content": "Data about references for statements. Data is generated from the JSON dumps.\n\n - **Statement Breakdown** - Total number of statements, also split into references and unreferenced statements.\n - **Referenced vs Unreferenced Statements** - As the number of referenced vs unreferenced statements are so close this also shows a % graph. (Could eventually be a pie chart?).\n - **Reference Snak main properties** - The number of times each of the main reference type properties is used in a reference. The list of properties is maintained in this file and can be generated using a SPARQL query (P31 -> Q18608359). This gives us a rough guide of the types of references that are being used.\n - **Reference Main Snak Types** - The number of references that appear to be referencing a Wikimedia project directly (for example Wikipedia) vs the number of references that appear to have some other main snak.\n - **Total Reference Snaks** - The total number of reference snaks on Wikidata. Note: a single reference is made up of multiple snaks, and a single statement can have multiple references.\n - **Wikipedia Reference Snaks** - The total number of reference snaks that relate to Wikipedia, e.g. Imported from -> English Wikipedia.\n - **Reference Snak Some & No Values** - Using some and no values in reference snaks is odd thus this is tracked here.",
+                    "editable": true,
+                    "error": false,
+                    "id": 10,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -609,5 +634,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel References",
-    "version": 10
+    "version": 11
 }

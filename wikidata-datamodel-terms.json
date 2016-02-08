@@ -23,6 +23,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "The usage of languages in Terms on Wikidata, extracted from the wb_terms SQL table.",
+                    "editable": true,
+                    "error": false,
+                    "id": 7,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -495,5 +520,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Terms",
-    "version": 6
+    "version": 7
 }

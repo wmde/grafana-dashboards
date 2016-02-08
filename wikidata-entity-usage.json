@@ -34,6 +34,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "Data about the usage of entities on client wikis. This data is taken from the SQL database.\n\n - **Total Entity Usage Flags** - Total number of flags for usage that are recorded in the database. (note: a single page can have multiple flags, and a single usage can cause multiple flags)\n - **Total Entity Usage Pages** - The number of distinct pages that have at least 1 entity usage flag recorded for them. This is a fairly accurate representation of the number of Wikimedia pages using or potentially using data from Wikidata.",
+                    "editable": true,
+                    "error": false,
+                    "id": 22,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "150px",
             "panels": [
                 {
@@ -1023,5 +1048,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 33
+    "version": 34
 }

@@ -43,6 +43,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "100px",
+            "panels": [
+                {
+                    "content": "Operational information about the [WDQS](https:\/\/query.wikidata.org\/).\n\n - Lag & Tripple counts retrieved using a SPARQL query to each host.\n - Other metrics are direct from blazegraph\n   - querySuccessCount is derived from queryDoneCount  and queryErrorCount.\n   - All of these counts include ALL queries to the service (Note: updating the data held in the service is counted as a query)",
+                    "editable": true,
+                    "error": false,
+                    "id": 14,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -89,7 +114,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -157,7 +182,7 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -180,22 +205,6 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "content": "Rates created from queryDoneCount and queryErrorCount\n\n    queryDoneCount - queryErrorCount = querySuccessCount\n\n-------------\n\nLag & Tripple counts retrieved using a SPARQL query\n\n(jumping perhaps explained by queries executing on different nodes)\n\n-------------\n\nOther metrics are direct from blazegraph",
-                    "editable": true,
-                    "error": false,
-                    "id": 9,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 4,
-                    "style": [
-
-                    ],
-                    "title": "Details",
-                    "type": "text"
                 }
             ],
             "title": "Rates"
@@ -827,5 +836,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 18
+    "version": 19
 }

@@ -44,6 +44,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "Shows operational information about the dispatch lag and queue for Wikidata.\n\nSee also: [https:\/\/www.wikidata.org\/wiki\/Special:DispatchStats](https:\/\/www.wikidata.org\/wiki\/Special:DispatchStats)",
+                    "editable": true,
+                    "error": false,
+                    "id": 18,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "200px",
             "panels": [
                 {
@@ -1026,5 +1051,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 13
+    "version": 14
 }

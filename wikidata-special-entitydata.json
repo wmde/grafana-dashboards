@@ -23,6 +23,31 @@
         {
             "collapse": false,
             "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "The data is extracted from the web request logs.",
+                    "editable": true,
+                    "error": false,
+                    "id": 4,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -280,5 +305,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Special:EntityData",
-    "version": 5
+    "version": 6
 }

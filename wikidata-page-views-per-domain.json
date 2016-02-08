@@ -39,7 +39,7 @@
             "height": "100px",
             "panels": [
                 {
-                    "content": "This data is taken from the cache logs **sampled** at [1:5000 resolution](https:\/\/github.com\/wikimedia\/operations-puppet\/blob\/812f280d16acfe3083259e8dfa7ce12ebf71da87\/files\/udp2log\/sqstat.pl#L153).\n\nPage views here are defined as either requests to \/wiki or index.php\n\nThis is good for comparing the use of the desktop site vs the mobile site (and test site)",
+                    "content": "This data is taken from the cache logs **sampled** at [1:5000 resolution](https:\/\/github.com\/wikimedia\/operations-puppet\/blob\/812f280d16acfe3083259e8dfa7ce12ebf71da87\/files\/udp2log\/sqstat.pl#L153).\n\nPage views here are defined as either requests to \/wiki or index.php\n\nThis is good for comparing the use of the desktop site vs the mobile site (and test site)\n\n**Note: this is currently broken and may not be fixed!**",
                     "editable": true,
                     "error": false,
                     "id": 7,
@@ -51,7 +51,7 @@
                     "style": [
 
                     ],
-                    "title": "Info",
+                    "title": "Description",
                     "type": "text"
                 }
             ],
@@ -212,12 +212,11 @@
             "title": "Page Views"
         }
     ],
-    "schemaVersion": 7,
+    "schemaVersion": 8,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
-        "wikidata",
-        "live"
+
     ],
     "templating": {
         "list": [
@@ -256,5 +255,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Page views (per domain)",
-    "version": 7
+    "version": 8
 }
