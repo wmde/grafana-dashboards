@@ -336,7 +336,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(aliasSub(aliasSub(aliasSub(wikidata.rc.edits.oauth.*, '93', 'Widar13'), '168', 'reCh10'), '336', 'Kasper11')), 4)"
+                            "target": "aliasByNode(aliasSub(sortByMaxima(aliasSub(aliasSub(aliasSub(wikidata.rc.edits.oauth.*, '93', 'Widar13'), '168', 'reCh10'), '336', 'Kasper11')), '378', 'Widar14'), 4)"
                         }
                     ],
                     "timeFrom": null,
@@ -551,5 +551,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 25
+    "version": 26
 }
