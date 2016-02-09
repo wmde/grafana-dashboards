@@ -19,7 +19,33 @@
         }
     ],
     "originalTitle": "Wikidata KPIs",
+    "refresh": "30m",
     "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "KPIs or Key Performance Indicators are measurable values that demonstrate how effectively goals are being achieved.\n\nThis dashboard contains a summary of the Wikidata KPIs split in three.",
+                    "editable": true,
+                    "error": false,
+                    "id": 10,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Description",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
         {
             "collapse": false,
             "editable": true,
@@ -144,8 +170,9 @@
                     "steppedLine": false,
                     "targets": [
                         {
+                            "hide": false,
                             "refId": "A",
-                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
+                            "target": "alias(sumSeries(#D, #E, #D), 'Value')",
                             "textEditor": false
                         },
                         {
@@ -163,7 +190,13 @@
                         {
                             "hide": true,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.5)",
+                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.1)",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "keepLastValue(daily.wikidata.site_stats.active_users.100, 10)",
                             "textEditor": true
                         }
                     ],
@@ -183,7 +216,7 @@
                     ]
                 },
                 {
-                    "content": "Currently made of:\n\n - Social following\n - Active site users",
+                    "content": "The general health of the community comprised of:\n\n  - The number of mailing list subscribers (both wikidata and wikidata-tech)\n  - The number of social followers\n  - The number of active site users with 1 edit in the past 30 days (with a weighting of 0.1)\n  - The number of active site users with 100 edits in the past 30 days",
                     "editable": true,
                     "error": false,
                     "id": 7,
@@ -364,7 +397,7 @@
                     ]
                 },
                 {
-                    "content": "Currently made of:\n\n - WDQS triples\n - Entity Labels & Descriptions\n - Non redirect Entities",
+                    "content": "The quantity and quality of the content comprised of:\n\n - The number of triples in the WDQS store (with a weighting of 0.00001)\n - The number Entity Labels & Descriptions (with a weighting of 0.00001)\n - The number of Non redirect Entities (with a weighting of 0.0001)",
                     "editable": true,
                     "error": false,
                     "id": 8,
@@ -515,19 +548,19 @@
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "scale(keepLastValue(daily.wikidata.entity_usage.*.*, 10), 0.0001)",
-                            "textEditor": true
+                            "target": "scale(keepLastValue(daily.wikidata.entity_usage_pages.*, 10), 0.001)",
+                            "textEditor": false
                         },
                         {
                             "hide": true,
                             "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.api.actions.wbget*, 10), 0.0001)",
+                            "target": "scale(keepLastValue(daily.wikidata.api.actions.wbgetentities, 10), 0.0001)",
                             "textEditor": true
                         },
                         {
                             "hide": true,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.001)",
+                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.0001)",
                             "textEditor": true
                         }
                     ],
@@ -547,7 +580,7 @@
                     ]
                 },
                 {
-                    "content": "Currently made of:\n\n - Entity usage flags\n - Call to wbget* API methods\n - Use of Special:EntityData\n\nTODO:\n\n - Use of dumps - [T119070](https:\/\/phabricator.wikimedia.org\/T119070)",
+                    "content": "The usage of data comprised of:\n\n - Total Wikimedia pages with Entity Usage flags (with a weighting of 0.001)\n - Total calls to the wbgetentites API method (with a weighting of 0.0001) - wbgetclaims may also be added once its usage is not skewed.\n - Total calls to Special:EntityData (with a weighting of 0.0001)\n\nTODO:\n\n - Use of dumps - [T119070](https:\/\/phabricator.wikimedia.org\/T119070)",
                     "editable": true,
                     "error": false,
                     "id": 9,
@@ -566,10 +599,35 @@
             ],
             "showTitle": true,
             "title": "Usage"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "content": "Data for all KPIs was tracked from 1 Dec 2015, this explains the large spike in 2 of the KPIs at this point.",
+                    "editable": true,
+                    "error": false,
+                    "id": 11,
+                    "isNew": true,
+                    "links": [
+
+                    ],
+                    "mode": "markdown",
+                    "span": 12,
+                    "style": [
+
+                    ],
+                    "title": "Changes",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
         }
     ],
     "schemaVersion": 8,
-    "sharedCrosshair": false,
+    "sharedCrosshair": true,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -581,7 +639,7 @@
         ]
     },
     "time": {
-        "from": "now-14d",
+        "from": "now-60d",
         "to": "now"
     },
     "timepicker": {
@@ -612,5 +670,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata KPIs",
-    "version": 5
+    "version": 6
 }

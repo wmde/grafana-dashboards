@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata Special:EntityData",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -87,7 +88,7 @@
                     "links": [
 
                     ],
-                    "nullPointMode": "null as zero",
+                    "nullPointMode": "null",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -274,7 +275,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-90d",
         "to": "now"
     },
     "timepicker": {
@@ -305,5 +306,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Special:EntityData",
-    "version": 6
+    "version": 8
 }

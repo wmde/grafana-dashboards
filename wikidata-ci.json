@@ -19,7 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata CI",
-    "refresh": "30s",
+    "refresh": "1m",
     "rows": [
         {
             "collapse": false,
@@ -137,7 +137,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-60d",
         "to": "now"
     },
     "timepicker": {
@@ -168,5 +168,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata CI",
-    "version": 3
+    "version": 5
 }

@@ -28,7 +28,7 @@
         }
     ],
     "originalTitle": "Wikidata Edits",
-    "refresh": "30s",
+    "refresh": "1m",
     "rows": [
         {
             "collapse": false,
@@ -520,7 +520,7 @@
         ]
     },
     "time": {
-        "from": "now-6h",
+        "from": "now-12h",
         "to": "now"
     },
     "timepicker": {
@@ -551,5 +551,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Edits",
-    "version": 23
+    "version": 25
 }

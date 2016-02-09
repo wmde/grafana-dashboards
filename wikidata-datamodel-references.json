@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata Datamodel References",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -634,5 +635,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel References",
-    "version": 11
+    "version": 12
 }

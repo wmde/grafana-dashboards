@@ -31,6 +31,10 @@ $dashboards = array(
 foreach( $dashboards as $dashboard ) {
 	echo "Getting dashboard $dashboard\n"; 
 	$response = file_get_contents( "https://grafana.wikimedia.org/api/dashboards/db/$dashboard" );
+	if( $response === false || $response === null ) {
+		echo "Skipping $dashboard, something went wrong...\n";
+		continue;
+	}
 	$data = json_decode( $response, true );
 	$data = $data['dashboard'];
 	$json = json_encode( $data, JSON_PRETTY_PRINT );

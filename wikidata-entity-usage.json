@@ -29,7 +29,7 @@
         }
     ],
     "originalTitle": "Wikidata Entity Usage",
-    "refresh": false,
+    "refresh": "30s",
     "rows": [
         {
             "collapse": false,
@@ -1017,7 +1017,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-90d",
         "to": "now"
     },
     "timepicker": {
@@ -1048,5 +1048,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 34
+    "version": 35
 }

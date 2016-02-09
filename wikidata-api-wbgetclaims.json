@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata API wbgetclaims",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -313,5 +314,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 13
+    "version": 15
 }

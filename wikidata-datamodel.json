@@ -19,7 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata Datamodel",
-    "refresh": false,
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -917,7 +917,7 @@
         ]
     },
     "time": {
-        "from": "now-7d",
+        "from": "now-90d",
         "to": "now"
     },
     "timepicker": {
@@ -948,5 +948,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel",
-    "version": 24
+    "version": 25
 }

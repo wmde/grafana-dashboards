@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata API",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -338,7 +339,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-60d",
         "to": "now"
     },
     "timepicker": {
@@ -369,5 +370,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 8
+    "version": 9
 }

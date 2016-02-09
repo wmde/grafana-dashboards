@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata Tasks",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -203,7 +204,7 @@
         ]
     },
     "time": {
-        "from": "now-7d",
+        "from": "now-90d",
         "to": "now"
     },
     "timepicker": {
@@ -234,5 +235,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Tasks",
-    "version": 2
+    "version": 3
 }

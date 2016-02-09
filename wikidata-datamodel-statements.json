@@ -19,6 +19,7 @@
         }
     ],
     "originalTitle": "Wikidata Datamodel Statements",
+    "refresh": "30m",
     "rows": [
         {
             "collapse": false,
@@ -827,7 +828,7 @@
         ]
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-90d",
         "to": "now"
     },
     "timepicker": {
@@ -858,5 +859,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Statements",
-    "version": 9
+    "version": 10
 }

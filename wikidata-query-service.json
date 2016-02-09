@@ -38,7 +38,7 @@
         }
     ],
     "originalTitle": "Wikidata Query Service",
-    "refresh": "30s",
+    "refresh": "1m",
     "rows": [
         {
             "collapse": false,
@@ -805,7 +805,7 @@
         ]
     },
     "time": {
-        "from": "now-1h",
+        "from": "now-24h",
         "to": "now"
     },
     "timepicker": {
@@ -836,5 +836,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 19
+    "version": 20
 }
