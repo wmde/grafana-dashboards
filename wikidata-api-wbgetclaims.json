@@ -61,7 +61,7 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 10,
+                        "leftLogBase": 1,
                         "leftMax": null,
                         "leftMin": null,
                         "rightLogBase": 1,
@@ -73,7 +73,7 @@
                         "threshold2Color": "rgba(234, 112, 112, 0.22)"
                     },
                     "id": 1,
-                    "leftYAxisLabel": "log % of calls",
+                    "leftYAxisLabel": "% of calls",
                     "legend": {
                         "alignAsTable": false,
                         "avg": false,
@@ -112,6 +112,7 @@
                     "timeShift": null,
                     "title": "Property distribution",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": false,
                         "value_type": "cumulative"
                     },
@@ -183,6 +184,7 @@
                     "timeShift": null,
                     "title": "Calls",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": false,
                         "value_type": "cumulative"
                     },
@@ -231,7 +233,6 @@
                             "pattern": "\/.*\/",
                             "thresholds": [
                                 "0",
-                                "0",
                                 "1000000"
                             ],
                             "type": "number",
@@ -269,7 +270,7 @@
             "title": "Usage"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 11,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -314,5 +315,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 15
+    "version": 16
 }
