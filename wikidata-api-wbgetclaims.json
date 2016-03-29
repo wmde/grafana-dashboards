@@ -105,7 +105,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(exclude(exclude(exclude(exclude(exclude(daily.wikidata.api.wbgetclaims.properties.*, 'SLEEP'), 'WAIT'), 'CP'), '_'), 'R'), 5)"
+                            "target": "aliasByNode(sortByMaxima(exclude(exclude(exclude(exclude(exclude(daily.wikidata.api.wbgetclaims.properties.*, 'SLEEP'), 'WAIT'), 'CP'), '_'), 'R')), 5)"
                         }
                     ],
                     "timeFrom": null,
@@ -315,5 +315,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbgetclaims",
-    "version": 16
+    "version": 17
 }
