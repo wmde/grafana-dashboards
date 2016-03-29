@@ -10,6 +10,7 @@ $dashboards = array(
 	'wikidata-ci',
 	'wikidata-tasks',
 	'wikidata-api',
+	'wikidata-api-error-rate',
 	'wikidata-api-wbgetclaims',
 	'wikidata-dispatch',
 	'wikidata-page-views-per-domain',
@@ -26,6 +27,7 @@ $dashboards = array(
 	'wikidata-kpis',
 	'wikidata-special-entitydata',
 	'wikidata-webpagetest',
+	'wikipageupdater-calls',
 );
 
 foreach( $dashboards as $dashboard ) {

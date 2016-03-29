@@ -103,19 +103,19 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 7)",
+                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 5, 7)",
                             "textEditor": false
                         },
                         {
                             "hide": false,
                             "refId": "B",
-                            "target": "alias(offset(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'Loaded')",
+                            "target": "aliasByNode(aliasSub(offset(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'fullyLoaded', 'loaded'), 5, 7)",
                             "textEditor": false
                         }
                     ],
@@ -179,14 +179,14 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{wb*,mw*}.median, 7)",
-                            "textEditor": true
+                            "target": "aliasByNode(webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.{wb*,mw*}.median, 5, 7)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -228,10 +228,12 @@
                     "id": 47,
                     "isNew": true,
                     "legend": {
+                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
+                        "rightSide": false,
                         "show": true,
                         "total": false,
                         "values": false
@@ -254,32 +256,65 @@
                         {
                             "alias": "Percent of all JS",
                             "yaxis": 2
+                        },
+                        {
+                            "alias": "Firefox Percent of JS",
+                            "yaxis": 2
                         }
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "hide": true,
                             "refId": "A",
-                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.wbInitStart.median",
-                            "textEditor": true
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Firefox.firstView.wbInitStart.median",
+                            "textEditor": false
                         },
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.$browser.firstView.wbInitEnd.median",
-                            "textEditor": true
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Firefox.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Google_Chrome.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "F",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Google_Chrome.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "G",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Internet_Explorer.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "H",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Internet_Explorer.firstView.wbInitEnd.median",
+                            "textEditor": false
                         },
                         {
                             "refId": "C",
-                            "target": "alias(diffSeries(#B, #A), 'Time')"
+                            "target": "alias(diffSeries(#B, #A), 'Firefox')"
                         },
                         {
-                            "refId": "D",
-                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Percent of all JS')",
-                            "textEditor": true
+                            "hide": false,
+                            "refId": "I",
+                            "target": "alias(diffSeries(#E, #F), 'Chrome')"
+                        },
+                        {
+                            "hide": false,
+                            "refId": "J",
+                            "target": "alias(diffSeries(#H, #G), 'IE')"
                         }
                     ],
                     "timeFrom": null,
@@ -295,6 +330,138 @@
                     "y_formats": [
                         "ms",
                         "percent"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": 0,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 48,
+                    "isNew": true,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "percent",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Percent of all JS",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Firefox Percent of JS",
+                            "yaxis": 2
+                        }
+                    ],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Firefox.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Firefox.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Google_Chrome.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "F",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Google_Chrome.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "G",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Internet_Explorer.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "H",
+                            "target": "webpagetest.wikidatawiki.anonymous.Berlin.us-east-1.Internet_Explorer.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": false,
+                            "refId": "D",
+                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Firefox')",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": false,
+                            "refId": "K",
+                            "target": "alias(asPercent(diffSeries(#E, #F), #E), 'Chrome')",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": false,
+                            "refId": "L",
+                            "target": "alias(asPercent(diffSeries(#H, #G), #H), 'IE')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Wikidata % of all JS time",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "percent",
+                        "none"
                     ]
                 }
             ],
@@ -351,17 +518,20 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 7)"
+                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{SpeedIndex,fullyLoaded,render}.median, 5, 7)",
+                            "textEditor": false
                         },
                         {
+                            "hide": false,
                             "refId": "B",
-                            "target": "alias(offset(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'Loaded')"
+                            "target": "aliasByNode(aliasSub(offset(wikidatawiki-beta.wikidatawiki.anonymous.Italy.us-east-1.$browser.firstView.fullyLoaded.median, -2000), 'fullyLoaded', 'loaded'), 5, 7)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -424,13 +594,13 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{wb*,mw*}.median, 7)",
+                            "target": "aliasByNode(webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.{wb*,mw*}.median, 5, 7)",
                             "textEditor": false
                         }
                     ],
@@ -473,10 +643,12 @@
                     "id": 43,
                     "isNew": true,
                     "legend": {
+                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
+                        "rightSide": false,
                         "show": true,
                         "total": false,
                         "values": false
@@ -499,30 +671,65 @@
                         {
                             "alias": "Percent of all JS",
                             "yaxis": 2
+                        },
+                        {
+                            "alias": "Firefox Percent of JS",
+                            "yaxis": 2
                         }
                     ],
-                    "span": 4,
+                    "span": 3,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "hide": true,
                             "refId": "A",
-                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.wbInitStart.median"
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Firefox.firstView.wbInitStart.median",
+                            "textEditor": false
                         },
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.$browser.firstView.wbInitEnd.median"
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Firefox.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Google_Chrome.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "F",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Google_Chrome.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "G",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Internet_Explorer.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "H",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Internet_Explorer.firstView.wbInitEnd.median",
+                            "textEditor": false
                         },
                         {
                             "refId": "C",
-                            "target": "alias(diffSeries(#B, #A), 'Time')"
+                            "target": "alias(diffSeries(#B, #A), 'Firefox')"
                         },
                         {
-                            "refId": "D",
-                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Percent of all JS')",
-                            "textEditor": true
+                            "hide": false,
+                            "refId": "I",
+                            "target": "alias(diffSeries(#E, #F), 'Chrome')"
+                        },
+                        {
+                            "hide": false,
+                            "refId": "J",
+                            "target": "alias(diffSeries(#H, #G), 'IE')"
                         }
                     ],
                     "timeFrom": null,
@@ -538,6 +745,138 @@
                     "y_formats": [
                         "ms",
                         "percent"
+                    ]
+                },
+                {
+                    "aliasColors": [
+
+                    ],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": 0,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": 0,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 49,
+                    "isNew": true,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [
+
+                    ],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "percent",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Percent of all JS",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "Firefox Percent of JS",
+                            "yaxis": 2
+                        }
+                    ],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Firefox.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Firefox.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Google_Chrome.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "F",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Google_Chrome.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "G",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Internet_Explorer.firstView.wbInitStart.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "H",
+                            "target": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.Internet_Explorer.firstView.wbInitEnd.median",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": false,
+                            "refId": "D",
+                            "target": "alias(asPercent(diffSeries(#B, #A), #B), 'Firefox')",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": false,
+                            "refId": "K",
+                            "target": "alias(asPercent(diffSeries(#E, #F), #E), 'Chrome')",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": false,
+                            "refId": "L",
+                            "target": "alias(asPercent(diffSeries(#H, #G), #H), 'IE')",
+                            "textEditor": true
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Wikidata % of all JS time",
+                    "tooltip": {
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "percent",
+                        "none"
                     ]
                 }
             ],
@@ -655,5 +994,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata WebPageTest",
-    "version": 7
+    "version": 9
 }
