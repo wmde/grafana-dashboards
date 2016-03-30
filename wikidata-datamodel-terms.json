@@ -102,13 +102,14 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.label.*), 'Labels')"
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.label.$lang), 'Labels')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Entity labels",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -171,13 +172,14 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.description.*), 'Descriptions')"
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.description.$lang), 'Descriptions')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Entity descriptions",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -240,13 +242,14 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.alias.*), 'Aliases')"
+                            "target": "alias(sumSeries(daily.wikidata.datamodel.*.alias.$lang), 'Aliases')"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Entity aliases",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -324,6 +327,7 @@
                     "timeShift": null,
                     "title": "Label Languages",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -393,6 +397,7 @@
                     "timeShift": null,
                     "title": "Description Languages",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -462,6 +467,7 @@
                     "timeShift": null,
                     "title": "Alias Languages",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -477,7 +483,7 @@
             "title": "Languages"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 11,
     "sharedCrosshair": false,
     "style": "dark",
     "tags": [
@@ -486,7 +492,2099 @@
     ],
     "templating": {
         "list": [
+            {
+                "allValue": "*",
+                "current": {
+                    "tags": [
 
+                    ],
+                    "text": "All",
+                    "value": [
+                        "$__all"
+                    ]
+                },
+                "datasource": null,
+                "hideLabel": false,
+                "includeAll": true,
+                "label": "Language",
+                "multi": true,
+                "name": "lang",
+                "options": [
+                    {
+                        "selected": true,
+                        "text": "All",
+                        "value": "$__all"
+                    },
+                    {
+                        "selected": false,
+                        "text": "aa",
+                        "value": "aa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ab",
+                        "value": "ab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ace",
+                        "value": "ace"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ady",
+                        "value": "ady"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ady-cyrl",
+                        "value": "ady-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "aeb",
+                        "value": "aeb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "aeb-arab",
+                        "value": "aeb-arab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "aeb-latn",
+                        "value": "aeb-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "af",
+                        "value": "af"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ak",
+                        "value": "ak"
+                    },
+                    {
+                        "selected": false,
+                        "text": "aln",
+                        "value": "aln"
+                    },
+                    {
+                        "selected": false,
+                        "text": "als",
+                        "value": "als"
+                    },
+                    {
+                        "selected": false,
+                        "text": "am",
+                        "value": "am"
+                    },
+                    {
+                        "selected": false,
+                        "text": "an",
+                        "value": "an"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ang",
+                        "value": "ang"
+                    },
+                    {
+                        "selected": false,
+                        "text": "anp",
+                        "value": "anp"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ar",
+                        "value": "ar"
+                    },
+                    {
+                        "selected": false,
+                        "text": "arc",
+                        "value": "arc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "arn",
+                        "value": "arn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "arq",
+                        "value": "arq"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ary",
+                        "value": "ary"
+                    },
+                    {
+                        "selected": false,
+                        "text": "arz",
+                        "value": "arz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "as",
+                        "value": "as"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ase",
+                        "value": "ase"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ast",
+                        "value": "ast"
+                    },
+                    {
+                        "selected": false,
+                        "text": "av",
+                        "value": "av"
+                    },
+                    {
+                        "selected": false,
+                        "text": "avk",
+                        "value": "avk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "awa",
+                        "value": "awa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ay",
+                        "value": "ay"
+                    },
+                    {
+                        "selected": false,
+                        "text": "az",
+                        "value": "az"
+                    },
+                    {
+                        "selected": false,
+                        "text": "azb",
+                        "value": "azb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ba",
+                        "value": "ba"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bar",
+                        "value": "bar"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bat-smg",
+                        "value": "bat-smg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bbc-latn",
+                        "value": "bbc-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bcc",
+                        "value": "bcc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bcl",
+                        "value": "bcl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "be",
+                        "value": "be"
+                    },
+                    {
+                        "selected": false,
+                        "text": "be-tarask",
+                        "value": "be-tarask"
+                    },
+                    {
+                        "selected": false,
+                        "text": "be-x-old",
+                        "value": "be-x-old"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bg",
+                        "value": "bg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bh",
+                        "value": "bh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bho",
+                        "value": "bho"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bi",
+                        "value": "bi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bjn",
+                        "value": "bjn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bm",
+                        "value": "bm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bn",
+                        "value": "bn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bo",
+                        "value": "bo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bpy",
+                        "value": "bpy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bqi",
+                        "value": "bqi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "br",
+                        "value": "br"
+                    },
+                    {
+                        "selected": false,
+                        "text": "brh",
+                        "value": "brh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bs",
+                        "value": "bs"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bug",
+                        "value": "bug"
+                    },
+                    {
+                        "selected": false,
+                        "text": "bxr",
+                        "value": "bxr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ca",
+                        "value": "ca"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cbk-zam",
+                        "value": "cbk-zam"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cdo",
+                        "value": "cdo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ce",
+                        "value": "ce"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ceb",
+                        "value": "ceb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ch",
+                        "value": "ch"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cho",
+                        "value": "cho"
+                    },
+                    {
+                        "selected": false,
+                        "text": "chr",
+                        "value": "chr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "chy",
+                        "value": "chy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ckb",
+                        "value": "ckb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "co",
+                        "value": "co"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cps",
+                        "value": "cps"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cr",
+                        "value": "cr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "crh",
+                        "value": "crh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "crh-cyrl",
+                        "value": "crh-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "crh-latn",
+                        "value": "crh-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cs",
+                        "value": "cs"
+                    },
+                    {
+                        "selected": false,
+                        "text": "csb",
+                        "value": "csb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cu",
+                        "value": "cu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cv",
+                        "value": "cv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "cy",
+                        "value": "cy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "da",
+                        "value": "da"
+                    },
+                    {
+                        "selected": false,
+                        "text": "de",
+                        "value": "de"
+                    },
+                    {
+                        "selected": false,
+                        "text": "de-at",
+                        "value": "de-at"
+                    },
+                    {
+                        "selected": false,
+                        "text": "de-ch",
+                        "value": "de-ch"
+                    },
+                    {
+                        "selected": false,
+                        "text": "de-formal",
+                        "value": "de-formal"
+                    },
+                    {
+                        "selected": false,
+                        "text": "din",
+                        "value": "din"
+                    },
+                    {
+                        "selected": false,
+                        "text": "diq",
+                        "value": "diq"
+                    },
+                    {
+                        "selected": false,
+                        "text": "dsb",
+                        "value": "dsb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "dtp",
+                        "value": "dtp"
+                    },
+                    {
+                        "selected": false,
+                        "text": "dty",
+                        "value": "dty"
+                    },
+                    {
+                        "selected": false,
+                        "text": "dv",
+                        "value": "dv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "dz",
+                        "value": "dz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ee",
+                        "value": "ee"
+                    },
+                    {
+                        "selected": false,
+                        "text": "egl",
+                        "value": "egl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "el",
+                        "value": "el"
+                    },
+                    {
+                        "selected": false,
+                        "text": "eml",
+                        "value": "eml"
+                    },
+                    {
+                        "selected": false,
+                        "text": "en",
+                        "value": "en"
+                    },
+                    {
+                        "selected": false,
+                        "text": "en-ca",
+                        "value": "en-ca"
+                    },
+                    {
+                        "selected": false,
+                        "text": "en-gb",
+                        "value": "en-gb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "eo",
+                        "value": "eo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "es",
+                        "value": "es"
+                    },
+                    {
+                        "selected": false,
+                        "text": "et",
+                        "value": "et"
+                    },
+                    {
+                        "selected": false,
+                        "text": "eu",
+                        "value": "eu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ext",
+                        "value": "ext"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fa",
+                        "value": "fa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ff",
+                        "value": "ff"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fi",
+                        "value": "fi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fit",
+                        "value": "fit"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fiu-vro",
+                        "value": "fiu-vro"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fj",
+                        "value": "fj"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fo",
+                        "value": "fo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fr",
+                        "value": "fr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "frc",
+                        "value": "frc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "frp",
+                        "value": "frp"
+                    },
+                    {
+                        "selected": false,
+                        "text": "frr",
+                        "value": "frr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fur",
+                        "value": "fur"
+                    },
+                    {
+                        "selected": false,
+                        "text": "fy",
+                        "value": "fy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ga",
+                        "value": "ga"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gag",
+                        "value": "gag"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gan",
+                        "value": "gan"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gan-hans",
+                        "value": "gan-hans"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gan-hant",
+                        "value": "gan-hant"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gd",
+                        "value": "gd"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gl",
+                        "value": "gl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "glk",
+                        "value": "glk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gn",
+                        "value": "gn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gom",
+                        "value": "gom"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gom-deva",
+                        "value": "gom-deva"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gom-latn",
+                        "value": "gom-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "got",
+                        "value": "got"
+                    },
+                    {
+                        "selected": false,
+                        "text": "grc",
+                        "value": "grc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gsw",
+                        "value": "gsw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gu",
+                        "value": "gu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "gv",
+                        "value": "gv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ha",
+                        "value": "ha"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hak",
+                        "value": "hak"
+                    },
+                    {
+                        "selected": false,
+                        "text": "haw",
+                        "value": "haw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "he",
+                        "value": "he"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hi",
+                        "value": "hi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hif",
+                        "value": "hif"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hif-latn",
+                        "value": "hif-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hil",
+                        "value": "hil"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ho",
+                        "value": "ho"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hr",
+                        "value": "hr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hrx",
+                        "value": "hrx"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hsb",
+                        "value": "hsb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ht",
+                        "value": "ht"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hu",
+                        "value": "hu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hy",
+                        "value": "hy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "hz",
+                        "value": "hz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ia",
+                        "value": "ia"
+                    },
+                    {
+                        "selected": false,
+                        "text": "id",
+                        "value": "id"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ie",
+                        "value": "ie"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ig",
+                        "value": "ig"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ii",
+                        "value": "ii"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ik",
+                        "value": "ik"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ike-cans",
+                        "value": "ike-cans"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ike-latn",
+                        "value": "ike-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ilo",
+                        "value": "ilo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "inh",
+                        "value": "inh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "io",
+                        "value": "io"
+                    },
+                    {
+                        "selected": false,
+                        "text": "is",
+                        "value": "is"
+                    },
+                    {
+                        "selected": false,
+                        "text": "it",
+                        "value": "it"
+                    },
+                    {
+                        "selected": false,
+                        "text": "iu",
+                        "value": "iu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ja",
+                        "value": "ja"
+                    },
+                    {
+                        "selected": false,
+                        "text": "jam",
+                        "value": "jam"
+                    },
+                    {
+                        "selected": false,
+                        "text": "jbo",
+                        "value": "jbo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "jut",
+                        "value": "jut"
+                    },
+                    {
+                        "selected": false,
+                        "text": "jv",
+                        "value": "jv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ka",
+                        "value": "ka"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kaa",
+                        "value": "kaa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kab",
+                        "value": "kab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kbd",
+                        "value": "kbd"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kbd-cyrl",
+                        "value": "kbd-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kg",
+                        "value": "kg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "khw",
+                        "value": "khw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ki",
+                        "value": "ki"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kiu",
+                        "value": "kiu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kj",
+                        "value": "kj"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk",
+                        "value": "kk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-arab",
+                        "value": "kk-arab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-cn",
+                        "value": "kk-cn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-cyrl",
+                        "value": "kk-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-kz",
+                        "value": "kk-kz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-latn",
+                        "value": "kk-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kk-tr",
+                        "value": "kk-tr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kl",
+                        "value": "kl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "km",
+                        "value": "km"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kn",
+                        "value": "kn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ko",
+                        "value": "ko"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ko-kp",
+                        "value": "ko-kp"
+                    },
+                    {
+                        "selected": false,
+                        "text": "koi",
+                        "value": "koi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kr",
+                        "value": "kr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "krc",
+                        "value": "krc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kri",
+                        "value": "kri"
+                    },
+                    {
+                        "selected": false,
+                        "text": "krj",
+                        "value": "krj"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ks",
+                        "value": "ks"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ks-arab",
+                        "value": "ks-arab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ks-deva",
+                        "value": "ks-deva"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ksh",
+                        "value": "ksh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ku",
+                        "value": "ku"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ku-arab",
+                        "value": "ku-arab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ku-latn",
+                        "value": "ku-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kv",
+                        "value": "kv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "kw",
+                        "value": "kw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ky",
+                        "value": "ky"
+                    },
+                    {
+                        "selected": false,
+                        "text": "la",
+                        "value": "la"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lad",
+                        "value": "lad"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lb",
+                        "value": "lb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lbe",
+                        "value": "lbe"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lez",
+                        "value": "lez"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lfn",
+                        "value": "lfn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lg",
+                        "value": "lg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "li",
+                        "value": "li"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lij",
+                        "value": "lij"
+                    },
+                    {
+                        "selected": false,
+                        "text": "liv",
+                        "value": "liv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lmo",
+                        "value": "lmo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ln",
+                        "value": "ln"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lo",
+                        "value": "lo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "loz",
+                        "value": "loz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lrc",
+                        "value": "lrc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lt",
+                        "value": "lt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ltg",
+                        "value": "ltg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lus",
+                        "value": "lus"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lv",
+                        "value": "lv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lzh",
+                        "value": "lzh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "lzz",
+                        "value": "lzz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mai",
+                        "value": "mai"
+                    },
+                    {
+                        "selected": false,
+                        "text": "map-bms",
+                        "value": "map-bms"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mdf",
+                        "value": "mdf"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mg",
+                        "value": "mg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mh",
+                        "value": "mh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mhr",
+                        "value": "mhr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mi",
+                        "value": "mi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "min",
+                        "value": "min"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mk",
+                        "value": "mk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ml",
+                        "value": "ml"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mn",
+                        "value": "mn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mo",
+                        "value": "mo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mr",
+                        "value": "mr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mrj",
+                        "value": "mrj"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ms",
+                        "value": "ms"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mt",
+                        "value": "mt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mus",
+                        "value": "mus"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mwl",
+                        "value": "mwl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "my",
+                        "value": "my"
+                    },
+                    {
+                        "selected": false,
+                        "text": "myv",
+                        "value": "myv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "mzn",
+                        "value": "mzn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "na",
+                        "value": "na"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nah",
+                        "value": "nah"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nan",
+                        "value": "nan"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nap",
+                        "value": "nap"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nb",
+                        "value": "nb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nds",
+                        "value": "nds"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nds-nl",
+                        "value": "nds-nl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ne",
+                        "value": "ne"
+                    },
+                    {
+                        "selected": false,
+                        "text": "new",
+                        "value": "new"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ng",
+                        "value": "ng"
+                    },
+                    {
+                        "selected": false,
+                        "text": "niu",
+                        "value": "niu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nl",
+                        "value": "nl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nl-informal",
+                        "value": "nl-informal"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nn",
+                        "value": "nn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "no",
+                        "value": "no"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nod",
+                        "value": "nod"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nov",
+                        "value": "nov"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nrm",
+                        "value": "nrm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nso",
+                        "value": "nso"
+                    },
+                    {
+                        "selected": false,
+                        "text": "nv",
+                        "value": "nv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ny",
+                        "value": "ny"
+                    },
+                    {
+                        "selected": false,
+                        "text": "oc",
+                        "value": "oc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "olo",
+                        "value": "olo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "om",
+                        "value": "om"
+                    },
+                    {
+                        "selected": false,
+                        "text": "or",
+                        "value": "or"
+                    },
+                    {
+                        "selected": false,
+                        "text": "os",
+                        "value": "os"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ota",
+                        "value": "ota"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pa",
+                        "value": "pa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pag",
+                        "value": "pag"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pam",
+                        "value": "pam"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pap",
+                        "value": "pap"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pcd",
+                        "value": "pcd"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pdc",
+                        "value": "pdc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pdt",
+                        "value": "pdt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pfl",
+                        "value": "pfl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pi",
+                        "value": "pi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pih",
+                        "value": "pih"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pl",
+                        "value": "pl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pms",
+                        "value": "pms"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pnb",
+                        "value": "pnb"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pnt",
+                        "value": "pnt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "prg",
+                        "value": "prg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ps",
+                        "value": "ps"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pt",
+                        "value": "pt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "pt-br",
+                        "value": "pt-br"
+                    },
+                    {
+                        "selected": false,
+                        "text": "qu",
+                        "value": "qu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "qug",
+                        "value": "qug"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rgn",
+                        "value": "rgn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rif",
+                        "value": "rif"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rm",
+                        "value": "rm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rmy",
+                        "value": "rmy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rn",
+                        "value": "rn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ro",
+                        "value": "ro"
+                    },
+                    {
+                        "selected": false,
+                        "text": "roa-rup",
+                        "value": "roa-rup"
+                    },
+                    {
+                        "selected": false,
+                        "text": "roa-tara",
+                        "value": "roa-tara"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ru",
+                        "value": "ru"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rue",
+                        "value": "rue"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rup",
+                        "value": "rup"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ruq",
+                        "value": "ruq"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ruq-cyrl",
+                        "value": "ruq-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ruq-latn",
+                        "value": "ruq-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rw",
+                        "value": "rw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "rwr",
+                        "value": "rwr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sa",
+                        "value": "sa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sah",
+                        "value": "sah"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sat",
+                        "value": "sat"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sc",
+                        "value": "sc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "scn",
+                        "value": "scn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sco",
+                        "value": "sco"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sd",
+                        "value": "sd"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sdc",
+                        "value": "sdc"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sdh",
+                        "value": "sdh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "se",
+                        "value": "se"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sei",
+                        "value": "sei"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sg",
+                        "value": "sg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sgs",
+                        "value": "sgs"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sh",
+                        "value": "sh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "shi",
+                        "value": "shi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "shi-latn",
+                        "value": "shi-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "shi-tfng",
+                        "value": "shi-tfng"
+                    },
+                    {
+                        "selected": false,
+                        "text": "si",
+                        "value": "si"
+                    },
+                    {
+                        "selected": false,
+                        "text": "simple",
+                        "value": "simple"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sk",
+                        "value": "sk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sl",
+                        "value": "sl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sli",
+                        "value": "sli"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sm",
+                        "value": "sm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sma",
+                        "value": "sma"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sn",
+                        "value": "sn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "so",
+                        "value": "so"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sq",
+                        "value": "sq"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sr",
+                        "value": "sr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sr-ec",
+                        "value": "sr-ec"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sr-el",
+                        "value": "sr-el"
+                    },
+                    {
+                        "selected": false,
+                        "text": "srn",
+                        "value": "srn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ss",
+                        "value": "ss"
+                    },
+                    {
+                        "selected": false,
+                        "text": "st",
+                        "value": "st"
+                    },
+                    {
+                        "selected": false,
+                        "text": "stq",
+                        "value": "stq"
+                    },
+                    {
+                        "selected": false,
+                        "text": "su",
+                        "value": "su"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sv",
+                        "value": "sv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "sw",
+                        "value": "sw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "szl",
+                        "value": "szl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ta",
+                        "value": "ta"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tcy",
+                        "value": "tcy"
+                    },
+                    {
+                        "selected": false,
+                        "text": "te",
+                        "value": "te"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tet",
+                        "value": "tet"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tg",
+                        "value": "tg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tg-cyrl",
+                        "value": "tg-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tg-latn",
+                        "value": "tg-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "th",
+                        "value": "th"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ti",
+                        "value": "ti"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tk",
+                        "value": "tk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tl",
+                        "value": "tl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tly",
+                        "value": "tly"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tn",
+                        "value": "tn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "to",
+                        "value": "to"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tokipona",
+                        "value": "tokipona"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tpi",
+                        "value": "tpi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tr",
+                        "value": "tr"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tru",
+                        "value": "tru"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ts",
+                        "value": "ts"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tt",
+                        "value": "tt"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tt-cyrl",
+                        "value": "tt-cyrl"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tt-latn",
+                        "value": "tt-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tum",
+                        "value": "tum"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tw",
+                        "value": "tw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ty",
+                        "value": "ty"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tyv",
+                        "value": "tyv"
+                    },
+                    {
+                        "selected": false,
+                        "text": "tzm",
+                        "value": "tzm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "udm",
+                        "value": "udm"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ug",
+                        "value": "ug"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ug-arab",
+                        "value": "ug-arab"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ug-latn",
+                        "value": "ug-latn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "uk",
+                        "value": "uk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ur",
+                        "value": "ur"
+                    },
+                    {
+                        "selected": false,
+                        "text": "uz",
+                        "value": "uz"
+                    },
+                    {
+                        "selected": false,
+                        "text": "ve",
+                        "value": "ve"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vec",
+                        "value": "vec"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vep",
+                        "value": "vep"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vi",
+                        "value": "vi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vls",
+                        "value": "vls"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vmf",
+                        "value": "vmf"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vo",
+                        "value": "vo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vot",
+                        "value": "vot"
+                    },
+                    {
+                        "selected": false,
+                        "text": "vro",
+                        "value": "vro"
+                    },
+                    {
+                        "selected": false,
+                        "text": "wa",
+                        "value": "wa"
+                    },
+                    {
+                        "selected": false,
+                        "text": "war",
+                        "value": "war"
+                    },
+                    {
+                        "selected": false,
+                        "text": "wo",
+                        "value": "wo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "wuu",
+                        "value": "wuu"
+                    },
+                    {
+                        "selected": false,
+                        "text": "xal",
+                        "value": "xal"
+                    },
+                    {
+                        "selected": false,
+                        "text": "xh",
+                        "value": "xh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "xmf",
+                        "value": "xmf"
+                    },
+                    {
+                        "selected": false,
+                        "text": "yi",
+                        "value": "yi"
+                    },
+                    {
+                        "selected": false,
+                        "text": "yo",
+                        "value": "yo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "yue",
+                        "value": "yue"
+                    },
+                    {
+                        "selected": false,
+                        "text": "za",
+                        "value": "za"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zea",
+                        "value": "zea"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh",
+                        "value": "zh"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-classical",
+                        "value": "zh-classical"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-cn",
+                        "value": "zh-cn"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-hans",
+                        "value": "zh-hans"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-hant",
+                        "value": "zh-hant"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-hk",
+                        "value": "zh-hk"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-min-nan",
+                        "value": "zh-min-nan"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-mo",
+                        "value": "zh-mo"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-my",
+                        "value": "zh-my"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-sg",
+                        "value": "zh-sg"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-tw",
+                        "value": "zh-tw"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zh-yue",
+                        "value": "zh-yue"
+                    },
+                    {
+                        "selected": false,
+                        "text": "zu",
+                        "value": "zu"
+                    }
+                ],
+                "query": "daily.wikidata.datamodel.item.{label,description,alias}.*",
+                "refresh": 0,
+                "type": "query"
+            }
         ]
     },
     "time": {
@@ -521,5 +2619,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Terms",
-    "version": 8
+    "version": 9
 }
