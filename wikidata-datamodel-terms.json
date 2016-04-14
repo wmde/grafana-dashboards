@@ -75,12 +75,12 @@
                     "id": 4,
                     "legend": {
                         "avg": false,
-                        "current": false,
+                        "current": true,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -145,12 +145,12 @@
                     "id": 5,
                     "legend": {
                         "avg": false,
-                        "current": false,
+                        "current": true,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -215,12 +215,12 @@
                     "id": 6,
                     "legend": {
                         "avg": false,
-                        "current": false,
+                        "current": true,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -498,9 +498,9 @@
                     "tags": [
 
                     ],
-                    "text": "All",
+                    "text": "ar",
                     "value": [
-                        "$__all"
+                        "ar"
                     ]
                 },
                 "datasource": null,
@@ -511,7 +511,7 @@
                 "name": "lang",
                 "options": [
                     {
-                        "selected": true,
+                        "selected": false,
                         "text": "All",
                         "value": "$__all"
                     },
@@ -596,7 +596,7 @@
                         "value": "anp"
                     },
                     {
-                        "selected": false,
+                        "selected": true,
                         "text": "ar",
                         "value": "ar"
                     },
@@ -2619,5 +2619,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Terms",
-    "version": 9
+    "version": 10
 }

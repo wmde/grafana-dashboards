@@ -109,6 +109,7 @@
                     "timeShift": null,
                     "title": "Item Statements",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -178,6 +179,7 @@
                     "timeShift": null,
                     "title": "Property Statements",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -255,6 +257,7 @@
                     "timeShift": null,
                     "title": "Instance of counts",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -323,6 +326,7 @@
                     "timeShift": null,
                     "title": "Ranks",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -391,6 +395,7 @@
                     "timeShift": null,
                     "title": "Qualifiers",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -467,6 +472,7 @@
                     "timeShift": null,
                     "title": "Average statements per item",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -535,6 +541,7 @@
                     "timeShift": null,
                     "title": "Average statements per property",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -603,6 +610,7 @@
                     "timeShift": null,
                     "title": "Max statements per item",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -671,6 +679,7 @@
                     "timeShift": null,
                     "title": "Max statements per property",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -749,6 +758,7 @@
                     "timeShift": null,
                     "title": "Statements per item",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "individual"
                     },
@@ -815,8 +825,8 @@
             "title": "Statements per Item"
         }
     ],
-    "schemaVersion": 8,
-    "sharedCrosshair": false,
+    "schemaVersion": 11,
+    "sharedCrosshair": true,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -859,5 +869,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Statements",
-    "version": 10
+    "version": 11
 }

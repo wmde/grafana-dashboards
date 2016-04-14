@@ -27,7 +27,7 @@
             "height": "25px",
             "panels": [
                 {
-                    "content": "KPIs or Key Performance Indicators are measurable values that demonstrate how effectively goals are being achieved.\n\nThis dashboard contains a summary of the Wikidata KPIs split in three.",
+                    "content": "KPIs or Key Performance Indicators are measurable values that demonstrate how effectively goals are being achieved.\n\nThis dashboard contains a summary of the Wikidata KPIs split in three.\n\nEach graph shows the stacked values that make up the KPI.\n\nWeightings are specified in the metric labels.",
                     "editable": true,
                     "error": false,
                     "id": 10,
@@ -110,7 +110,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "timeFrom": null,
                     "title": "",
                     "type": "singlestat",
@@ -144,10 +144,12 @@
                     "id": 5,
                     "isNew": true,
                     "legend": {
+                        "alignAsTable": true,
                         "avg": true,
                         "current": true,
                         "max": true,
                         "min": true,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
                         "values": true
@@ -165,47 +167,42 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 5,
-                    "stack": false,
+                    "span": 10,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
                             "hide": false,
-                            "refId": "A",
-                            "target": "alias(sumSeries(#D, #E, #D), 'Value')",
+                            "refId": "B",
+                            "target": "alias(sumSeries(keepLastValue(daily.wikidata.social.email.*.*, 10)), 'List Subscribers')",
                             "textEditor": false
                         },
                         {
-                            "hide": true,
-                            "refId": "B",
-                            "target": "keepLastValue(daily.wikidata.social.email.*.*, 10)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
+                            "hide": false,
                             "refId": "C",
-                            "target": "keepLastValue(daily.wikidata.social.*.*, 10)",
+                            "target": "alias(sumSeries(keepLastValue(daily.wikidata.social.*.*, 10)), 'Social Followers')",
                             "textEditor": true
                         },
                         {
-                            "hide": true,
+                            "hide": false,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.1)",
-                            "textEditor": true
+                            "target": "alias(scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.1), 'Active users with 1 edit (0.1 weighting)')",
+                            "textEditor": false
                         },
                         {
-                            "hide": true,
+                            "hide": false,
                             "refId": "E",
-                            "target": "keepLastValue(daily.wikidata.site_stats.active_users.100, 10)",
-                            "textEditor": true
+                            "target": "alias(keepLastValue(daily.wikidata.site_stats.active_users.100, 10), 'Active users with 100 edits')",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "x-axis": true,
@@ -214,23 +211,6 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "content": "The general health of the community comprised of:\n\n  - The number of mailing list subscribers (both wikidata and wikidata-tech)\n  - The number of social followers\n  - The number of active site users with 1 edit in the past 30 days (with a weighting of 0.1)\n  - The number of active site users with 100 edits in the past 30 days",
-                    "editable": true,
-                    "error": false,
-                    "id": 7,
-                    "isNew": true,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 5,
-                    "style": [
-
-                    ],
-                    "title": "",
-                    "type": "text"
                 }
             ],
             "showTitle": true,
@@ -298,7 +278,7 @@
                             "target": "scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001)"
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "timeFrom": null,
                     "title": "",
                     "type": "singlestat",
@@ -332,10 +312,12 @@
                     "id": 2,
                     "isNew": true,
                     "legend": {
+                        "alignAsTable": true,
                         "avg": true,
                         "current": true,
                         "max": true,
                         "min": true,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
                         "values": true
@@ -353,40 +335,30 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 5,
-                    "stack": false,
+                    "span": 10,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
-                            "refId": "A",
-                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
+                            "hide": false,
+                            "refId": "C",
+                            "target": "alias(scale(sumSeries(keepLastValue(daily.wikidata.datamodel.*.{label,description}.*, 10)), 0.00001), 'Labels & Descriptions (0.00001 weight)')",
                             "textEditor": false
                         },
                         {
-                            "hide": true,
-                            "refId": "B",
-                            "target": "scale(averageSeries(keepLastValue(wikidata.query.triples.*, 10)), 0.00001)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
-                            "refId": "C",
-                            "target": "scale(sumSeries(keepLastValue(daily.wikidata.datamodel.*.{label,description}.*, 10)), 0.00001)",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
+                            "hide": false,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001)",
-                            "textEditor": true
+                            "target": "alias(sumSeries(scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001)), 'Non redirect entities (0.0001 weight)')",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "x-axis": true,
@@ -395,23 +367,6 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "content": "The quantity and quality of the content comprised of:\n\n - The number of triples in the WDQS store (with a weighting of 0.00001)\n - The number Entity Labels & Descriptions (with a weighting of 0.00001)\n - The number of Non redirect Entities (with a weighting of 0.0001)",
-                    "editable": true,
-                    "error": false,
-                    "id": 8,
-                    "isNew": true,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 5,
-                    "style": [
-
-                    ],
-                    "title": "",
-                    "type": "text"
                 }
             ],
             "showTitle": true,
@@ -480,7 +435,7 @@
                             "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.001)"
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "timeFrom": null,
                     "title": "",
                     "type": "singlestat",
@@ -514,10 +469,12 @@
                     "id": 6,
                     "isNew": true,
                     "legend": {
+                        "alignAsTable": true,
                         "avg": true,
                         "current": true,
                         "max": true,
                         "min": true,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
                         "values": true
@@ -535,41 +492,36 @@
                     "seriesOverrides": [
 
                     ],
-                    "span": 5,
-                    "stack": false,
+                    "span": 10,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
                             "hide": false,
-                            "refId": "A",
-                            "target": "alias(sumSeries(#B, #C, #D), 'Value')",
-                            "textEditor": true
-                        },
-                        {
-                            "hide": true,
                             "refId": "B",
-                            "target": "scale(keepLastValue(daily.wikidata.entity_usage_pages.*, 10), 0.001)",
+                            "target": "alias(sumSeries(scale(keepLastValue(daily.wikidata.entity_usage_pages.*, 10), 0.001)), 'Entity usage pages (0.001 weight)')",
                             "textEditor": false
                         },
                         {
-                            "hide": true,
+                            "hide": false,
                             "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.api.actions.wbgetentities, 10), 0.0001)",
-                            "textEditor": true
+                            "target": "alias(sumSeries(scale(keepLastValue(daily.wikidata.api.actions.wbgetentities, 10), 0.0001)), 'wbgetentities API module Usage (0.0001 weight)')",
+                            "textEditor": false
                         },
                         {
-                            "hide": true,
+                            "hide": false,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.0001)",
-                            "textEditor": true
+                            "target": "alias(sumSeries(scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.0001)), 'Special:EntityData usage (0.0001 weight)')",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "x-axis": true,
@@ -578,23 +530,6 @@
                         "short",
                         "short"
                     ]
-                },
-                {
-                    "content": "The usage of data comprised of:\n\n - Total Wikimedia pages with Entity Usage flags (with a weighting of 0.001)\n - Total calls to the wbgetentites API method (with a weighting of 0.0001) - wbgetclaims may also be added once its usage is not skewed.\n - Total calls to Special:EntityData (with a weighting of 0.0001)\n\nTODO:\n\n - Use of dumps - [T119070](https:\/\/phabricator.wikimedia.org\/T119070)",
-                    "editable": true,
-                    "error": false,
-                    "id": 9,
-                    "isNew": true,
-                    "links": [
-
-                    ],
-                    "mode": "markdown",
-                    "span": 5,
-                    "style": [
-
-                    ],
-                    "title": "",
-                    "type": "text"
                 }
             ],
             "showTitle": true,
@@ -626,7 +561,7 @@
             "title": "New row"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 11,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -670,5 +605,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata KPIs",
-    "version": 6
+    "version": 7
 }
