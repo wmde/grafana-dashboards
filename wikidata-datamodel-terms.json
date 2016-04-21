@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -32,14 +30,10 @@
                     "error": false,
                     "id": 7,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Description",
                     "type": "text"
                 }
@@ -52,9 +46,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -84,18 +76,14 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -154,18 +142,14 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -224,18 +208,14 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -270,9 +250,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": true,
                     "datasource": null,
                     "editable": true,
@@ -303,17 +281,13 @@
                     },
                     "lines": false,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": true,
                     "steppedLine": false,
@@ -340,9 +314,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": true,
                     "datasource": null,
                     "editable": true,
@@ -373,17 +345,13 @@
                     },
                     "lines": false,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": true,
                     "steppedLine": false,
@@ -410,9 +378,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": true,
                     "datasource": null,
                     "editable": true,
@@ -443,17 +409,13 @@
                     },
                     "lines": false,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": true,
                     "steppedLine": false,
@@ -495,9 +457,7 @@
             {
                 "allValue": "*",
                 "current": {
-                    "tags": [
-
-                    ],
+                    "tags": [],
                     "text": "ar",
                     "value": [
                         "ar"

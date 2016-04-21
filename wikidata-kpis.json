@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -32,14 +30,10 @@
                     "error": false,
                     "id": 10,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Description",
                     "type": "text"
                 }
@@ -67,9 +61,7 @@
                     "format": "none",
                     "id": 3,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -115,15 +107,11 @@
                     "title": "",
                     "type": "singlestat",
                     "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
+                    "valueMaps": [],
                     "valueName": "current"
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -156,17 +144,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 10,
                     "stack": true,
                     "steppedLine": false,
@@ -237,9 +221,7 @@
                     "format": "none",
                     "id": 1,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -283,9 +265,7 @@
                     "title": "",
                     "type": "singlestat",
                     "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
+                    "valueMaps": [],
                     "valueName": "current"
                 },
                 {
@@ -324,17 +304,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 10,
                     "stack": true,
                     "steppedLine": false,
@@ -393,9 +369,7 @@
                     "format": "none",
                     "id": 4,
                     "interval": null,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -440,9 +414,7 @@
                     "title": "",
                     "type": "singlestat",
                     "valueFontSize": "80%",
-                    "valueMaps": [
-
-                    ],
+                    "valueMaps": [],
                     "valueName": "current"
                 },
                 {
@@ -481,17 +453,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 10,
                     "stack": true,
                     "steppedLine": false,
@@ -546,14 +514,10 @@
                     "error": false,
                     "id": 11,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Changes",
                     "type": "text"
                 }
@@ -569,9 +533,7 @@
         "KPI"
     ],
     "templating": {
-        "list": [
-
-        ]
+        "list": []
     },
     "time": {
         "from": "now-60d",

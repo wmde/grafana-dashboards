@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -10,9 +8,7 @@
     "links": [
         {
             "icon": "dashboard",
-            "tags": [
-
-            ],
+            "tags": [],
             "title": "Overview",
             "type": "link",
             "url": "\/dashboard\/db\/wikidata-entity-usage"
@@ -41,14 +37,10 @@
                     "error": false,
                     "id": 36,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Description",
                     "type": "text"
                 },
@@ -57,14 +49,10 @@
                     "editable": true,
                     "error": false,
                     "id": 9,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "L - Labels",
                     "type": "text"
                 },
@@ -73,14 +61,10 @@
                     "editable": true,
                     "error": false,
                     "id": 11,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "S - Sitelinks",
                     "type": "text"
                 },
@@ -89,14 +73,10 @@
                     "editable": true,
                     "error": false,
                     "id": 10,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "T - Titles",
                     "type": "text"
                 },
@@ -105,14 +85,10 @@
                     "editable": true,
                     "error": false,
                     "id": 12,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "O - Other",
                     "type": "text"
                 },
@@ -121,14 +97,10 @@
                     "editable": true,
                     "error": false,
                     "id": 8,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "X - All",
                     "type": "text"
                 },
@@ -137,14 +109,10 @@
                     "editable": true,
                     "error": false,
                     "id": 14,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 2,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Total",
                     "type": "text"
                 }
@@ -158,9 +126,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -191,9 +157,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -206,9 +170,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -267,9 +229,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -282,9 +242,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -343,9 +301,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -358,9 +314,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -419,9 +373,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -434,9 +386,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -495,9 +445,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -510,9 +458,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -571,9 +517,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -586,9 +530,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -614,9 +556,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -646,9 +586,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -661,9 +599,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -747,9 +683,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -762,9 +696,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -825,9 +757,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -840,9 +770,7 @@
                             "value": "dewiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -888,9 +816,7 @@
                     "hideTimeOverride": false,
                     "id": 19,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "pageSize": 10,
                     "scopedVars": {
                         "project": {
@@ -939,9 +865,7 @@
                             "dateFormat": "YYYY-MM-DD HH:mm:ss",
                             "decimals": 2,
                             "pattern": "Metric",
-                            "thresholds": [
-
-                            ],
+                            "thresholds": [],
                             "type": "string",
                             "unit": "short"
                         }
@@ -976,9 +900,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1009,9 +931,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1024,9 +944,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1085,9 +1003,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1100,9 +1016,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1161,9 +1075,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1176,9 +1088,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1237,9 +1147,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1252,9 +1160,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1313,9 +1219,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1328,9 +1232,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1389,9 +1291,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1404,9 +1304,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1432,9 +1330,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -1464,9 +1360,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1479,9 +1373,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1565,9 +1457,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1580,9 +1470,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1643,9 +1531,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -1658,9 +1544,7 @@
                             "value": "enwiki"
                         }
                     },
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1706,9 +1590,7 @@
                     "hideTimeOverride": false,
                     "id": 35,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "pageSize": 10,
                     "scopedVars": {
                         "project": {
@@ -1757,9 +1639,7 @@
                             "dateFormat": "YYYY-MM-DD HH:mm:ss",
                             "decimals": 2,
                             "pattern": "Metric",
-                            "thresholds": [
-
-                            ],
+                            "thresholds": [],
                             "type": "string",
                             "unit": "short"
                         }
@@ -1803,9 +1683,7 @@
             {
                 "allFormat": "glob",
                 "current": {
-                    "tags": [
-
-                    ],
+                    "tags": [],
                     "text": "dewiki + enwiki",
                     "value": [
                         "dewiki",

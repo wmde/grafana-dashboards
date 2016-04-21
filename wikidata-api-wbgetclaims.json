@@ -1,8 +1,6 @@
 {
     "annotations": {
-        "list": [
-
-        ]
+        "list": []
     },
     "editable": true,
     "hideControls": false,
@@ -31,14 +29,10 @@
                     "editable": true,
                     "error": false,
                     "id": 4,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "Introduction",
                     "type": "text"
                 }
@@ -51,9 +45,7 @@
             "height": "300px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": true,
                     "datasource": null,
                     "decimals": 3,
@@ -87,18 +79,14 @@
                     },
                     "lines": false,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "null",
                     "percentage": true,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 12,
                     "stack": true,
                     "steppedLine": false,
@@ -125,9 +113,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -159,17 +145,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 6,
                     "stack": true,
                     "steppedLine": false,
@@ -197,17 +179,13 @@
                     ]
                 },
                 {
-                    "columns": [
-
-                    ],
+                    "columns": [],
                     "editable": true,
                     "error": false,
                     "fontSize": "100%",
                     "id": 6,
                     "isNew": true,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "pageSize": null,
                     "scroll": true,
                     "showHeader": true,
@@ -248,9 +226,7 @@
                             "dateFormat": "YYYY-MM-DD HH:mm:ss",
                             "decimals": 2,
                             "pattern": "Value",
-                            "thresholds": [
-
-                            ],
+                            "thresholds": [],
                             "type": "string",
                             "unit": "short"
                         }
@@ -279,9 +255,7 @@
         "daily"
     ],
     "templating": {
-        "list": [
-
-        ]
+        "list": []
     },
     "time": {
         "from": "now-90d",

@@ -20,9 +20,7 @@
     "links": [
         {
             "icon": "external link",
-            "tags": [
-
-            ],
+            "tags": [],
             "targetBlank": true,
             "title": "Wikidata Berlin",
             "tooltip": "Open Item",
@@ -31,9 +29,7 @@
         },
         {
             "icon": "external link",
-            "tags": [
-
-            ],
+            "tags": [],
             "targetBlank": true,
             "title": "Beta Italy",
             "tooltip": "Open Item",
@@ -59,9 +55,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -92,17 +86,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -123,6 +113,7 @@
                     "timeShift": null,
                     "title": "Page Timings",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -135,9 +126,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -168,17 +157,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -193,6 +178,7 @@
                     "timeShift": null,
                     "title": "JS Timings",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -205,9 +191,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -240,9 +224,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -321,6 +303,7 @@
                     "timeShift": null,
                     "title": "Wikidata JS time",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -333,9 +316,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -368,9 +349,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -453,6 +432,7 @@
                     "timeShift": null,
                     "title": "Wikidata % of all JS time",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -474,9 +454,7 @@
             "height": "250px",
             "panels": [
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -507,17 +485,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -538,6 +512,7 @@
                     "timeShift": null,
                     "title": "Page Timings",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -550,9 +525,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -583,17 +556,13 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [
-
-                    ],
+                    "seriesOverrides": [],
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -608,6 +577,7 @@
                     "timeShift": null,
                     "title": "JS Timings",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -620,9 +590,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -655,9 +623,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -736,6 +702,7 @@
                     "timeShift": null,
                     "title": "Wikidata JS time",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -748,9 +715,7 @@
                     ]
                 },
                 {
-                    "aliasColors": [
-
-                    ],
+                    "aliasColors": [],
                     "bars": false,
                     "datasource": null,
                     "editable": true,
@@ -783,9 +748,7 @@
                     },
                     "lines": true,
                     "linewidth": 2,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
@@ -868,6 +831,7 @@
                     "timeShift": null,
                     "title": "Wikidata % of all JS time",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -893,14 +857,10 @@
                     "editable": true,
                     "error": false,
                     "id": 39,
-                    "links": [
-
-                    ],
+                    "links": [],
                     "mode": "markdown",
                     "span": 12,
-                    "style": [
-
-                    ],
+                    "style": [],
                     "title": "",
                     "type": "text"
                 }
@@ -908,11 +868,10 @@
             "title": "New row"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 11,
     "sharedCrosshair": true,
     "style": "light",
     "tags": [
-        "performance",
         "wikidata",
         "live"
     ],
@@ -922,9 +881,7 @@
             {
                 "allFormat": "glob",
                 "current": {
-                    "tags": [
-
-                    ],
+                    "tags": [],
                     "text": "Google_Chrome",
                     "value": "Google_Chrome"
                 },
@@ -957,7 +914,7 @@
                     }
                 ],
                 "query": "webpagetest.wikidatawiki-beta.anonymous.Italy.us-east-1.*",
-                "refresh": false,
+                "refresh": 0,
                 "regex": "",
                 "type": "query"
             }
@@ -994,5 +951,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata WebPageTest",
-    "version": 9
+    "version": 10
 }
