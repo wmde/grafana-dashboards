@@ -12,6 +12,7 @@ $dashboards = array(
 	'wikidata-api',
 	'wikidata-api-wbgetclaims',
 	'wikidata-dispatch',
+	'wikidata-dispatch-script',
 	'wikidata-page-views-per-domain',
 	'wikidata-social-followers',
 	'wikidata-entity-usage',
