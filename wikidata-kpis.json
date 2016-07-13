@@ -59,6 +59,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 3,
                     "interval": null,
                     "links": [],
@@ -80,7 +87,7 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "sumSeries(#B, #C,#D)",
+                            "target": "sumSeries(#B, #C,#D,#E)",
                             "textEditor": true
                         },
                         {
@@ -98,7 +105,13 @@
                         {
                             "hide": true,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.5)",
+                            "target": "scale(keepLastValue(daily.wikidata.site_stats.active_users.1, 10), 0.1)",
+                            "textEditor": true
+                        },
+                        {
+                            "hide": true,
+                            "refId": "E",
+                            "target": "keepLastValue(daily.wikidata.site_stats.active_users.100, 10)",
                             "textEditor": true
                         }
                     ],
@@ -118,12 +131,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -189,11 +196,24 @@
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
@@ -219,6 +239,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 1,
                     "interval": null,
                     "links": [],
@@ -240,24 +267,20 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "sumSeries(#B, #C, #D)",
+                            "target": "sumSeries(#B, #C)",
                             "textEditor": false
                         },
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "scale(averageSeries(keepLastValue(wikidata.query.triples.*, 10)), 0.00001)",
-                            "textEditor": false
-                        },
-                        {
-                            "hide": true,
-                            "refId": "D",
-                            "target": "scale(sumSeries(keepLastValue(daily.wikidata.datamodel.*.{label,description}.*, 10)), 0.00001)"
+                            "target": "scale(sumSeries(keepLastValue(daily.wikidata.datamodel.*.{label,description}.*, 10)), 0.00001)",
+                            "textEditor": true
                         },
                         {
                             "hide": true,
                             "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001)"
+                            "target": "sumSeries(scale(keepLastValue(daily.wikidata.site_stats.pages_by_namespace.{0,120}.nonredirects, 10), 0.0001))",
+                            "textEditor": true
                         }
                     ],
                     "thresholds": "0,+1",
@@ -278,12 +301,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -337,11 +354,24 @@
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
@@ -367,6 +397,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 4,
                     "interval": null,
                     "links": [],
@@ -394,19 +431,20 @@
                         {
                             "hide": true,
                             "refId": "B",
-                            "target": "scale(keepLastValue(daily.wikidata.entity_usage.*.*, 10), 0.0001)",
-                            "textEditor": false
+                            "target": "sumSeries(scale(keepLastValue(daily.wikidata.entity_usage_pages.*, 10), 0.001))",
+                            "textEditor": true
                         },
                         {
                             "hide": true,
                             "refId": "C",
-                            "target": "scale(keepLastValue(daily.wikidata.api.actions.wbget*, 10), 0.0001)",
-                            "textEditor": false
+                            "target": "sumSeries(scale(keepLastValue(daily.wikidata.api.actions.wbgetentities, 10), 0.0001))",
+                            "textEditor": true
                         },
                         {
                             "hide": true,
                             "refId": "D",
-                            "target": "scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.001)"
+                            "target": "sumSeries(scale(keepLastValue(daily.wikidata.entitydata.agent_types.*, 10), 0.0001))",
+                            "textEditor": true
                         }
                     ],
                     "thresholds": "0,+1",
@@ -427,12 +465,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -492,11 +524,24 @@
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
@@ -525,7 +570,7 @@
             "title": "New row"
         }
     ],
-    "schemaVersion": 11,
+    "schemaVersion": 12,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -567,5 +612,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata KPIs",
-    "version": 7
+    "version": 9
 }

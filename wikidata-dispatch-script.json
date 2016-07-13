@@ -16,7 +16,8 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata Dispatch Changes",
+    "originalTitle": "Wikidata Dispatch Script",
+    "refresh": "1m",
     "rows": [
         {
             "collapse": false,
@@ -33,12 +34,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -47,13 +42,13 @@
                     "id": 2,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
+                        "avg": true,
                         "current": false,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -66,7 +61,7 @@
                     "seriesOverrides": [],
                     "span": 3,
                     "stack": false,
-                    "steppedLine": false,
+                    "steppedLine": true,
                     "targets": [
                         {
                             "refId": "A",
@@ -82,11 +77,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": false
+                        }
                     ]
                 },
                 {
@@ -100,12 +108,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -149,11 +151,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "none",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -167,12 +182,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -181,13 +190,13 @@
                     "id": 6,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
+                        "avg": true,
                         "current": false,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -222,11 +231,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "none",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -240,12 +262,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -254,13 +270,13 @@
                     "id": 5,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
+                        "avg": true,
                         "current": false,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -289,11 +305,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "none",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
@@ -316,12 +345,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -365,11 +388,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "none",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -384,12 +420,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -434,11 +464,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": false
+                        }
                     ]
                 },
                 {
@@ -454,12 +497,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -468,13 +505,13 @@
                     "id": 1,
                     "isNew": true,
                     "legend": {
-                        "avg": false,
+                        "avg": true,
                         "current": false,
                         "max": false,
                         "min": false,
                         "show": true,
                         "total": false,
-                        "values": false
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 2,
@@ -504,11 +541,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": false
+                        }
                     ]
                 },
                 {
@@ -522,12 +572,6 @@
                     "error": false,
                     "fill": 1,
                     "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
@@ -571,11 +615,24 @@
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "ms",
-                        "short"
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "ms",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
@@ -590,7 +647,7 @@
             "title": "New row"
         }
     ],
-    "schemaVersion": 11,
+    "schemaVersion": 12,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -601,7 +658,7 @@
         "list": []
     },
     "time": {
-        "from": "now-24h",
+        "from": "now-12h",
         "to": "now"
     },
     "timepicker": {
@@ -631,5 +688,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch Script",
-    "version": 2
+    "version": 5
 }

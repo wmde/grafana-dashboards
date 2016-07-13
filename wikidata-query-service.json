@@ -115,6 +115,7 @@
                     "timeShift": null,
                     "title": "Done rate",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -177,6 +178,7 @@
                     "timeShift": null,
                     "title": "Error rate",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -239,14 +241,15 @@
                     "steppedLine": false,
                     "targets": [
                         {
-                            "refId": "A",
-                            "target": "aliasByNode(servers.wdqs*.WDQSUpdaterCollector.updates.MeanRate, 1)"
+                            "refId": "B",
+                            "target": "aliasByNode(servers.wdqs*.WDQSUpdaterCollector.updates.OneMinuteRate, 1)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Updates (Mean rate)",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -302,13 +305,14 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(servers.wdqs*.WDQSUpdaterCollector.batch-progress.MeanRate, 1)"
+                            "target": "aliasByNode(servers.wdqs*.WDQSUpdaterCollector.batch-progress.OneMinuteRate, 1)"
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Batch Progress (Mean rate)",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -374,6 +378,7 @@
                     "timeShift": null,
                     "title": "Lag",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -444,6 +449,7 @@
                     "timeShift": null,
                     "title": "Queries per second (QPS)",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -507,6 +513,7 @@
                     "timeShift": null,
                     "title": "Triples",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -585,6 +592,7 @@
                     "timeShift": null,
                     "title": "WDQS Load",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -647,6 +655,7 @@
                     "timeShift": null,
                     "title": "Bytes out",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -704,13 +713,15 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.GET.p99, 3, 4, 5)"
+                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.GET.p99, 3, 4, 5)",
+                            "textEditor": true
                         }
                     ],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Varnish Latency",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
                         "value_type": "cumulative"
                     },
@@ -724,9 +735,224 @@
                 }
             ],
             "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 15,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.5xx.rate, 3)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Varnish 5xx rate",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 16,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "wdqs1001.iops",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "wdqs1002.iops",
+                            "yaxis": 2
+                        }
+                    ],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(servers.wdqs*.loadavg.05, 1, 2)"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(servers.wdqs*.iostat.sda.iops, 1, 4)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Load & IO",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "short",
+                        "short"
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "leftLogBase": 1,
+                        "leftMax": null,
+                        "leftMin": null,
+                        "rightLogBase": 1,
+                        "rightMax": null,
+                        "rightMin": null,
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 17,
+                    "isNew": true,
+                    "leftYAxisLabel": "req\/s",
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sumSeriesWithWildcards(varnish.eqiad.backends.be_wdqs*.*xx.rate, 4), 3)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Request per Second (Varnish backend)",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "x-axis": true,
+                    "y-axis": true,
+                    "y_formats": [
+                        "none",
+                        "short"
+                    ]
+                }
+            ],
+            "title": "New row"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 11,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -768,5 +994,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Query Service",
-    "version": 20
+    "version": 26
 }
