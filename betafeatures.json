@@ -4,9 +4,20 @@
     },
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": true,
     "id": 259,
-    "links": [],
+    "links": [
+        {
+            "icon": "bolt",
+            "tags": [],
+            "targetBlank": true,
+            "title": "Generating script",
+            "tooltip": "Go to source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/betafeatures\/counts.php"
+        }
+    ],
     "refresh": "5m",
     "rows": [
         {
@@ -14,7 +25,7 @@
             "height": "25px",
             "panels": [
                 {
-                    "content": "**Global users** will only count an account once across all wikis. **Site users** will count the same global user multiple times across all wikis.",
+                    "content": "Data gathered by querying the \"user_properties\" table on all wikis daily.\n\n**Global users** will only count an account once across all wikis.\n\n**Site users** will count the same global user multiple times across all wikis.\n\nFor new BetaFeatures to be included here the list of features must be updated in the [analytics-wmde-scripts repository](https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/betafeatures\/counts.php;master$14).",
                     "editable": true,
                     "error": false,
                     "id": 3,
@@ -468,11 +479,11 @@
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
-        "team-tcb"
+        "team-tcb",
+        "daily"
     ],
     "templating": {
         "list": [
@@ -496,8 +507,10 @@
                 "regex": "",
                 "sort": 0,
                 "tagValuesQuery": null,
+                "tags": [],
                 "tagsQuery": null,
-                "type": "query"
+                "type": "query",
+                "useTags": false
             }
         ]
     },
@@ -532,5 +545,5 @@
     },
     "timezone": "utc",
     "title": "BetaFeatures",
-    "version": 18
+    "version": 20
 }

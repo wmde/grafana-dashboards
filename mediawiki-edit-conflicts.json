@@ -3,51 +3,27 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 213,
     "links": [],
-    "originalTitle": "MediaWiki Edit Conflicts",
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
-            "height": "100px",
-            "panels": [
-                {
-                    "content": "**The top graph** shows the number of conflicts per namespace across all sites, as well as a total.\n\nTo see which namespaces the IDs refer to see [https:\/\/www.mediawiki.org\/wiki\/Manual:Namespace#Built-in_namespaces](https:\/\/www.mediawiki.org\/wiki\/Manual:Namespace#Built-in_namespaces)\n\n**The lower graphs** show the total number of edit conflicts across all sites with a comparison of some previous time periods.\n\nThe first has the time period of 1 day, thus looking back over the past 4 days for example.\n\nThe other graphs have a time period of 1 week and 1 month.",
-                    "editable": true,
-                    "error": false,
-                    "id": 5,
-                    "isNew": true,
-                    "mode": "markdown",
-                    "span": 12,
-                    "title": "Panel Title",
-                    "type": "text"
-                }
-            ],
-            "title": "New row"
-        },
-        {
-            "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Shows the number of conflicts per namespace across all sites, as well as a total.\n\nTo see which namespaces the IDs refer to see [https:\/\/www.mediawiki.org\/wiki\/Manual:Namespace#Built-in_namespaces](https:\/\/www.mediawiki.org\/wiki\/Manual:Namespace#Built-in_namespaces)",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -93,17 +69,22 @@
                             "target": "aliasByNode(summarize(MediaWiki.edit.failures.conflict.byNamespaceId.*.count, '$interval', 'sum'), 5)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Edit Conflicts",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -123,28 +104,27 @@
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Show the total number of edit conflicts across all sites with a comparison of some previous time periods.\n\nThe time period for this graph is 1 day, thus the graph compares the last 4 days.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 4,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -184,17 +164,22 @@
                             "target": "alias(timeShift(summarize(MediaWiki.edit.failures.conflict.count, '1h', 'sum'), '3d'), 'Conflicts - 3days')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": "1d",
                     "timeShift": null,
                     "title": "Edit Conflicts",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -217,17 +202,12 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Show the total number of edit conflicts across all sites with a comparison of some previous time periods.\n\nThe time period for this graph is 7 days, thus the graph compares the last 4 weeks.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -267,17 +247,22 @@
                             "target": "alias(timeShift(summarize(MediaWiki.edit.failures.conflict.count, '6h', 'sum'), '21d'), 'Conflicts - 3weeks')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": "7d",
                     "timeShift": null,
                     "title": "Edit Conflicts",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -300,17 +285,12 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Show the total number of edit conflicts across all sites with a comparison of some previous time periods.\n\nThe time period for this graph is 30 days, thus the graph roughly compares the last 4 months.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 3,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -350,17 +330,22 @@
                             "target": "alias(timeShift(summarize(MediaWiki.edit.failures.conflict.count, '1d', 'sum'), '60d'), 'Conflicts - 3months')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": "30d",
                     "timeShift": null,
                     "title": "Edit Conflicts",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -380,12 +365,15 @@
                     ]
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Comparisons"
+            "title": "Comparisons",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "live",
@@ -396,8 +384,10 @@
         "list": [
             {
                 "allFormat": "glob",
+                "auto": false,
+                "auto_count": 30,
+                "auto_min": "10s",
                 "current": {
-                    "tags": [],
                     "text": "1h",
                     "value": "1h"
                 },
@@ -461,7 +451,7 @@
                     }
                 ],
                 "query": "1m,10m,30m,1h,6h,12h,1d,7d,14d,30d",
-                "refresh": 0,
+                "refresh": 2,
                 "type": "interval"
             }
         ]
@@ -498,5 +488,5 @@
     },
     "timezone": "browser",
     "title": "MediaWiki Edit Conflicts",
-    "version": 11
+    "version": 12
 }

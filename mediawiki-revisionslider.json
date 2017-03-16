@@ -4,6 +4,7 @@
     },
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 260,
     "links": [],
@@ -23,6 +24,7 @@
                         "rgba(50, 172, 45, 0.97)"
                     ],
                     "datasource": null,
+                    "description": "The number of times the revision slider has been loaded (expanded from its bar) in the last day.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -98,6 +100,7 @@
                         "rgba(50, 172, 45, 0.97)"
                     ],
                     "datasource": null,
+                    "description": "Number of generic slider events that have happened in the last day.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -173,6 +176,7 @@
                         "rgba(245, 54, 54, 0.9)"
                     ],
                     "datasource": null,
+                    "description": "Number of generic slider errors that have happened in the last day.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -248,6 +252,7 @@
                         "rgba(50, 172, 45, 0.97)"
                     ],
                     "datasource": null,
+                    "description": "Number of BetaFeature users of the revision slider.\n\nFor wikis that have the feature enabled by default, those users will not be counted here.\nThe number of users that were using the feature as a BetaFeature before it was enabled by default will still be counted.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -301,7 +306,7 @@
                     ],
                     "thresholds": "",
                     "timeFrom": "1d",
-                    "title": "Users",
+                    "title": "BF Users",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -323,6 +328,7 @@
                         "rgba(50, 172, 45, 0.97)"
                     ],
                     "datasource": null,
+                    "description": "Number of BetaFeature users in the last day.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -377,7 +383,7 @@
                     "thresholds": "0,,>0",
                     "timeFrom": "1d",
                     "timeShift": null,
-                    "title": "New Users",
+                    "title": "New BF Users",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -399,6 +405,7 @@
                         "rgba(245, 54, 54, 0.9)"
                     ],
                     "datasource": null,
+                    "description": "Number of BetaFeature users that have disabled the feature in the last day.",
                     "editable": true,
                     "error": false,
                     "format": "none",
@@ -452,7 +459,7 @@
                     ],
                     "thresholds": "0,,>0",
                     "timeFrom": "1d",
-                    "title": "Disables",
+                    "title": "BF Disables",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -468,8 +475,8 @@
             "repeat": null,
             "repeatIteration": null,
             "repeatRowId": null,
-            "showTitle": false,
-            "title": "General numbers",
+            "showTitle": true,
+            "title": "Stats",
             "titleSize": "h6"
         },
         {
@@ -480,6 +487,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "###### Load Events\n  - hookinit - The number of times the JS has been added to a page by the PHP hook (excludes people with the BF or feature disabled)\n  - load - The number of times the main slider JS has been loaded on a page (counted once per request).\n  - lazyload - The number of times the lazy slider JS has been loaded on a page (counted once per request).\n  - init - The number of times the slider has been started \/ rendered \/ expanded from its bar.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -557,6 +565,7 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "###### Users\n  - user_counts - The number of individual users that have enabled the beta feature. (If 1 user enabled the feature on 2 wikis they will be counted twice)\n  - global_user_counts - The number of global users that have enabled the beta feature (If 1 user enabled the feature on 2 wikis they will be counted once)\n  - global_disables - The number of global users that were using the feature yesterday, but have disabled it today.\n  - global_enables - The number of global users that were not using the feature yesterday, but have enabled it today.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -740,6 +749,7 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "###### Events\n  - arrowClick - The number of times the arrow at either end of the slider is clicked.\n  - pointerMove - The number of times a pointer is moved, either by dragging or by clicking on a revision bar.\n  - historyChange - The number of times the browser back or forward buttons are used to navigate the slider.\n  - expand - The number of times the container has been expanded\n  - collapse - The number of times the container has been collapsed",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -813,6 +823,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "###### Errors\n  - init - Something went wrong when initially starting \/ rendering the slider\n  - refresh - Something went wrong while reloading the diff after a new set of revisions was selected\n  - outOfRange - LEGACY, Someone tried to load the slider on a diff which was outside of the most recent 500 revisions",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -898,6 +909,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "The time taken from the start of the slider render \/ build to the end when displayed to the user.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -978,6 +990,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "###### Timing Names\n  - Full load time - The time taken from the start of the slider render \/ build to the end when displayed to the user.\n  - initFetchRevisionData - The ammount of time spent doing the API calls to get the revision data to be displayed.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -1064,7 +1077,7 @@
         },
         {
             "collapse": false,
-            "height": "100px",
+            "height": "100",
             "panels": [
                 {
                     "cacheTimeout": null,
@@ -1086,7 +1099,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 14,
+                    "id": 30,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1161,7 +1174,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 18,
+                    "id": 31,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1236,7 +1249,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 19,
+                    "id": 32,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1311,7 +1324,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 15,
+                    "id": 33,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1386,7 +1399,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 17,
+                    "id": 34,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1461,7 +1474,7 @@
                         "thresholdLabels": false,
                         "thresholdMarkers": true
                     },
-                    "id": 16,
+                    "id": 35,
                     "interval": null,
                     "links": [],
                     "mappingType": 1,
@@ -1515,508 +1528,17 @@
                         }
                     ],
                     "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 20,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(MediaWiki.RevisionSlider.timing.init.upper, '1d', 'max', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "Max Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 21,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(removeAbovePercentile(MediaWiki.RevisionSlider.timing.init.upper, 95), '1d', 'max', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "p95 Max Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 22,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(removeAbovePercentile(MediaWiki.RevisionSlider.timing.init.upper, 75), '1d', 'max', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "p75 Max Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 23,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(MediaWiki.RevisionSlider.timing.init.mean, '1d', 'avg', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "Mean Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 24,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(MediaWiki.RevisionSlider.timing.init.median, '1d', 'avg', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "Median Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
-                },
-                {
-                    "cacheTimeout": null,
-                    "colorBackground": false,
-                    "colorValue": false,
-                    "colors": [
-                        "rgba(245, 54, 54, 0.9)",
-                        "rgba(237, 129, 40, 0.89)",
-                        "rgba(50, 172, 45, 0.97)"
-                    ],
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "format": "ms",
-                    "gauge": {
-                        "maxValue": 100,
-                        "minValue": 0,
-                        "show": false,
-                        "thresholdLabels": false,
-                        "thresholdMarkers": true
-                    },
-                    "id": 25,
-                    "interval": null,
-                    "links": [],
-                    "mappingType": 1,
-                    "mappingTypes": [
-                        {
-                            "name": "value to text",
-                            "value": 1
-                        },
-                        {
-                            "name": "range to text",
-                            "value": 2
-                        }
-                    ],
-                    "maxDataPoints": 100,
-                    "nullPointMode": "connected",
-                    "nullText": null,
-                    "postfix": "",
-                    "postfixFontSize": "50%",
-                    "prefix": "",
-                    "prefixFontSize": "50%",
-                    "rangeMaps": [
-                        {
-                            "from": "null",
-                            "text": "N\/A",
-                            "to": "null"
-                        }
-                    ],
-                    "span": 2,
-                    "sparkline": {
-                        "fillColor": "rgba(31, 118, 189, 0.18)",
-                        "full": false,
-                        "lineColor": "rgb(31, 120, 193)",
-                        "show": false
-                    },
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "summarize(MediaWiki.RevisionSlider.timing.init.lower, '1d', 'min', false)"
-                        }
-                    ],
-                    "thresholds": "",
-                    "timeFrom": "1d",
-                    "timeShift": "1d",
-                    "title": "Min Time",
-                    "type": "singlestat",
-                    "valueFontSize": "80%",
-                    "valueMaps": [
-                        {
-                            "op": "=",
-                            "text": "N\/A",
-                            "value": "null"
-                        }
-                    ],
-                    "valueName": "avg"
                 }
             ],
             "repeat": null,
             "repeatIteration": null,
             "repeatRowId": null,
-            "showTitle": false,
-            "title": "Timing numbers",
-            "titleSize": "h6"
-        },
-        {
-            "collapse": false,
-            "height": "250px",
-            "panels": [
-                {
-                    "content": "#### Users\n  - user_counts - The number of individual users that have enabled the beta feature. (If 1 user enabled the feature on 2 wikis they will be counted twice)\n  - global_user_counts - The number of global users that have enabled the beta feature (If 1 user enabled the feature on 2 wikis they will be counted once)\n  - global_disables - The number of global users that were using the feature yesterday, but have disabled it today.\n  - global_enables - The number of global users that were not using the feature yesterday, but have enabled it today.\n\n#### Events\n  - hookinit - The number of times the JS has been added to a page by the PHP hook (excludes people with the BF or feature disabled)\n  - load - The number of times the main slider JS has been loaded on a page (counted once per request).\n  - lazyload - The number of times the lazy slider JS has been loaded on a page (counted once per request).\n  - init - The number of times the slider has been started \/ rendered \/ expanded from its bar.\n  - arrowClick - The number of times the arrow at either end of the slider is clicked.\n  - pointerMove - The number of times a pointer is moved, either by dragging or by clicking on a revision bar.\n  - historyChange - The number of times the browser back or forward buttons are used to navigate the slider.\n  - expand - The number of times the container has been expanded\n  - collapse - The number of times the container has been collapsed\n\n#### Errors\n  - init - Something went wrong when initially starting \/ rendering the slider\n  - refresh - Something went wrong while reloading the diff after a new set of revisions was selected\n  - outOfRange - LEGACY, Someone tried to load the slider on a diff which was outside of the most recent 500 revisions",
-                    "editable": true,
-                    "error": false,
-                    "id": 27,
-                    "links": [],
-                    "mode": "markdown",
-                    "span": 6,
-                    "title": "",
-                    "type": "text"
-                },
-                {
-                    "content": "#### Timing Names\n  - Full load time - The time taken from the start of the slider render \/ build to the end when displayed to the user.\n  - initFetchRevisionData - The ammount of time spent doing the API calls to get the revision data to be displayed.\n\n#### Timing Values\n  - Max \/ Upper - The maximum time in the given timeframe\n  - Mean - The mean \/ average time in the given timeframe.\n  - Median - The median \/ middle time in the given timeframe.\n  - Min \/ Lower - The minimum time in the given timeframe.\n  - p95 Max - The maximum time in the given timeframe for 95% of cases.\n  - p75 Max - The maximum time in the given timeframe for 75% of cases.",
-                    "editable": true,
-                    "error": false,
-                    "id": 28,
-                    "links": [],
-                    "mode": "markdown",
-                    "span": 6,
-                    "title": "",
-                    "type": "text"
-                }
-            ],
-            "repeat": null,
-            "repeatIteration": null,
-            "repeatRowId": null,
-            "showTitle": false,
-            "title": "New row",
+            "showTitle": true,
+            "title": "Timing (for load \/ expansion from bar)",
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wmde",
@@ -2127,5 +1649,5 @@
     },
     "timezone": "utc",
     "title": "Mediawiki RevisionSlider",
-    "version": 33
+    "version": 35
 }

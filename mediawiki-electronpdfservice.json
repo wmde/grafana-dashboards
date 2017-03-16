@@ -7,7 +7,16 @@
     "graphTooltip": 0,
     "hideControls": false,
     "id": 309,
-    "links": [],
+    "links": [
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating code",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/EEPS\/browse\/master\/src\/specials\/SpecialElectronPdf.php"
+        }
+    ],
     "refresh": false,
     "rows": [
         {
@@ -18,6 +27,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of times that the ElectronPdfService extension selection screen is shown across all projects.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -90,6 +100,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of times that a user is redirected to one of the rendering services (usually from the ElectronPdfService extension selection page) across all projects.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -162,6 +173,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of times that the ElectronPdfService extension selection screen is shown broken down per wiki.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -234,6 +246,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of times that a user is redirected to one of the rendering services (usually from the ElectronPdfService extension selection page) broken down by wiki.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -307,7 +320,7 @@
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": true,
-            "title": "Live",
+            "title": "Live, ElectronPdfService extension",
             "titleSize": "h6"
         },
         {
@@ -318,6 +331,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "This shows renderings for both services for ALL wikis (not only wikis with the ElectronPdfService extension enabled)\n\nThis results in much larger OCG numbers currently as Electron is only deployed on a small number of projects.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -346,7 +360,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_electron.sum, '1d', 'sum', false), 'Electron Renders')",
+                            "target": "alias(MediaWiki.electronpdf.action.redirect_to_electron.sum, 'Electron Renders')",
                             "textEditor": false
                         },
                         {
@@ -395,6 +409,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "This shows renderings for both services for on projects that have the ElectronPdfService extension enabled.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -423,12 +438,12 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_electron.sum, '1d', 'sum', false), 'Electron Renders')",
+                            "target": "alias(MediaWiki.electronpdf.action.redirect_to_electron.sum, 'Electron Renders')",
                             "textEditor": false
                         },
                         {
                             "refId": "B",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_collection.sum, '1d', 'sum', false), 'OCG Renders')",
+                            "target": "alias(MediaWiki.electronpdf.action.redirect_to_collection.sum, 'OCG Renders')",
                             "textEditor": false
                         }
                     ],
@@ -473,173 +488,7 @@
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": true,
-            "title": "Daily",
-            "titleSize": "h6"
-        },
-        {
-            "collapse": false,
-            "height": 250,
-            "panels": [
-                {
-                    "aliasColors": [],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "id": 7,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 1,
-                    "links": [],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_electron.sum, '30d', 'sum', false), 'Electron Renders')",
-                            "textEditor": false
-                        },
-                        {
-                            "refId": "B",
-                            "target": "alias(summarize(sumSeries(ocg.pdf.frontend.requests.render.*Page.sum), '30d', 'sum', false), 'OCG Renders')",
-                            "textEditor": false
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": "180d",
-                    "timeShift": null,
-                    "title": "PDF rendering over time total monthly (all renderings)",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "individual"
-                    },
-                    "type": "graph",
-                    "xaxis": {
-                        "mode": "time",
-                        "name": null,
-                        "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        }
-                    ]
-                },
-                {
-                    "aliasColors": [],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "id": 8,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 1,
-                    "links": [],
-                    "nullPointMode": "connected",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_electron.sum, '30d', 'sum', false), 'Electron Renders')",
-                            "textEditor": false
-                        },
-                        {
-                            "refId": "B",
-                            "target": "alias(summarize(MediaWiki.electronpdf.action.redirect_to_collection.sum, '30d', 'sum', false), 'OCG Renders')",
-                            "textEditor": false
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": "180d",
-                    "timeShift": null,
-                    "title": "PDF rendering over time daily (ElectronPdfService Extension only)",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "individual"
-                    },
-                    "type": "graph",
-                    "xaxis": {
-                        "mode": "time",
-                        "name": null,
-                        "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        }
-                    ]
-                }
-            ],
-            "repeat": null,
-            "repeatIteration": null,
-            "repeatRowId": null,
-            "showTitle": true,
-            "title": "6 month overview",
+            "title": "Daily (renders)",
             "titleSize": "h6"
         }
     ],
@@ -652,7 +501,7 @@
         "list": []
     },
     "time": {
-        "from": "now-7d",
+        "from": "now-30d",
         "to": "now"
     },
     "timepicker": {
@@ -682,5 +531,5 @@
     },
     "timezone": "utc",
     "title": "MediaWiki ElectronPdfService",
-    "version": 8
+    "version": 10
 }

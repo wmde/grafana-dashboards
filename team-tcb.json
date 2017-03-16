@@ -3,14 +3,14 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 288,
     "links": [],
-    "originalTitle": "Team TCB",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "200px",
             "panels": [
                 {
@@ -26,11 +26,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "300px",
             "panels": [
                 {
@@ -64,28 +68,27 @@
                     "type": "text"
                 }
             ],
-            "title": "Dashboards"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboards",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Stacked usage of key TCB developed features.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 5,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -129,17 +132,23 @@
                             "target": "alias(daily.echo.mentionStatus.global_user_counts.totals.echo-subscriptions-web-mention-failure, 'Mention Successes')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Usage",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "individual"
                     },
+                    "transparent": false,
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -161,11 +170,15 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -197,5 +210,5 @@
     },
     "timezone": "browser",
     "title": "Team TCB",
-    "version": 5
+    "version": 6
 }

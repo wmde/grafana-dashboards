@@ -3,17 +3,27 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 270,
     "links": [],
-    "originalTitle": "Echo Mention Status Notifications",
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
+                {
+                    "content": "Errors triggered by the Echo extension Mention notification feature.\n\nTriggering code can be found in [DiscussionParser.php](https:\/\/phabricator.wikimedia.org\/diffusion\/ECHO\/browse\/master\/includes\/DiscussionParser.php)",
+                    "height": "10px",
+                    "id": 3,
+                    "links": [],
+                    "mode": "markdown",
+                    "span": 12,
+                    "title": "Details",
+                    "type": "text"
+                },
                 {
                     "aliasColors": [],
                     "bars": false,
@@ -21,14 +31,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -56,17 +60,22 @@
                             "target": "aliasByNode(daily.echo.mentionStatus.global_user_counts.totals.*, 5)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Users",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -88,11 +97,15 @@
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -102,14 +115,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -137,17 +144,22 @@
                             "target": "aliasByNode(MediaWiki.echo.event.mention.notification.*.sum, 5)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Status Notifications",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -169,11 +181,15 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "team-tcb",
@@ -213,5 +229,5 @@
     },
     "timezone": "utc",
     "title": "Echo Mention Status Notifications",
-    "version": 4
+    "version": 5
 }

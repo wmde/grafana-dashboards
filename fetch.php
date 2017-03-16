@@ -44,7 +44,6 @@ $dashboards = array(
 	'mediawiki-electronpdfservice',
 	'mediawiki-watcheditemstore',
 	'mediawiki-revisionslider',
-	'revisionsliderenablesdisables',
 	// Misc?
 	'betafeatures',
 );
