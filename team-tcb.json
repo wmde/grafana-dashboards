@@ -1,0 +1,201 @@
+{
+    "annotations": {
+        "list": []
+    },
+    "editable": true,
+    "hideControls": false,
+    "id": 288,
+    "links": [],
+    "originalTitle": "Team TCB",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "200px",
+            "panels": [
+                {
+                    "content": "<img style=\"float:right;\" src=\"https:\/\/www.wikimedia.de\/w\/images.homepage\/c\/c9\/Logo.png\"><\/img>\n<h3>Welcome to the <strong>TCB<\/strong> dashboards.<\/h3>\n<p>\n  Below you can find a collection of all dashboard relating to the TCB team.\n  These include external dashboards as well as grafana boards.\n  If you have an issues or suggestions please file <a href=\"https:\/\/phabricator.wikimedia.org\/maniphest\/task\/create\/?projects=wikidata,WMDE-Analytics-Engineering\" >a ticket<\/a> or talk to Addshore!\n<\/p>",
+                    "editable": true,
+                    "error": false,
+                    "id": 2,
+                    "links": [],
+                    "mode": "html",
+                    "span": 12,
+                    "style": [],
+                    "title": "",
+                    "type": "text"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "300px",
+            "panels": [
+                {
+                    "editable": true,
+                    "error": false,
+                    "headings": false,
+                    "id": 1,
+                    "limit": 100,
+                    "links": [],
+                    "query": "",
+                    "recent": false,
+                    "search": true,
+                    "span": 6,
+                    "starred": false,
+                    "tags": [
+                        "team-tcb"
+                    ],
+                    "title": "Our Dashboards",
+                    "type": "dashlist"
+                },
+                {
+                    "content": "<div class=\"panel-content\">\n    <div class=\"dashlist ng-scope\">\n        <!-- start dash entry -->\n        <div class=\"dashlist-item ng-scope\">\n            <a target=\"_blank\" class=\"dashlist-link dashlist-link-dash-db\" href=\"#\">\n                <span class=\"dashlist-title ng-binding\">Nothing here yet!<\/span>\n            <\/a>\n        <\/div>\n        <!-- end dash entry -->\n    <\/div>\n<\/div>",
+                    "editable": true,
+                    "error": false,
+                    "id": 4,
+                    "links": [],
+                    "mode": "html",
+                    "span": 6,
+                    "style": [],
+                    "title": "External Dashboards",
+                    "type": "text"
+                }
+            ],
+            "title": "Dashboards"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 5,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 12,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(daily.betafeatures.global_user_counts.totals.revisionslider, 'RevisionSlider')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(sumSeries(daily.catwatch.userprops.recentchanges.count), 'CatWatch RC')"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(sumSeries(daily.catwatch.userprops.recentchanges.count), 'CatWatch WL')"
+                        },
+                        {
+                            "refId": "D",
+                            "target": "alias(daily.echo.mentionStatus.global_user_counts.totals.echo-subscriptions-web-mention-failure, 'Mention Fails')"
+                        },
+                        {
+                            "refId": "E",
+                            "target": "alias(daily.echo.mentionStatus.global_user_counts.totals.echo-subscriptions-web-mention-failure, 'Mention Successes')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Usage",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "title": "New row"
+        }
+    ],
+    "schemaVersion": 12,
+    "sharedCrosshair": false,
+    "style": "dark",
+    "tags": [
+        "wikidata",
+        "featured"
+    ],
+    "templating": {
+        "list": []
+    },
+    "time": {
+        "from": "now-1y",
+        "to": "now"
+    },
+    "timepicker": {
+        "now": true,
+        "refresh_intervals": [
+            ""
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "browser",
+    "title": "Team TCB",
+    "version": 5
+}

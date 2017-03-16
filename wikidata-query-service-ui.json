@@ -1,0 +1,1429 @@
+{
+    "annotations": {
+        "list": []
+    },
+    "editable": true,
+    "hideControls": false,
+    "id": 290,
+    "links": [
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [],
+            "targetBlank": true,
+            "title": "WDQS",
+            "type": "link",
+            "url": "https:\/\/query.wikidata.org\/"
+        },
+        {
+            "icon": "external link",
+            "tags": [],
+            "targetBlank": true,
+            "title": "Discovery Dashboard",
+            "type": "link",
+            "url": "http:\/\/discovery.wmflabs.org\/wdqs\/#wdqs_usage"
+        },
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "wikidata"
+            ],
+            "title": "Wikidata Dashboards",
+            "type": "dashboards"
+        },
+        {
+            "asDropdown": true,
+            "icon": "external link",
+            "tags": [
+                "wdqs"
+            ],
+            "title": "WDQS Dashboards",
+            "type": "dashboards"
+        }
+    ],
+    "originalTitle": "Wikidata Query Service UI",
+    "refresh": "1m",
+    "rows": [
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "25px",
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 15,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikibase.queryService.ui.app.init.sum"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Page Loads",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 16,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikibase.queryService.ui.app.result.received.success.sum"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Good Queries",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(50, 172, 45, 0.97)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(245, 54, 54, 0.9)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 17,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "sumSeries(wikibase.queryService.ui.app.result.error.*.sum)"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Bad Queries",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "ms",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 18,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikibase.queryService.ui.app.result.executionTime.sum"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Total Query Execution Time",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 19,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "wikibase.queryService.ui.app.result.resultLength.sum"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Total Result Rows",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 20,
+                    "interval": null,
+                    "isNew": true,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "span": 2,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "sumSeries(wikibase.queryService.ui.embed.*.sum)"
+                        }
+                    ],
+                    "thresholds": "0,1",
+                    "title": "Embed Loads",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "total"
+                }
+            ],
+            "title": "New row"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": {
+                        "Embed Loads": "#447EBC"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 1,
+                    "isNew": true,
+                    "legend": {
+                        "avg": true,
+                        "current": false,
+                        "max": true,
+                        "min": false,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(summarize(wikibase.queryService.ui.app.init.sum, '$interval', 'sum', false), 'Page Loads')"
+                        },
+                        {
+                            "hide": false,
+                            "refId": "B",
+                            "target": "alias(summarize(sumSeries(wikibase.queryService.ui.embed.*.sum), '$interval', 'sum', false), 'Embed Loads')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Loads",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 4,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 8,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.resultLength.lower, '$interval', 'min', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "C",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.resultLength.upper, '$interval', 'max', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "D",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.resultLength.mean, '$interval', 'avg', false), 6)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Rows served",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "rows",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 9,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.executionTime.p95, '$interval', 'max', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.executionTime.lower, '$interval', 'min', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "C",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.executionTime.upper, '$interval', 'max', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "D",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.executionTime.mean, '$interval', 'avg', false), 6)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "E",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.executionTime.median, '$interval', 'avg', false), 6)",
+                            "textEditor": false
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Time waiting",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "ms",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "showTitle": true,
+            "title": "Page Loads"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": {
+                        "unknown": "#E24D42"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 5,
+                    "isNew": true,
+                    "legend": {
+                        "avg": true,
+                        "current": false,
+                        "max": true,
+                        "min": false,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.received.success.sum, '$interval', 'sum', false), 6)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Results",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "unknown": "#E24D42"
+                    },
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 11,
+                    "isNew": true,
+                    "legend": {
+                        "avg": true,
+                        "current": false,
+                        "max": true,
+                        "min": false,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 3,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.error.*.sum, '$interval', 'sum', false), 6)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Result Errors",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "Errors": "#E24D42"
+                    },
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 14,
+                    "interval": null,
+                    "isNew": true,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 2,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(wikibase.queryService.ui.app.result.received.success.sum, 'Successes')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(sumSeries(wikibase.queryService.ui.app.result.error.*.sum), 'Errors')"
+                        }
+                    ],
+                    "title": "Errors vs Successes",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                },
+                {
+                    "aliasColors": {
+                        "unknown": "#1F78C1",
+                        "wdqs-action-timeout": "#614D93"
+                    },
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 21,
+                    "interval": null,
+                    "isNew": true,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 2,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(wikibase.queryService.ui.app.result.error.*.sum, 6)"
+                        }
+                    ],
+                    "title": "Errors breakdown",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                },
+                {
+                    "aliasColors": [],
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 2,
+                    "interval": null,
+                    "isNew": true,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 2,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikibase.queryService.ui.app.result.browser.*.sum, 6)"
+                        }
+                    ],
+                    "title": "Result Views",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                }
+            ],
+            "showTitle": true,
+            "title": "Results"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 10,
+                    "isNew": true,
+                    "legend": {
+                        "avg": true,
+                        "current": false,
+                        "max": true,
+                        "min": false,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(summarize(sumSeries(wikibase.queryService.ui.embed.*.sum), '$interval', 'sum', false), 'Loads')"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Embed Loads",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 4,
+                    "interval": null,
+                    "isNew": true,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 6,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikibase.queryService.ui.embed.*.sum, 4)"
+                        }
+                    ],
+                    "title": "Embed Views",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                }
+            ],
+            "showTitle": true,
+            "title": "Embeds"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 7,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.download.query.*.sum, '$interval', 'sum', false), 7)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Result Downloads",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "csv": "#E5A8E2",
+                        "json": "#64B0C8",
+                        "tsv": "#BA43A9"
+                    },
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 3,
+                    "interval": null,
+                    "isNew": true,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 6,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikibase.queryService.ui.app.buttonClick.download.query.*.sum, 7)"
+                        }
+                    ],
+                    "title": "Download Types",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                }
+            ],
+            "showTitle": true,
+            "title": "Downloads"
+        },
+        {
+            "collapse": false,
+            "editable": true,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 12,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.*.sum, '$interval', 'sum', false), 5)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Button Clicks",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": {
+                        "threshold1": null,
+                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
+                        "threshold2": null,
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    },
+                    "id": 13,
+                    "isNew": true,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.display.*.sum, '$interval', 'sum', false), 6)"
+                        }
+                    ],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Views Changes",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "show": true
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "title": "Button Clicks"
+        }
+    ],
+    "schemaVersion": 12,
+    "sharedCrosshair": true,
+    "style": "dark",
+    "tags": [
+        "wikidata",
+        "live",
+        "wdqs"
+    ],
+    "templating": {
+        "list": [
+            {
+                "auto": false,
+                "current": {
+                    "tags": [],
+                    "text": "1m",
+                    "value": "1m"
+                },
+                "datasource": null,
+                "hide": 0,
+                "includeAll": false,
+                "label": "Interval",
+                "multi": false,
+                "name": "interval",
+                "options": [
+                    {
+                        "selected": true,
+                        "text": "1m",
+                        "value": "1m"
+                    },
+                    {
+                        "selected": false,
+                        "text": "10m",
+                        "value": "10m"
+                    },
+                    {
+                        "selected": false,
+                        "text": "30m",
+                        "value": "30m"
+                    },
+                    {
+                        "selected": false,
+                        "text": "1h",
+                        "value": "1h"
+                    },
+                    {
+                        "selected": false,
+                        "text": "6h",
+                        "value": "6h"
+                    },
+                    {
+                        "selected": false,
+                        "text": "12h",
+                        "value": "12h"
+                    },
+                    {
+                        "selected": false,
+                        "text": "1d",
+                        "value": "1d"
+                    },
+                    {
+                        "selected": false,
+                        "text": "7d",
+                        "value": "7d"
+                    },
+                    {
+                        "selected": false,
+                        "text": "14d",
+                        "value": "14d"
+                    },
+                    {
+                        "selected": false,
+                        "text": "30d",
+                        "value": "30d"
+                    }
+                ],
+                "query": "1m,10m,30m,1h,6h,12h,1d,7d,14d,30d",
+                "refresh": 0,
+                "type": "interval"
+            }
+        ]
+    },
+    "time": {
+        "from": "now-24h",
+        "to": "now"
+    },
+    "timepicker": {
+        "refresh_intervals": [
+            "5s",
+            "10s",
+            "30s",
+            "1m",
+            "5m",
+            "15m",
+            "30m",
+            "1h",
+            "2h",
+            "1d"
+        ],
+        "time_options": [
+            "5m",
+            "15m",
+            "1h",
+            "6h",
+            "12h",
+            "24h",
+            "2d",
+            "7d",
+            "30d"
+        ]
+    },
+    "timezone": "utc",
+    "title": "Wikidata Query Service UI",
+    "version": 25
+}

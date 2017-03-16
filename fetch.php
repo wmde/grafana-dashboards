@@ -5,11 +5,13 @@
  */
 
 $dashboards = array(
+	// Wikidata related
 	'article-placeholder',
 	'wikidata',
 	'wikidata-api',
 	'wikibase-api-error-rate',
 	'wikidata-api-wbsetclaim',
+	'wikibase-api-wbgetentities',
 	'wikidata-ci',
 	'wikidata-datamodel',
 	'wikidata-datamodel-terms',
@@ -17,12 +19,14 @@ $dashboards = array(
 	'wikidata-datamodel-references',
 	'wikidata-dispatch',
 	'wikidata-dispatch-script',
+	'wikidata-dump-downloads',
 	'wikidata-edits',
 	'wikidata-entity-usage',
 	'wikidata-entity-usage-project',
 	'wikidata-kpis',
 	'wikidata-page-views-per-domain',
 	'wikidata-query-service',
+	'wikidata-query-service-ui',
 	'wikidata-site-stats',
 	'wikidata-social-followers',
 	'wikidata-special-entitydata',
@@ -30,6 +34,19 @@ $dashboards = array(
 	'wikidata-top-page-views',
 	'wikidata-webpagetest',
 	'wikipageupdater-calls',
+	// TCB related
+	'team-tcb',
+	'collection_use',
+	'echo-mention-errors',
+	'echo-mention-status-notifications',
+	'mediawiki-catwatch-feature',
+	'mediawiki-edit-conflicts',
+	'mediawiki-electronpdfservice',
+	'mediawiki-watcheditemstore',
+	'mediawiki-revisionslider',
+	'revisionsliderenablesdisables',
+	// Misc?
+	'betafeatures',
 );
 
 if ( array_key_exists( 1, $argv ) ) {
