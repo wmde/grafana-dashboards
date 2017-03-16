@@ -3,6 +3,7 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
     "hideControls": false,
     "id": 169,
     "links": [
@@ -16,12 +17,10 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata API",
     "refresh": "30m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "100px",
             "panels": [
                 {
@@ -29,7 +28,6 @@
                     "editable": true,
                     "error": false,
                     "id": 5,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -38,11 +36,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -52,18 +54,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 3,
                     "legend": {
                         "avg": false,
@@ -92,19 +83,38 @@
                             "target": "alias(sumSeries(daily.wikidata.api.formats.*), 'Calls')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Calls",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -114,18 +124,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 10,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
                     "legend": {
                         "avg": false,
@@ -156,19 +155,38 @@
                             "target": "aliasByNode(exclude(exclude(exclude(exclude(sortByMaxima(daily.wikidata.api.actions.*), '_'), 'entitie'), 'wbgetentity'), 'wbgetitems'), 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Actions",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 10,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -178,20 +196,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 10,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
-                    "leftYAxisLabel": "log scale",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -221,27 +227,51 @@
                             "target": "aliasByNode(exclude(sortByMaxima(daily.wikidata.api.formats.*), '_'), 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Formats",
                     "tooltip": {
+                        "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "log scale",
+                            "logBase": 10,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -250,7 +280,6 @@
                     "error": false,
                     "fontSize": "100%",
                     "id": 4,
-                    "isNew": true,
                     "links": [],
                     "pageSize": 25,
                     "scroll": false,
@@ -284,19 +313,25 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(transformNull(daily.wikidata.api.actions.*, 0), 4)"
+                            "target": "aliasByNode(daily.wikidata.api.actions.*, 4)"
                         }
                     ],
-                    "timeFrom": "3d",
+                    "timeFrom": "5d",
+                    "timeShift": null,
                     "title": "API Module calls",
                     "transform": "timeseries_to_rows",
                     "type": "table"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 8,
+    "schemaVersion": 13,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -338,5 +373,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 9
+    "version": 11
 }

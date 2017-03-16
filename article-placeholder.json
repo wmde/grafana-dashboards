@@ -2,7 +2,9 @@
     "annotations": {
         "list": []
     },
+    "editMode": false,
     "editable": true,
+    "gnetId": null,
     "hideControls": false,
     "id": 244,
     "links": [
@@ -16,14 +18,96 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Article Placeholder",
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
+                    "id": 5,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": true,
+                        "hideZero": true,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(sumSeries(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.spider.*), 'Spiders')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(sumSeries(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.user.*), 'Users')"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(sumSeries(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.search_referral.*), 'Search Referals')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Special:AboutTopic Pageview overview",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "Views",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
                 {
                     "aliasColors": [],
                     "bars": true,
@@ -31,14 +115,160 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                    "grid": [],
+                    "id": 3,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": true,
+                        "hideZero": true,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
                     },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.spider.*), 6)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Special:AboutTopic Spider Pageviews",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "Views",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
                     "id": 2,
-                    "isNew": true,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": true,
+                        "hideZero": true,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": false,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.user.*), 6)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Special:AboutTopic User Pageviews",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "Views",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
+                    "id": 4,
                     "legend": {
                         "alignAsTable": false,
                         "avg": false,
@@ -67,20 +297,25 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.user.*), 6)"
+                            "target": "aliasByNode(sortByMaxima(daily.wikidata.articleplaceholder.varnish_requests.abouttopic.search_referral.*), 6)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Special:AboutTopic Pageviews",
+                    "title": "Special:AboutTopic Pageviews from internal search",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -102,11 +337,15 @@
                     ]
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -116,20 +355,14 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -148,21 +381,26 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(summarize(MediaWiki.wikibase.articleplaceholder.button.create-article.count, '1d', 'sum', false), 'Clicks')",
-                            "textEditor": true
+                            "target": "alias(summarize(sumSeries(MediaWiki.wikibase.articleplaceholder.button.create*.count), '1d', 'sum', false), 'Clicks')",
+                            "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Create Article Button",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -183,10 +421,15 @@
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
+    "schemaVersion": 13,
     "sharedCrosshair": true,
     "style": "dark",
     "tags": [
@@ -227,5 +470,5 @@
     },
     "timezone": "browser",
     "title": "Article Placeholder",
-    "version": 11
+    "version": 16
 }

@@ -56,7 +56,8 @@
                         "threshold1": null,
                         "threshold1Color": "rgba(216, 200, 27, 0.27)",
                         "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
+                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
+                        "thresholdLine": false
                     },
                     "id": 5,
                     "legend": {
@@ -88,13 +89,13 @@
                         {
                             "hide": false,
                             "refId": "A",
-                            "target": "aliasByNode(MediaWiki.wikibase.repo.api.wbsetclaim.total.sum, -2, -1)",
-                            "textEditor": true
+                            "target": "aliasByNode(summarize(MediaWiki.wikibase.repo.api.wbsetclaim.total.sum, '1d', 'sum', false), -2)",
+                            "textEditor": false
                         },
                         {
                             "refId": "B",
-                            "target": "aliasByNode(MediaWiki.wikibase.repo.api.wbsetclaim.index.sum, -2, -1)",
-                            "textEditor": true
+                            "target": "aliasByNode(summarize(MediaWiki.wikibase.repo.api.wbsetclaim.index.sum, '1d', 'sum', false), -2)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -113,7 +114,7 @@
                         {
                             "format": "none",
                             "label": "",
-                            "logBase": 1,
+                            "logBase": 10,
                             "max": null,
                             "min": 0,
                             "show": true
@@ -146,7 +147,7 @@
                     "span": 6,
                     "styles": [
                         {
-                            "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                            "dateFormat": "YYYY-MM-DD",
                             "pattern": "Time",
                             "type": "date"
                         },
@@ -157,23 +158,23 @@
                                 "rgba(237, 129, 40, 0.89)",
                                 "rgba(50, 172, 45, 0.97)"
                             ],
-                            "decimals": 2,
+                            "decimals": 0,
                             "pattern": "\/.*\/",
                             "thresholds": [],
                             "type": "number",
-                            "unit": "short"
+                            "unit": "none"
                         }
                     ],
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(MediaWiki.wikibase.repo.api.wbsetclaim.total.sum, -2, -1)",
-                            "textEditor": true
+                            "target": "aliasByNode(summarize(MediaWiki.wikibase.repo.api.wbsetclaim.total.sum, '1d', 'sum', false), -2)",
+                            "textEditor": false
                         },
                         {
                             "refId": "B",
-                            "target": "aliasByNode(MediaWiki.wikibase.repo.api.wbsetclaim.index.sum, -2, -1)",
-                            "textEditor": true
+                            "target": "aliasByNode(summarize(MediaWiki.wikibase.repo.api.wbsetclaim.index.sum, '1d', 'sum', false), -2)",
+                            "textEditor": false
                         }
                     ],
                     "timeFrom": null,
@@ -231,5 +232,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API wbsetclaim",
-    "version": 17
+    "version": 23
 }
