@@ -25,6 +25,7 @@ $dashboards = array(
 	'wikidata-entity-usage-project',
 	'wikidata-kpis',
 	'wikidata-page-views-per-domain',
+	'wikidata-quality',
 	'wikidata-query-service',
 	'wikidata-query-service-ui',
 	'wikidata-site-stats',
