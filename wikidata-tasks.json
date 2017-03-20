@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 172,
     "links": [
@@ -14,14 +16,20 @@
             ],
             "title": "Wikidata Dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating script",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/phabricatorTasks.php"
         }
     ],
-    "originalTitle": "Wikidata Tasks",
     "refresh": "30m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -29,7 +37,6 @@
                     "editable": true,
                     "error": false,
                     "id": 3,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -38,11 +45,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -52,18 +63,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
                     "legend": {
                         "avg": false,
@@ -92,19 +92,37 @@
                             "target": "aliasByNode(daily.wikidata.phabricator.board.columns.*, 5)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Task groups",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -116,18 +134,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
                     "legend": {
                         "avg": false,
@@ -156,27 +163,49 @@
                             "target": "alias(sumSeries(exclude(daily.wikidata.phabricator.board.columns.*, 'monitoring')), 'Tasks')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Open tasks (excluding monitoring)",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 8,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -217,5 +246,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Tasks",
-    "version": 3
+    "version": 4
 }

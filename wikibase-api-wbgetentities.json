@@ -2,9 +2,9 @@
     "annotations": {
         "list": []
     },
-    "editMode": false,
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 265,
     "links": [
@@ -30,6 +30,7 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Live number of entities requested via the Wikibase wbgetentities API module.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -104,6 +105,7 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Live number of requests to the Wikibase wbgetentities API module.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -179,6 +181,7 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Live breakdown of the number of entities requested per request to the Wikibase wbgetentities API module.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -256,8 +259,7 @@
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -267,7 +269,7 @@
         "list": []
     },
     "time": {
-        "from": "now-48h",
+        "from": "now-7d",
         "to": "now"
     },
     "timepicker": {
@@ -297,5 +299,5 @@
     },
     "timezone": "utc",
     "title": "Wikibase API wbgetentities",
-    "version": 8
+    "version": 9
 }

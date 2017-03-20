@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 159,
     "links": [
@@ -15,14 +17,20 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating scripts",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/social\/"
         }
     ],
-    "originalTitle": "Wikidata Social Followers",
     "refresh": false,
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -30,7 +38,6 @@
                     "editable": true,
                     "error": false,
                     "id": 28,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -39,11 +46,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "150px",
             "panels": [
                 {
@@ -60,6 +71,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 3,
                     "interval": null,
                     "links": [
@@ -70,6 +88,17 @@
                             "url": "https:\/\/lists.wikimedia.org\/mailman\/listinfo\/wikidata"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -77,6 +106,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -118,6 +154,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 5,
                     "interval": null,
                     "links": [
@@ -129,6 +172,17 @@
                             "url": "https:\/\/lists.wikimedia.org\/mailman\/listinfo\/wikidata-tech"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -136,6 +190,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -176,6 +237,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 10,
                     "interval": null,
                     "links": [
@@ -186,6 +254,17 @@
                             "url": "https:\/\/www.wikidata.org\/wiki\/Wikidata:Status_updates"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "minSpan": 1,
                     "nullPointMode": "connected",
@@ -194,6 +273,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -235,9 +321,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 11,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -245,6 +349,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -285,6 +396,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 7,
                     "interval": null,
                     "links": [
@@ -295,6 +413,17 @@
                             "url": "https:\/\/twitter.com\/wikidata"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -302,6 +431,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -343,6 +479,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 6,
                     "interval": null,
                     "links": [
@@ -353,6 +496,17 @@
                             "url": "https:\/\/www.facebook.com\/Wikidata"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -360,6 +514,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -400,6 +561,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 8,
                     "interval": null,
                     "links": [
@@ -410,6 +578,17 @@
                             "url": "https:\/\/plus.google.com\/105776413863749545202"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -417,6 +596,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -457,6 +643,13 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 9,
                     "interval": null,
                     "links": [
@@ -467,6 +660,17 @@
                             "url": "https:\/\/identi.ca\/wikidata"
                         }
                     ],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -474,6 +678,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -514,9 +725,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 25,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -524,6 +753,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -553,12 +789,15 @@
                     "valueName": "current"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": false,
-            "title": "Social Following Change"
+            "title": "Social Following Change",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "150px",
             "panels": [
                 {
@@ -575,9 +814,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 17,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -585,6 +842,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -600,7 +864,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Wikidata List $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -627,9 +891,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 18,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -637,6 +919,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -652,7 +941,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Tech List $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -679,9 +968,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 19,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -689,6 +996,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -704,7 +1018,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Newsletter $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -731,9 +1045,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 24,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -741,6 +1073,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -756,7 +1095,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "IRC $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -783,9 +1122,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 21,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -793,6 +1150,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -808,7 +1172,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Twitter $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -835,9 +1199,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 22,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -845,6 +1227,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -860,7 +1249,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Facebook $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -887,9 +1276,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 23,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -897,6 +1304,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -912,7 +1326,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Google+ $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -939,9 +1353,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 20,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -949,6 +1381,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 1,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -964,7 +1403,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Identica $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -991,9 +1430,27 @@
                     "editable": true,
                     "error": false,
                     "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 26,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -1001,6 +1458,13 @@
                     "postfixFontSize": "30%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -1016,7 +1480,7 @@
                             "textEditor": true
                         }
                     ],
-                    "thresholds": "-9999999,0,+1",
+                    "thresholds": "0,+1",
                     "title": "Total $delta",
                     "type": "singlestat",
                     "valueFontSize": "80%",
@@ -1030,11 +1494,15 @@
                     "valueName": "current"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -1044,20 +1512,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "leftYAxisLabel": "",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1086,19 +1542,38 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "none",
-                        "none"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "label": "",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "none",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1108,20 +1583,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 10,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 4,
-                    "leftYAxisLabel": "log",
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1150,19 +1613,38 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "log",
+                            "logBase": 10,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1174,18 +1656,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 27,
                     "legend": {
                         "avg": false,
@@ -1215,28 +1686,49 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total following",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": false,
-            "title": "Social Followers"
+            "title": "Social Followers",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 8,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -1246,12 +1738,15 @@
         "list": [
             {
                 "allFormat": "glob",
+                "auto": false,
+                "auto_count": 30,
+                "auto_min": "10s",
                 "current": {
-                    "tags": [],
                     "text": "-7d",
                     "value": "-7d"
                 },
                 "datasource": null,
+                "hide": 0,
                 "includeAll": false,
                 "label": "Delta",
                 "multi": false,
@@ -1280,13 +1775,14 @@
                     }
                 ],
                 "query": "-1d,-7d,-14d,-30d",
+                "refresh": 2,
                 "refresh_on_load": false,
                 "type": "interval"
             }
         ]
     },
     "time": {
-        "from": "now-6M",
+        "from": "now-1y",
         "to": "now"
     },
     "timepicker": {
@@ -1309,5 +1805,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Social Followers",
-    "version": 27
+    "version": 29
 }

@@ -15,6 +15,7 @@
     },
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 156,
     "links": [
@@ -35,13 +36,20 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating script",
+            "tooltip": "Open Source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/dispatch.php"
         }
     ],
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -49,7 +57,6 @@
                     "editable": true,
                     "error": false,
                     "id": 18,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -58,11 +65,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "200px",
             "panels": [
                 {
@@ -72,13 +83,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "height": "220px",
                     "hideTimeOverride": false,
                     "id": 9,
@@ -111,6 +116,7 @@
                             "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.lag), 2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": "7d",
                     "timeShift": null,
                     "title": "Dispatch Lag (7 days)",
@@ -122,7 +128,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -149,12 +158,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "height": "220px",
                     "id": 11,
                     "legend": {
@@ -186,6 +190,7 @@
                             "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.pending), 2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": "7d",
                     "timeShift": null,
                     "title": "Dispatch Pending (7 days)",
@@ -197,7 +202,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -676,11 +684,15 @@
                     "valueName": "max"
                 }
             ],
-            "title": "Overview"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Overview",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -690,12 +702,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
                     "legend": {
                         "alignAsTable": true,
@@ -726,6 +733,7 @@
                             "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.lag), 2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Dispatch Lag",
@@ -737,7 +745,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -758,11 +769,15 @@
                     ]
                 }
             ],
-            "title": "Dispatch Lag"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dispatch Lag",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -772,12 +787,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
                     "legend": {
                         "alignAsTable": true,
@@ -808,6 +818,7 @@
                             "target": "aliasByNode(sortByMaxima(wikidata.dispatch.*.pending), 2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Dispatch Pending",
@@ -819,7 +830,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -840,11 +854,15 @@
                     ]
                 }
             ],
-            "title": "Dispatch Pending"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dispatch Pending",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -854,12 +872,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 5,
                     "legend": {
                         "alignAsTable": true,
@@ -898,6 +911,7 @@
                             "target": "aliasByNode(servers.terbium.loadavg.15, 1, -1)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Dispatchers (terbium) Load",
@@ -909,7 +923,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -936,12 +953,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 10,
                     "legend": {
                         "alignAsTable": true,
@@ -972,6 +984,7 @@
                             "target": "aliasByNode(servers.terbium.cpu.*.*, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Dispatchers (terbium) CPU",
@@ -983,7 +996,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1004,11 +1020,15 @@
                     ]
                 }
             ],
-            "title": "Dispatchers"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dispatchers",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -1018,12 +1038,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 3,
                     "legend": {
                         "alignAsTable": true,
@@ -1056,6 +1071,7 @@
                             "target": "sumSeries(jobrunner.pop.wikibase-addUsagesForPage.ok.*.count)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "addUsagesForPage job pop ok",
@@ -1067,7 +1083,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1094,12 +1113,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 12,
                     "legend": {
                         "alignAsTable": true,
@@ -1130,6 +1144,7 @@
                             "target": "sumSeries(jobrunner.pop.ChangeNotification.ok.*.count)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "ChangeNotification job pop ok",
@@ -1141,7 +1156,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1162,11 +1180,15 @@
                     ]
                 }
             ],
-            "title": "Jobs"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Jobs",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -1207,5 +1229,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 17
+    "version": 18
 }

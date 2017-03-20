@@ -381,6 +381,7 @@
                     "bars": false,
                     "datasource": null,
                     "decimals": null,
+                    "description": "Lag per server.\n\nBased on the query:\n\nSELECT * WHERE { <http:\/\/www.wikidata.org> schema:dateModified ?y }",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -551,6 +552,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of triples on each query service server.\n\nUsing the following query:\n\nSELECT ( COUNT( * ) AS ?count ) { ?s ?p ?o }",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -1379,5 +1381,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Query Service",
-    "version": 38
+    "version": 39
 }

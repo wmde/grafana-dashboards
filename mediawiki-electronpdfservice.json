@@ -21,6 +21,28 @@
     "rows": [
         {
             "collapse": false,
+            "height": "",
+            "panels": [
+                {
+                    "content": "You can find the current list of wikis that have the ElectronPdfService extension loaded by looking at [https:\/\/noc.wikimedia.org\/conf\/InitialiseSettings.php.txt](https:\/\/noc.wikimedia.org\/conf\/InitialiseSettings.php.txt) and searching for \"wmgUseElectronPdfService\".\n\nOn wikis that have the extension loaded the ElectronPdfService rendering if the default selection.",
+                    "height": "100",
+                    "id": 11,
+                    "links": [],
+                    "mode": "markdown",
+                    "span": 12,
+                    "title": "",
+                    "type": "text"
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": true,
+            "title": "Details",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
             "height": 234,
             "panels": [
                 {
@@ -531,5 +553,5 @@
     },
     "timezone": "utc",
     "title": "MediaWiki ElectronPdfService",
-    "version": 10
+    "version": 11
 }

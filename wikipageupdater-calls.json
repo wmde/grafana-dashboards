@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 227,
     "links": [
@@ -14,56 +16,31 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating code",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/EWBA\/browse\/master\/client\/includes\/Changes\/WikiPageUpdater.php"
         }
     ],
-    "originalTitle": "WikiPageUpdater calls",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
-            "height": "25px",
-            "panels": [
-                {
-                    "content": "Calls to WikiPageUpdater methods\n\nSee [https:\/\/gerrit.wikimedia.org\/r\/#\/c\/268588\/5\/client\/includes\/Changes\/WikiPageUpdater.php](https:\/\/gerrit.wikimedia.org\/r\/#\/c\/268588\/5\/client\/includes\/Changes\/WikiPageUpdater.php)",
-                    "editable": true,
-                    "error": false,
-                    "id": 2,
-                    "isNew": true,
-                    "links": [],
-                    "mode": "markdown",
-                    "span": 12,
-                    "title": "Description",
-                    "type": "text"
-                }
-            ],
-            "title": "New row"
-        },
-        {
-            "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Calls to WikiPageUpdater methods.\n\nUsed to monitor the amount of cache purges Wikibase does.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -91,27 +68,49 @@
                             "target": "aliasByNode(MediaWiki.wikibase.client.pageupdates.*.count, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Client Page Updates",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "Row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 10,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "live",
@@ -153,5 +152,5 @@
     },
     "timezone": "browser",
     "title": "WikiPageUpdater calls",
-    "version": 1
+    "version": 2
 }

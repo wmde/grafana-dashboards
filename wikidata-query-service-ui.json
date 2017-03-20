@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 290,
     "links": [
@@ -42,12 +44,10 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikidata Query Service UI",
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -72,8 +72,18 @@
                     },
                     "id": 15,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -81,6 +91,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -129,8 +146,18 @@
                     },
                     "id": 16,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -138,6 +165,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -186,8 +220,18 @@
                     },
                     "id": 17,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -195,6 +239,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -243,8 +294,18 @@
                     },
                     "id": 18,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -252,6 +313,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -300,8 +368,18 @@
                     },
                     "id": 19,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -309,6 +387,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -357,8 +442,18 @@
                     },
                     "id": 20,
                     "interval": null,
-                    "isNew": true,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -366,6 +461,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -393,11 +495,15 @@
                     "valueName": "total"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -406,17 +512,12 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of times the query service has been loaded, broken down by main interface loads and embed page loads.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -449,17 +550,22 @@
                             "target": "alias(summarize(sumSeries(wikibase.queryService.ui.embed.*.sum), '$interval', 'sum', false), 'Embed Loads')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Loads",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -484,17 +590,12 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Breakdown of the number of rows returned by queries.",
                     "editable": true,
                     "error": false,
                     "fill": 4,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 8,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -533,17 +634,22 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Rows served",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -568,17 +674,12 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Breakdown of the time spent waiting for a query to return results.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 9,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -627,17 +728,22 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Time waiting",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -659,12 +765,15 @@
                     ]
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Page Loads"
+            "title": "Page Loads",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -673,17 +782,12 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of successful requests.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 5,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -711,17 +815,22 @@
                             "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.received.success.sum, '$interval', 'sum', false), 6)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Results",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -748,17 +857,12 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Number of requests that result in errors, broken down by type.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 11,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -786,17 +890,22 @@
                             "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.error.*.sum, '$interval', 'sum', false), 6)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Result Errors",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -823,13 +932,13 @@
                     },
                     "cacheTimeout": null,
                     "datasource": null,
+                    "description": "Number of queries that resulted in success compared with failure.",
                     "editable": true,
                     "error": false,
                     "fontSize": "80%",
                     "format": "short",
                     "id": 14,
                     "interval": null,
-                    "isNew": true,
                     "legend": {
                         "show": true,
                         "values": true
@@ -862,13 +971,13 @@
                     },
                     "cacheTimeout": null,
                     "datasource": null,
+                    "description": "Breakdown of the reasons for query errors based on error codes returned.",
                     "editable": true,
                     "error": false,
                     "fontSize": "80%",
                     "format": "short",
                     "id": 21,
                     "interval": null,
-                    "isNew": true,
                     "legend": {
                         "show": true,
                         "values": true
@@ -894,13 +1003,13 @@
                     "aliasColors": [],
                     "cacheTimeout": null,
                     "datasource": null,
+                    "description": "Breakdown of result views used in query results.",
                     "editable": true,
                     "error": false,
                     "fontSize": "80%",
                     "format": "short",
                     "id": 2,
                     "interval": null,
-                    "isNew": true,
                     "legend": {
                         "show": true,
                         "values": true
@@ -915,7 +1024,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikibase.queryService.ui.app.result.browser.*.sum, 6)"
+                            "target": "aliasByNode(sortByMaxima(wikibase.queryService.ui.app.result.browser.*.sum), 6)"
                         }
                     ],
                     "title": "Result Views",
@@ -923,12 +1032,15 @@
                     "valueName": "total"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Results"
+            "title": "Results",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -938,14 +1050,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 10,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -973,17 +1079,22 @@
                             "target": "alias(summarize(sumSeries(wikibase.queryService.ui.embed.*.sum), '$interval', 'sum', false), 'Loads')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Embed Loads",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1008,13 +1119,13 @@
                     "aliasColors": [],
                     "cacheTimeout": null,
                     "datasource": null,
+                    "description": "Breakdown of the types of view used in the embed interface.",
                     "editable": true,
                     "error": false,
                     "fontSize": "80%",
                     "format": "short",
                     "id": 4,
                     "interval": null,
-                    "isNew": true,
                     "legend": {
                         "show": true,
                         "values": true
@@ -1037,29 +1148,27 @@
                     "valueName": "total"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Embeds"
+            "title": "Embeds",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": true,
                     "datasource": null,
+                    "description": "Number of times results are downloaded broken down by type of download.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 7,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1087,17 +1196,22 @@
                             "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.download.query.*.sum, '$interval', 'sum', false), 7)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Result Downloads",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1132,7 +1246,6 @@
                     "format": "short",
                     "id": 3,
                     "interval": null,
-                    "isNew": true,
                     "legend": {
                         "show": true,
                         "values": true
@@ -1155,29 +1268,27 @@
                     "valueName": "total"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Downloads"
+            "title": "Downloads",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": true,
                     "datasource": null,
+                    "description": "Number of interface button clicks.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 12,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1205,17 +1316,22 @@
                             "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.*.sum, '$interval', 'sum', false), 5)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Button Clicks",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1240,17 +1356,12 @@
                     "aliasColors": [],
                     "bars": true,
                     "datasource": null,
+                    "description": "Number of times the view type is changed in the interface, broken down by the type of view changed to.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 13,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -1278,17 +1389,22 @@
                             "target": "aliasByNode(summarize(wikibase.queryService.ui.app.buttonClick.display.*.sum, '$interval', 'sum', false), 6)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Views Changes",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -1310,11 +1426,15 @@
                     ]
                 }
             ],
-            "title": "Button Clicks"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Button Clicks",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -1325,8 +1445,9 @@
         "list": [
             {
                 "auto": false,
+                "auto_count": 30,
+                "auto_min": "10s",
                 "current": {
-                    "tags": [],
                     "text": "1m",
                     "value": "1m"
                 },
@@ -1389,7 +1510,7 @@
                     }
                 ],
                 "query": "1m,10m,30m,1h,6h,12h,1d,7d,14d,30d",
-                "refresh": 0,
+                "refresh": 2,
                 "type": "interval"
             }
         ]
@@ -1425,5 +1546,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Query Service UI",
-    "version": 25
+    "version": 27
 }

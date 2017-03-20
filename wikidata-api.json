@@ -4,6 +4,7 @@
     },
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 169,
     "links": [
@@ -15,6 +16,14 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating script",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/apiLogScanner.php"
         }
     ],
     "refresh": "30m",
@@ -331,8 +340,7 @@
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -373,5 +381,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata API",
-    "version": 11
+    "version": 12
 }

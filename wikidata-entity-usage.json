@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 160,
     "links": [
@@ -22,14 +24,20 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating script",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/entityUsage.php"
         }
     ],
-    "originalTitle": "Wikidata Entity Usage",
     "refresh": "30s",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -37,7 +45,6 @@
                     "editable": true,
                     "error": false,
                     "id": 22,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -46,11 +53,15 @@
                     "type": "text"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "150px",
             "panels": [
                 {
@@ -126,12 +137,15 @@
                     "type": "text"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": false,
-            "title": "Descriptions"
+            "title": "Descriptions",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "100px",
             "panels": [
                 {
@@ -148,9 +162,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 3,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -158,6 +190,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -199,9 +238,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 5,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -209,6 +266,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -250,9 +314,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 4,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -260,6 +342,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -301,9 +390,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 6,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -311,6 +418,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -352,9 +466,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 2,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -362,6 +494,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -403,9 +542,27 @@
                     "editable": true,
                     "error": false,
                     "format": "short",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
                     "id": 13,
                     "interval": null,
                     "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
                     "maxDataPoints": 100,
                     "nullPointMode": "connected",
                     "nullText": null,
@@ -413,6 +570,13 @@
                     "postfixFontSize": "50%",
                     "prefix": "",
                     "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
                     "span": 2,
                     "sparkline": {
                         "fillColor": "rgba(31, 118, 189, 0.18)",
@@ -441,12 +605,15 @@
                     "valueName": "current"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": false,
-            "title": "Counts"
+            "title": "Counts",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -458,18 +625,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 18,
                     "legend": {
                         "avg": false,
@@ -498,19 +654,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage.*.*), 'Total entity flags')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -522,19 +696,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "id": 17,
                     "legend": {
                         "alignAsTable": false,
@@ -565,27 +727,49 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.*), 'Pages')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Pages (excluding sitelinks)",
                     "tooltip": {
                         "shared": false,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "Total"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Total",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -595,18 +779,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 0,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 15,
                     "legend": {
                         "avg": false,
@@ -661,19 +834,37 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Usage type comparison",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -683,19 +874,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "id": 16,
                     "legend": {
                         "alignAsTable": false,
@@ -727,19 +906,37 @@
                             "target": "aliasByNode(limit(sortByMaxima(sumSeriesWithWildcards(sumSeriesWithWildcards(daily.wikidata.entity_usage.*.*, 2), 3)), 20), 2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total usage per site (top 20)",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -749,19 +946,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "id": 20,
                     "legend": {
                         "alignAsTable": false,
@@ -794,27 +979,49 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total usage pages per site (top 20)",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "Compare"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Compare",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -824,7 +1031,6 @@
                     "fontSize": "100%",
                     "hideTimeOverride": false,
                     "id": 19,
-                    "isNew": true,
                     "links": [],
                     "pageSize": 50,
                     "scroll": false,
@@ -874,7 +1080,6 @@
                     "fontSize": "100%",
                     "hideTimeOverride": false,
                     "id": 21,
-                    "isNew": true,
                     "links": [],
                     "pageSize": 50,
                     "scroll": false,
@@ -919,11 +1124,15 @@
                     "type": "table"
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 8,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -964,5 +1173,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage",
-    "version": 35
+    "version": 36
 }

@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 226,
     "links": [
@@ -16,54 +18,21 @@
             "type": "dashboards"
         }
     ],
-    "originalTitle": "Wikibase API error rate",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
-            "height": "25px",
-            "panels": [
-                {
-                    "content": "Live Wikibase API errors",
-                    "editable": true,
-                    "error": false,
-                    "id": 2,
-                    "isNew": true,
-                    "links": [],
-                    "mode": "markdown",
-                    "span": 12,
-                    "title": "Description",
-                    "type": "text"
-                }
-            ],
-            "title": "Row"
-        },
-        {
-            "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Live Wikibase API errors (total).\n\nUsed to spot issues with the Wikibase API. Spikes can indicate issues with Wikibase deployments.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -91,27 +60,49 @@
                             "target": "alias(MediaWiki.wikibase.repo.api.errors.total.count, 'Errors')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Wikibase API errors",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 }
             ],
-            "title": "New row"
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "New row",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 10,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -153,5 +144,5 @@
     },
     "timezone": "browser",
     "title": "Wikibase API error rate",
-    "version": 1
+    "version": 2
 }

@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 239,
     "links": [
@@ -14,14 +16,20 @@
             ],
             "title": "Wikidata Dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating code",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/EWBA\/browse\/master\/repo\/maintenance\/dispatchChanges.php"
         }
     ],
-    "originalTitle": "Wikidata Dispatch Script",
     "refresh": "1m",
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -33,14 +41,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 2,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -68,17 +70,22 @@
                             "target": "alias(MediaWiki.wikibase.repo.dispatchChanges.start.sum, 'Starts')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Script starts",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -107,14 +114,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 7,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -142,17 +143,22 @@
                             "target": "aliasByNode(MediaWiki.wikibase.repo.dispatchChanges.changes.sum, -1, -2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Changes",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -181,14 +187,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 6,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -222,17 +222,22 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Passes run",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -261,14 +266,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 5,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -296,17 +295,22 @@
                             "target": "aliasByNode(MediaWiki.wikibase.repo.dispatchChanges.execute_time.median, -1, -2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Median execution time",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -326,12 +330,15 @@
                     ]
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Script stats"
+            "title": "Script stats",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -344,14 +351,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 3,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -379,17 +380,22 @@
                             "target": "aliasByNode(MediaWiki.wikibase.repo.dispatchChanges.changes.mean, -1, -2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Mean changes per pass",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -416,17 +422,12 @@
                     },
                     "bars": false,
                     "datasource": null,
+                    "description": "Live number of exceptions cause in the script.\n\nIf spikes occur you should probably check the logs and see why.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 4,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -455,17 +456,22 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Exception passes",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -496,14 +502,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 1,
-                    "isNew": true,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -532,17 +532,22 @@
                             "textEditor": false
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total No Client passes",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -571,14 +576,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 8,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -606,17 +605,22 @@
                             "target": "aliasByNode(MediaWiki.wikibase.repo.dispatchChanges.pass_time.median, -1, -2)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Median pass time",
                     "tooltip": {
                         "msResolution": true,
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
                     "xaxis": {
-                        "show": true
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
                     },
                     "yaxes": [
                         {
@@ -636,19 +640,15 @@
                     ]
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "Pass stats"
-        },
-        {
-            "collapse": false,
-            "editable": true,
-            "height": "250px",
-            "panels": [],
-            "title": "New row"
+            "title": "Pass stats",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 12,
-    "sharedCrosshair": true,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -658,7 +658,7 @@
         "list": []
     },
     "time": {
-        "from": "now-12h",
+        "from": "now-24h",
         "to": "now"
     },
     "timepicker": {
@@ -688,5 +688,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch Script",
-    "version": 5
+    "version": 7
 }

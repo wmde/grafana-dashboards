@@ -3,6 +3,8 @@
         "list": []
     },
     "editable": true,
+    "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 176,
     "links": [
@@ -21,14 +23,20 @@
             ],
             "title": "Wikidata dashboards",
             "type": "dashboards"
+        },
+        {
+            "icon": "bolt",
+            "tags": [],
+            "title": "Generating script",
+            "tooltip": "Open source",
+            "type": "link",
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/entityUsage.php"
         }
     ],
-    "originalTitle": "Wikidata Entity Usage Project",
     "refresh": false,
     "rows": [
         {
             "collapse": false,
-            "editable": true,
             "height": "25px",
             "panels": [
                 {
@@ -36,7 +44,6 @@
                     "editable": true,
                     "error": false,
                     "id": 36,
-                    "isNew": true,
                     "links": [],
                     "mode": "markdown",
                     "span": 12,
@@ -117,12 +124,15 @@
                     "type": "text"
                 }
             ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": false,
-            "title": "Descriptions"
+            "title": "Descriptions",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -132,20 +142,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 20,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -180,19 +178,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.L_*, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Label flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -204,20 +220,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 21,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -252,19 +256,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.S, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Sitelink flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -276,20 +298,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 22,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -324,19 +334,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.T, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Title flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -348,20 +376,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 23,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -396,19 +412,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.O, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Other flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -420,20 +454,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 24,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -468,19 +490,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.X, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "All flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -492,20 +532,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 25,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -540,19 +568,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'flags')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -562,18 +608,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 0,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 15,
                     "legend": {
                         "avg": false,
@@ -635,19 +670,37 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Usage type comparison",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -659,18 +712,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 18,
                     "legend": {
                         "avg": false,
@@ -706,19 +748,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -730,19 +790,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "id": 17,
                     "legend": {
                         "alignAsTable": false,
@@ -780,19 +828,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Pages (excluding sitelinks)",
                     "tooltip": {
                         "shared": false,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -815,7 +881,6 @@
                     "fontSize": "90%",
                     "hideTimeOverride": false,
                     "id": 19,
-                    "isNew": true,
                     "links": [],
                     "pageSize": 10,
                     "scopedVars": {
@@ -848,7 +913,6 @@
                             "decimals": 0,
                             "pattern": "Value",
                             "thresholds": [
-                                "-1",
                                 "0",
                                 "20"
                             ],
@@ -884,19 +948,14 @@
                 }
             ],
             "repeat": "project",
-            "scopedVars": {
-                "project": {
-                    "selected": true,
-                    "text": "dewiki",
-                    "value": "dewiki"
-                }
-            },
+            "repeatIteration": null,
+            "repeatRowId": null,
             "showTitle": true,
-            "title": "$project"
+            "title": "$project",
+            "titleSize": "h6"
         },
         {
             "collapse": false,
-            "editable": true,
             "height": "250px",
             "panels": [
                 {
@@ -906,20 +965,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 26,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -954,19 +1001,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.L_*, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Label flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -978,20 +1043,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 27,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -1026,19 +1079,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.S, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Sitelink flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1050,20 +1121,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 28,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -1098,19 +1157,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.T, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Title flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1122,20 +1199,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 29,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -1170,19 +1235,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.O, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Other flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1194,20 +1277,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 30,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -1242,19 +1313,37 @@
                             "target": "aliasByNode(daily.wikidata.entity_usage.$project.X, 4)"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "All flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1266,20 +1355,8 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 31,
-                    "isNew": true,
                     "legend": {
                         "avg": false,
                         "current": true,
@@ -1314,19 +1391,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'flags')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1336,18 +1431,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 0,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 32,
                     "legend": {
                         "avg": false,
@@ -1409,19 +1493,37 @@
                             "textEditor": true
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Usage type comparison",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1433,18 +1535,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": null,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)"
-                    },
+                    "grid": [],
                     "id": 33,
                     "legend": {
                         "avg": false,
@@ -1480,19 +1571,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage.$project.*), 'Total entity flags')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Flags",
                     "tooltip": {
                         "shared": true,
+                        "sort": 0,
                         "value_type": "cumulative"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1504,19 +1613,7 @@
                     "editable": true,
                     "error": false,
                     "fill": 1,
-                    "grid": {
-                        "leftLogBase": 1,
-                        "leftMax": null,
-                        "leftMin": 0,
-                        "rightLogBase": 1,
-                        "rightMax": null,
-                        "rightMin": null,
-                        "threshold1": null,
-                        "threshold1Color": "rgba(216, 200, 27, 0.27)",
-                        "threshold2": null,
-                        "threshold2Color": "rgba(234, 112, 112, 0.22)",
-                        "thresholdLine": false
-                    },
+                    "grid": [],
                     "id": 34,
                     "legend": {
                         "alignAsTable": false,
@@ -1554,19 +1651,37 @@
                             "target": "alias(sumSeries(daily.wikidata.entity_usage_pages.$project), 'Pages')"
                         }
                     ],
+                    "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
                     "title": "Total Entity Usage Pages (excluding sitelinks)",
                     "tooltip": {
                         "shared": false,
+                        "sort": 0,
                         "value_type": "individual"
                     },
                     "type": "graph",
-                    "x-axis": true,
-                    "y-axis": true,
-                    "y_formats": [
-                        "short",
-                        "short"
+                    "xaxis": {
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
                     ]
                 },
                 {
@@ -1589,7 +1704,6 @@
                     "fontSize": "90%",
                     "hideTimeOverride": false,
                     "id": 35,
-                    "isNew": true,
                     "links": [],
                     "pageSize": 10,
                     "scopedVars": {
@@ -1622,7 +1736,6 @@
                             "decimals": 0,
                             "pattern": "Value",
                             "thresholds": [
-                                "-1",
                                 "0",
                                 "20"
                             ],
@@ -1658,21 +1771,14 @@
                 }
             ],
             "repeat": null,
-            "repeatIteration": 1454946236954,
+            "repeatIteration": 1489775815226,
             "repeatRowId": 2,
-            "scopedVars": {
-                "project": {
-                    "selected": true,
-                    "text": "enwiki",
-                    "value": "enwiki"
-                }
-            },
             "showTitle": true,
-            "title": "$project"
+            "title": "$project",
+            "titleSize": "h6"
         }
     ],
-    "schemaVersion": 8,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -1682,8 +1788,8 @@
         "list": [
             {
                 "allFormat": "glob",
+                "allValue": null,
                 "current": {
-                    "tags": [],
                     "text": "dewiki + enwiki",
                     "value": [
                         "dewiki",
@@ -1691,3136 +1797,19 @@
                     ]
                 },
                 "datasource": null,
+                "hide": 0,
                 "includeAll": false,
                 "label": "Project",
                 "multi": true,
                 "multiFormat": "glob",
                 "name": "project",
-                "options": [
-                    {
-                        "selected": false,
-                        "text": "aawiki",
-                        "value": "aawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aawikibooks",
-                        "value": "aawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "abwiki",
-                        "value": "abwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "acewiki",
-                        "value": "acewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "afwiki",
-                        "value": "afwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "afwikibooks",
-                        "value": "afwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "afwikiquote",
-                        "value": "afwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "akwiki",
-                        "value": "akwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "akwikibooks",
-                        "value": "akwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "alswiki",
-                        "value": "alswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "alswikibooks",
-                        "value": "alswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "alswikiquote",
-                        "value": "alswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "amwiki",
-                        "value": "amwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "amwikiquote",
-                        "value": "amwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "angwiki",
-                        "value": "angwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "angwikibooks",
-                        "value": "angwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "angwikiquote",
-                        "value": "angwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "angwikisource",
-                        "value": "angwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "anwiki",
-                        "value": "anwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arcwiki",
-                        "value": "arcwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arwiki",
-                        "value": "arwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arwikibooks",
-                        "value": "arwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arwikinews",
-                        "value": "arwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arwikiquote",
-                        "value": "arwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arwikisource",
-                        "value": "arwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "arzwiki",
-                        "value": "arzwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "astwiki",
-                        "value": "astwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "astwikibooks",
-                        "value": "astwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "astwikiquote",
-                        "value": "astwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aswiki",
-                        "value": "aswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aswikibooks",
-                        "value": "aswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aswikisource",
-                        "value": "aswikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "avwiki",
-                        "value": "avwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aywiki",
-                        "value": "aywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "aywikibooks",
-                        "value": "aywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "azbwiki",
-                        "value": "azbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "azwiki",
-                        "value": "azwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "azwikibooks",
-                        "value": "azwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "azwikiquote",
-                        "value": "azwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "azwikisource",
-                        "value": "azwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "barwiki",
-                        "value": "barwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bat_smgwiki",
-                        "value": "bat_smgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bawiki",
-                        "value": "bawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bawikibooks",
-                        "value": "bawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bclwiki",
-                        "value": "bclwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "be_x_oldwiki",
-                        "value": "be_x_oldwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bewiki",
-                        "value": "bewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bewikibooks",
-                        "value": "bewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bewikiquote",
-                        "value": "bewikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bewikisource",
-                        "value": "bewikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bgwiki",
-                        "value": "bgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bgwikibooks",
-                        "value": "bgwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bgwikinews",
-                        "value": "bgwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bgwikiquote",
-                        "value": "bgwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bgwikisource",
-                        "value": "bgwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bhwiki",
-                        "value": "bhwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "biwiki",
-                        "value": "biwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "biwikibooks",
-                        "value": "biwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bjnwiki",
-                        "value": "bjnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bmwiki",
-                        "value": "bmwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bmwikibooks",
-                        "value": "bmwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bmwikiquote",
-                        "value": "bmwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bnwiki",
-                        "value": "bnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bnwikibooks",
-                        "value": "bnwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bnwikisource",
-                        "value": "bnwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bowiki",
-                        "value": "bowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bowikibooks",
-                        "value": "bowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bpywiki",
-                        "value": "bpywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "brwiki",
-                        "value": "brwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "brwikiquote",
-                        "value": "brwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "brwikisource",
-                        "value": "brwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bswiki",
-                        "value": "bswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bswikibooks",
-                        "value": "bswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bswikinews",
-                        "value": "bswikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bswikiquote",
-                        "value": "bswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bswikisource",
-                        "value": "bswikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bugwiki",
-                        "value": "bugwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "bxrwiki",
-                        "value": "bxrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cawiki",
-                        "value": "cawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cawikibooks",
-                        "value": "cawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cawikinews",
-                        "value": "cawikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cawikiquote",
-                        "value": "cawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cawikisource",
-                        "value": "cawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cbk_zamwiki",
-                        "value": "cbk_zamwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cdowiki",
-                        "value": "cdowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cebwiki",
-                        "value": "cebwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cewiki",
-                        "value": "cewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "chowiki",
-                        "value": "chowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "chrwiki",
-                        "value": "chrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "chwiki",
-                        "value": "chwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "chwikibooks",
-                        "value": "chwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "chywiki",
-                        "value": "chywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ckbwiki",
-                        "value": "ckbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "commonswiki",
-                        "value": "commonswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cowiki",
-                        "value": "cowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cowikibooks",
-                        "value": "cowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cowikiquote",
-                        "value": "cowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "crhwiki",
-                        "value": "crhwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "crwiki",
-                        "value": "crwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "crwikiquote",
-                        "value": "crwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "csbwiki",
-                        "value": "csbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cswiki",
-                        "value": "cswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cswikibooks",
-                        "value": "cswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cswikinews",
-                        "value": "cswikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cswikiquote",
-                        "value": "cswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cswikisource",
-                        "value": "cswikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cuwiki",
-                        "value": "cuwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cvwiki",
-                        "value": "cvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cvwikibooks",
-                        "value": "cvwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cywiki",
-                        "value": "cywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cywikibooks",
-                        "value": "cywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cywikiquote",
-                        "value": "cywikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "cywikisource",
-                        "value": "cywikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dawiki",
-                        "value": "dawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dawikibooks",
-                        "value": "dawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dawikiquote",
-                        "value": "dawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dawikisource",
-                        "value": "dawikisource"
-                    },
-                    {
-                        "selected": true,
-                        "text": "dewiki",
-                        "value": "dewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dewikibooks",
-                        "value": "dewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dewikinews",
-                        "value": "dewikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dewikiquote",
-                        "value": "dewikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dewikisource",
-                        "value": "dewikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dewikivoyage",
-                        "value": "dewikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "diqwiki",
-                        "value": "diqwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dsbwiki",
-                        "value": "dsbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dvwiki",
-                        "value": "dvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "dzwiki",
-                        "value": "dzwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eewiki",
-                        "value": "eewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwiki",
-                        "value": "elwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwikibooks",
-                        "value": "elwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwikinews",
-                        "value": "elwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwikiquote",
-                        "value": "elwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwikisource",
-                        "value": "elwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "elwikivoyage",
-                        "value": "elwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "emlwiki",
-                        "value": "emlwiki"
-                    },
-                    {
-                        "selected": true,
-                        "text": "enwiki",
-                        "value": "enwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "enwikibooks",
-                        "value": "enwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "enwikinews",
-                        "value": "enwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "enwikiquote",
-                        "value": "enwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "enwikisource",
-                        "value": "enwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "enwikivoyage",
-                        "value": "enwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eowiki",
-                        "value": "eowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eowikibooks",
-                        "value": "eowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eowikinews",
-                        "value": "eowikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eowikiquote",
-                        "value": "eowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eowikisource",
-                        "value": "eowikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswiki",
-                        "value": "eswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswikibooks",
-                        "value": "eswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswikinews",
-                        "value": "eswikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswikiquote",
-                        "value": "eswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswikisource",
-                        "value": "eswikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "eswikivoyage",
-                        "value": "eswikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "etwiki",
-                        "value": "etwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "etwikibooks",
-                        "value": "etwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "etwikiquote",
-                        "value": "etwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "etwikisource",
-                        "value": "etwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "euwiki",
-                        "value": "euwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "euwikibooks",
-                        "value": "euwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "euwikiquote",
-                        "value": "euwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "extwiki",
-                        "value": "extwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawiki",
-                        "value": "fawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawikibooks",
-                        "value": "fawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawikinews",
-                        "value": "fawikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawikiquote",
-                        "value": "fawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawikisource",
-                        "value": "fawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fawikivoyage",
-                        "value": "fawikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ffwiki",
-                        "value": "ffwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiu_vrowiki",
-                        "value": "fiu_vrowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiwiki",
-                        "value": "fiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiwikibooks",
-                        "value": "fiwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiwikinews",
-                        "value": "fiwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiwikiquote",
-                        "value": "fiwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fiwikisource",
-                        "value": "fiwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fjwiki",
-                        "value": "fjwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fowiki",
-                        "value": "fowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fowikisource",
-                        "value": "fowikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frpwiki",
-                        "value": "frpwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frrwiki",
-                        "value": "frrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwiki",
-                        "value": "frwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwikibooks",
-                        "value": "frwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwikinews",
-                        "value": "frwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwikiquote",
-                        "value": "frwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwikisource",
-                        "value": "frwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "frwikivoyage",
-                        "value": "frwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "furwiki",
-                        "value": "furwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fywiki",
-                        "value": "fywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "fywikibooks",
-                        "value": "fywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gagwiki",
-                        "value": "gagwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ganwiki",
-                        "value": "ganwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gawiki",
-                        "value": "gawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gawikibooks",
-                        "value": "gawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gawikiquote",
-                        "value": "gawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gdwiki",
-                        "value": "gdwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "glkwiki",
-                        "value": "glkwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "glwiki",
-                        "value": "glwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "glwikibooks",
-                        "value": "glwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "glwikiquote",
-                        "value": "glwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "glwikisource",
-                        "value": "glwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gnwiki",
-                        "value": "gnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gnwikibooks",
-                        "value": "gnwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gomwiki",
-                        "value": "gomwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gotwiki",
-                        "value": "gotwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gotwikibooks",
-                        "value": "gotwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "guwiki",
-                        "value": "guwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "guwikibooks",
-                        "value": "guwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "guwikiquote",
-                        "value": "guwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "guwikisource",
-                        "value": "guwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "gvwiki",
-                        "value": "gvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hakwiki",
-                        "value": "hakwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hawiki",
-                        "value": "hawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hawwiki",
-                        "value": "hawwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewiki",
-                        "value": "hewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewikibooks",
-                        "value": "hewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewikinews",
-                        "value": "hewikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewikiquote",
-                        "value": "hewikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewikisource",
-                        "value": "hewikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hewikivoyage",
-                        "value": "hewikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hifwiki",
-                        "value": "hifwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hiwiki",
-                        "value": "hiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hiwikibooks",
-                        "value": "hiwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hiwikiquote",
-                        "value": "hiwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "howiki",
-                        "value": "howiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hrwiki",
-                        "value": "hrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hrwikibooks",
-                        "value": "hrwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hrwikiquote",
-                        "value": "hrwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hrwikisource",
-                        "value": "hrwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hsbwiki",
-                        "value": "hsbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "htwiki",
-                        "value": "htwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "htwikisource",
-                        "value": "htwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "huwiki",
-                        "value": "huwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "huwikibooks",
-                        "value": "huwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "huwikinews",
-                        "value": "huwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "huwikiquote",
-                        "value": "huwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "huwikisource",
-                        "value": "huwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hywiki",
-                        "value": "hywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hywikibooks",
-                        "value": "hywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hywikiquote",
-                        "value": "hywikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hywikisource",
-                        "value": "hywikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "hzwiki",
-                        "value": "hzwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iawiki",
-                        "value": "iawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iawikibooks",
-                        "value": "iawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "idwiki",
-                        "value": "idwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "idwikibooks",
-                        "value": "idwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "idwikiquote",
-                        "value": "idwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "idwikisource",
-                        "value": "idwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iewiki",
-                        "value": "iewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iewikibooks",
-                        "value": "iewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "igwiki",
-                        "value": "igwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iiwiki",
-                        "value": "iiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ikwiki",
-                        "value": "ikwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ilowiki",
-                        "value": "ilowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iowiki",
-                        "value": "iowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iswiki",
-                        "value": "iswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iswikibooks",
-                        "value": "iswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iswikiquote",
-                        "value": "iswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iswikisource",
-                        "value": "iswikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwiki",
-                        "value": "itwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwikibooks",
-                        "value": "itwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwikinews",
-                        "value": "itwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwikiquote",
-                        "value": "itwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwikisource",
-                        "value": "itwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "itwikivoyage",
-                        "value": "itwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "iuwiki",
-                        "value": "iuwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jawiki",
-                        "value": "jawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jawikibooks",
-                        "value": "jawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jawikinews",
-                        "value": "jawikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jawikiquote",
-                        "value": "jawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jawikisource",
-                        "value": "jawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jbowiki",
-                        "value": "jbowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "jvwiki",
-                        "value": "jvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kaawiki",
-                        "value": "kaawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kabwiki",
-                        "value": "kabwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kawiki",
-                        "value": "kawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kawikibooks",
-                        "value": "kawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kawikiquote",
-                        "value": "kawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kbdwiki",
-                        "value": "kbdwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kgwiki",
-                        "value": "kgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kiwiki",
-                        "value": "kiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kjwiki",
-                        "value": "kjwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kkwiki",
-                        "value": "kkwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kkwikibooks",
-                        "value": "kkwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kkwikiquote",
-                        "value": "kkwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "klwiki",
-                        "value": "klwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kmwiki",
-                        "value": "kmwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kmwikibooks",
-                        "value": "kmwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "knwiki",
-                        "value": "knwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "knwikibooks",
-                        "value": "knwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "knwikiquote",
-                        "value": "knwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "knwikisource",
-                        "value": "knwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "koiwiki",
-                        "value": "koiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kowiki",
-                        "value": "kowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kowikibooks",
-                        "value": "kowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kowikinews",
-                        "value": "kowikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kowikiquote",
-                        "value": "kowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kowikisource",
-                        "value": "kowikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "krcwiki",
-                        "value": "krcwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "krwiki",
-                        "value": "krwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "krwikiquote",
-                        "value": "krwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kshwiki",
-                        "value": "kshwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kswiki",
-                        "value": "kswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kswikibooks",
-                        "value": "kswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kswikiquote",
-                        "value": "kswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kuwiki",
-                        "value": "kuwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kuwikibooks",
-                        "value": "kuwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kuwikiquote",
-                        "value": "kuwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kvwiki",
-                        "value": "kvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kwwiki",
-                        "value": "kwwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kwwikiquote",
-                        "value": "kwwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kywiki",
-                        "value": "kywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kywikibooks",
-                        "value": "kywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "kywikiquote",
-                        "value": "kywikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ladwiki",
-                        "value": "ladwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lawiki",
-                        "value": "lawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lawikibooks",
-                        "value": "lawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lawikiquote",
-                        "value": "lawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lawikisource",
-                        "value": "lawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lbewiki",
-                        "value": "lbewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lbwiki",
-                        "value": "lbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lbwikibooks",
-                        "value": "lbwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lbwikiquote",
-                        "value": "lbwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lezwiki",
-                        "value": "lezwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lgwiki",
-                        "value": "lgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lijwiki",
-                        "value": "lijwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "liwiki",
-                        "value": "liwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "liwikibooks",
-                        "value": "liwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "liwikiquote",
-                        "value": "liwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "liwikisource",
-                        "value": "liwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lmowiki",
-                        "value": "lmowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lnwiki",
-                        "value": "lnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lnwikibooks",
-                        "value": "lnwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lowiki",
-                        "value": "lowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lrcwiki",
-                        "value": "lrcwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ltgwiki",
-                        "value": "ltgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ltwiki",
-                        "value": "ltwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ltwikibooks",
-                        "value": "ltwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ltwikiquote",
-                        "value": "ltwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ltwikisource",
-                        "value": "ltwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lvwiki",
-                        "value": "lvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "lvwikibooks",
-                        "value": "lvwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "maiwiki",
-                        "value": "maiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "map_bmswiki",
-                        "value": "map_bmswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mdfwiki",
-                        "value": "mdfwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mediawikiwiki",
-                        "value": "mediawikiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "metawiki",
-                        "value": "metawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mgwiki",
-                        "value": "mgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mgwikibooks",
-                        "value": "mgwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mhrwiki",
-                        "value": "mhrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mhwiki",
-                        "value": "mhwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "minwiki",
-                        "value": "minwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "miwiki",
-                        "value": "miwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "miwikibooks",
-                        "value": "miwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mkwiki",
-                        "value": "mkwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mkwikibooks",
-                        "value": "mkwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mkwikisource",
-                        "value": "mkwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mlwiki",
-                        "value": "mlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mlwikibooks",
-                        "value": "mlwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mlwikiquote",
-                        "value": "mlwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mlwikisource",
-                        "value": "mlwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mnwiki",
-                        "value": "mnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mnwikibooks",
-                        "value": "mnwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mowiki",
-                        "value": "mowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mrjwiki",
-                        "value": "mrjwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mrwiki",
-                        "value": "mrwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mrwikibooks",
-                        "value": "mrwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mrwikiquote",
-                        "value": "mrwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mrwikisource",
-                        "value": "mrwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mswiki",
-                        "value": "mswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mswikibooks",
-                        "value": "mswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mtwiki",
-                        "value": "mtwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "muswiki",
-                        "value": "muswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mwlwiki",
-                        "value": "mwlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "myvwiki",
-                        "value": "myvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mywiki",
-                        "value": "mywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mywikibooks",
-                        "value": "mywikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "mznwiki",
-                        "value": "mznwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nahwiki",
-                        "value": "nahwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nahwikibooks",
-                        "value": "nahwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "napwiki",
-                        "value": "napwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nawiki",
-                        "value": "nawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nawikibooks",
-                        "value": "nawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nawikiquote",
-                        "value": "nawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nds_nlwiki",
-                        "value": "nds_nlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ndswiki",
-                        "value": "ndswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ndswikibooks",
-                        "value": "ndswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ndswikiquote",
-                        "value": "ndswikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "newiki",
-                        "value": "newiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "newikibooks",
-                        "value": "newikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "newwiki",
-                        "value": "newwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ngwiki",
-                        "value": "ngwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwiki",
-                        "value": "nlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwikibooks",
-                        "value": "nlwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwikinews",
-                        "value": "nlwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwikiquote",
-                        "value": "nlwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwikisource",
-                        "value": "nlwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nlwikivoyage",
-                        "value": "nlwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nnwiki",
-                        "value": "nnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nnwikiquote",
-                        "value": "nnwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "novwiki",
-                        "value": "novwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nowiki",
-                        "value": "nowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nowikibooks",
-                        "value": "nowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nowikinews",
-                        "value": "nowikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nowikiquote",
-                        "value": "nowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nowikisource",
-                        "value": "nowikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nrmwiki",
-                        "value": "nrmwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nsowiki",
-                        "value": "nsowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nvwiki",
-                        "value": "nvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "nywiki",
-                        "value": "nywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ocwiki",
-                        "value": "ocwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ocwikibooks",
-                        "value": "ocwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "omwiki",
-                        "value": "omwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "orwiki",
-                        "value": "orwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "orwikisource",
-                        "value": "orwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "oswiki",
-                        "value": "oswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pagwiki",
-                        "value": "pagwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pamwiki",
-                        "value": "pamwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "papwiki",
-                        "value": "papwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pawiki",
-                        "value": "pawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pawikibooks",
-                        "value": "pawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pcdwiki",
-                        "value": "pcdwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pdcwiki",
-                        "value": "pdcwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pflwiki",
-                        "value": "pflwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pihwiki",
-                        "value": "pihwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "piwiki",
-                        "value": "piwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwiki",
-                        "value": "plwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwikibooks",
-                        "value": "plwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwikinews",
-                        "value": "plwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwikiquote",
-                        "value": "plwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwikisource",
-                        "value": "plwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "plwikivoyage",
-                        "value": "plwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pmswiki",
-                        "value": "pmswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pnbwiki",
-                        "value": "pnbwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pntwiki",
-                        "value": "pntwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pswiki",
-                        "value": "pswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "pswikibooks",
-                        "value": "pswikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwiki",
-                        "value": "ptwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwikibooks",
-                        "value": "ptwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwikinews",
-                        "value": "ptwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwikiquote",
-                        "value": "ptwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwikisource",
-                        "value": "ptwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ptwikivoyage",
-                        "value": "ptwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "quwiki",
-                        "value": "quwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "quwikibooks",
-                        "value": "quwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "quwikiquote",
-                        "value": "quwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rmwiki",
-                        "value": "rmwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rmwikibooks",
-                        "value": "rmwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rmywiki",
-                        "value": "rmywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rnwiki",
-                        "value": "rnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "roa_rupwiki",
-                        "value": "roa_rupwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "roa_tarawiki",
-                        "value": "roa_tarawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowiki",
-                        "value": "rowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowikibooks",
-                        "value": "rowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowikinews",
-                        "value": "rowikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowikiquote",
-                        "value": "rowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowikisource",
-                        "value": "rowikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rowikivoyage",
-                        "value": "rowikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruewiki",
-                        "value": "ruewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwiki",
-                        "value": "ruwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwikibooks",
-                        "value": "ruwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwikinews",
-                        "value": "ruwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwikiquote",
-                        "value": "ruwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwikisource",
-                        "value": "ruwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ruwikivoyage",
-                        "value": "ruwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "rwwiki",
-                        "value": "rwwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sahwiki",
-                        "value": "sahwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sahwikisource",
-                        "value": "sahwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sawiki",
-                        "value": "sawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sawikibooks",
-                        "value": "sawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sawikiquote",
-                        "value": "sawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sawikisource",
-                        "value": "sawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "scnwiki",
-                        "value": "scnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "scowiki",
-                        "value": "scowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "scwiki",
-                        "value": "scwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sdwiki",
-                        "value": "sdwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sdwikinews",
-                        "value": "sdwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sewiki",
-                        "value": "sewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sewikibooks",
-                        "value": "sewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sgwiki",
-                        "value": "sgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "shwiki",
-                        "value": "shwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "simplewiki",
-                        "value": "simplewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "simplewikibooks",
-                        "value": "simplewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "simplewikiquote",
-                        "value": "simplewikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "siwiki",
-                        "value": "siwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "siwikibooks",
-                        "value": "siwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "skwiki",
-                        "value": "skwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "skwikibooks",
-                        "value": "skwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "skwikiquote",
-                        "value": "skwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "skwikisource",
-                        "value": "skwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "slwiki",
-                        "value": "slwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "slwikibooks",
-                        "value": "slwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "slwikiquote",
-                        "value": "slwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "slwikisource",
-                        "value": "slwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "smwiki",
-                        "value": "smwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "snwiki",
-                        "value": "snwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sowiki",
-                        "value": "sowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "specieswiki",
-                        "value": "specieswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sqwiki",
-                        "value": "sqwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sqwikibooks",
-                        "value": "sqwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sqwikinews",
-                        "value": "sqwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sqwikiquote",
-                        "value": "sqwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srnwiki",
-                        "value": "srnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srwiki",
-                        "value": "srwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srwikibooks",
-                        "value": "srwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srwikinews",
-                        "value": "srwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srwikiquote",
-                        "value": "srwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "srwikisource",
-                        "value": "srwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "sswiki",
-                        "value": "sswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "stqwiki",
-                        "value": "stqwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "stwiki",
-                        "value": "stwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "suwiki",
-                        "value": "suwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "suwikibooks",
-                        "value": "suwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "suwikiquote",
-                        "value": "suwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwiki",
-                        "value": "svwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwikibooks",
-                        "value": "svwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwikinews",
-                        "value": "svwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwikiquote",
-                        "value": "svwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwikisource",
-                        "value": "svwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "svwikivoyage",
-                        "value": "svwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "swwiki",
-                        "value": "swwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "swwikibooks",
-                        "value": "swwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "szlwiki",
-                        "value": "szlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tawiki",
-                        "value": "tawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tawikibooks",
-                        "value": "tawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tawikinews",
-                        "value": "tawikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tawikiquote",
-                        "value": "tawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tawikisource",
-                        "value": "tawikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "test2wiki",
-                        "value": "test2wiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "testwiki",
-                        "value": "testwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "testwikidatawiki",
-                        "value": "testwikidatawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tetwiki",
-                        "value": "tetwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tewiki",
-                        "value": "tewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tewikibooks",
-                        "value": "tewikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tewikiquote",
-                        "value": "tewikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tewikisource",
-                        "value": "tewikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tgwiki",
-                        "value": "tgwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tgwikibooks",
-                        "value": "tgwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "thwiki",
-                        "value": "thwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "thwikibooks",
-                        "value": "thwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "thwikinews",
-                        "value": "thwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "thwikiquote",
-                        "value": "thwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "thwikisource",
-                        "value": "thwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tiwiki",
-                        "value": "tiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tkwiki",
-                        "value": "tkwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tkwikibooks",
-                        "value": "tkwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tkwikiquote",
-                        "value": "tkwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tlwiki",
-                        "value": "tlwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tlwikibooks",
-                        "value": "tlwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tnwiki",
-                        "value": "tnwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "towiki",
-                        "value": "towiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tpiwiki",
-                        "value": "tpiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "trwiki",
-                        "value": "trwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "trwikibooks",
-                        "value": "trwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "trwikinews",
-                        "value": "trwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "trwikiquote",
-                        "value": "trwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "trwikisource",
-                        "value": "trwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tswiki",
-                        "value": "tswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ttwiki",
-                        "value": "ttwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ttwikibooks",
-                        "value": "ttwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ttwikiquote",
-                        "value": "ttwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tumwiki",
-                        "value": "tumwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "twwiki",
-                        "value": "twwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tyvwiki",
-                        "value": "tyvwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "tywiki",
-                        "value": "tywiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "udmwiki",
-                        "value": "udmwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ugwiki",
-                        "value": "ugwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ugwikibooks",
-                        "value": "ugwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ugwikiquote",
-                        "value": "ugwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwiki",
-                        "value": "ukwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwikibooks",
-                        "value": "ukwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwikinews",
-                        "value": "ukwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwikiquote",
-                        "value": "ukwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwikisource",
-                        "value": "ukwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "ukwikivoyage",
-                        "value": "ukwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "urwiki",
-                        "value": "urwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "urwikibooks",
-                        "value": "urwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "urwikiquote",
-                        "value": "urwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "uzwiki",
-                        "value": "uzwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "uzwikibooks",
-                        "value": "uzwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "uzwikiquote",
-                        "value": "uzwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vecwiki",
-                        "value": "vecwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vecwikisource",
-                        "value": "vecwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vepwiki",
-                        "value": "vepwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vewiki",
-                        "value": "vewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "viwiki",
-                        "value": "viwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "viwikibooks",
-                        "value": "viwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "viwikiquote",
-                        "value": "viwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "viwikisource",
-                        "value": "viwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "viwikivoyage",
-                        "value": "viwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vlswiki",
-                        "value": "vlswiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vowiki",
-                        "value": "vowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vowikibooks",
-                        "value": "vowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "vowikiquote",
-                        "value": "vowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "warwiki",
-                        "value": "warwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wawiki",
-                        "value": "wawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wawikibooks",
-                        "value": "wawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wikidatawiki",
-                        "value": "wikidatawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wowiki",
-                        "value": "wowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wowikiquote",
-                        "value": "wowikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "wuuwiki",
-                        "value": "wuuwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "xalwiki",
-                        "value": "xalwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "xhwiki",
-                        "value": "xhwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "xhwikibooks",
-                        "value": "xhwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "xmfwiki",
-                        "value": "xmfwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "yiwiki",
-                        "value": "yiwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "yiwikisource",
-                        "value": "yiwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "yowiki",
-                        "value": "yowiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "yowikibooks",
-                        "value": "yowikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zawiki",
-                        "value": "zawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zawikibooks",
-                        "value": "zawikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zawikiquote",
-                        "value": "zawikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zeawiki",
-                        "value": "zeawiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_classicalwiki",
-                        "value": "zh_classicalwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_min_nanwiki",
-                        "value": "zh_min_nanwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_min_nanwikibooks",
-                        "value": "zh_min_nanwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_min_nanwikiquote",
-                        "value": "zh_min_nanwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_min_nanwikisource",
-                        "value": "zh_min_nanwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zh_yuewiki",
-                        "value": "zh_yuewiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwiki",
-                        "value": "zhwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwikibooks",
-                        "value": "zhwikibooks"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwikinews",
-                        "value": "zhwikinews"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwikiquote",
-                        "value": "zhwikiquote"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwikisource",
-                        "value": "zhwikisource"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zhwikivoyage",
-                        "value": "zhwikivoyage"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zuwiki",
-                        "value": "zuwiki"
-                    },
-                    {
-                        "selected": false,
-                        "text": "zuwikibooks",
-                        "value": "zuwikibooks"
-                    }
-                ],
+                "options": [],
                 "query": "daily.wikidata.entity_usage.*",
-                "refresh": true,
+                "refresh": 1,
+                "regex": "",
+                "sort": 0,
                 "tagValuesQuery": "",
+                "tags": [],
                 "tagsQuery": "",
                 "type": "query",
                 "useTags": false
@@ -4859,5 +1848,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage Project",
-    "version": 7
+    "version": 8
 }

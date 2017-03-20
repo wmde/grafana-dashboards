@@ -4,6 +4,7 @@
     },
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": false,
     "id": 168,
     "links": [
@@ -24,7 +25,7 @@
             "height": "25px",
             "panels": [
                 {
-                    "content": "The usage of languages in Terms on Wikidata, extracted from the wb_terms SQL table.",
+                    "content": "The usage of languages in Terms on Wikidata, extracted from the wb_terms SQL table.\n\nBroken per [https:\/\/phabricator.wikimedia.org\/T154601](https:\/\/phabricator.wikimedia.org\/T154601)",
                     "editable": true,
                     "error": false,
                     "id": 7,
@@ -498,8 +499,7 @@
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "wikidata",
@@ -2600,8 +2600,10 @@
                 "regex": "",
                 "sort": 0,
                 "tagValuesQuery": null,
+                "tags": [],
                 "tagsQuery": null,
-                "type": "query"
+                "type": "query",
+                "useTags": false
             }
         ]
     },
@@ -2637,5 +2639,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Datamodel Terms",
-    "version": 11
+    "version": 12
 }
