@@ -27,6 +27,7 @@
                     "aliasColors": [],
                     "bars": false,
                     "datasource": null,
+                    "description": "Maximum execution time spent per constraint check.",
                     "fill": 1,
                     "id": 3,
                     "legend": {
@@ -76,7 +77,7 @@
                     },
                     "yaxes": [
                         {
-                            "format": "dtdurationms",
+                            "format": "ms",
                             "label": "",
                             "logBase": 1,
                             "max": null,
@@ -421,5 +422,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Quality",
-    "version": 28
+    "version": 29
 }

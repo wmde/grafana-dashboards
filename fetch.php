@@ -45,6 +45,7 @@ $dashboards = array(
 	'mediawiki-electronpdfservice',
 	'mediawiki-watcheditemstore',
 	'mediawiki-revisionslider',
+	'mediawiki-twocolconflict',
 	// Misc?
 	'betafeatures',
 );

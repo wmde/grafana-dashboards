@@ -5,6 +5,7 @@
     "description": "",
     "editable": true,
     "gnetId": null,
+    "graphTooltip": 0,
     "hideControls": true,
     "id": 269,
     "links": [],
@@ -190,12 +191,12 @@
             "titleSize": "h6"
         }
     ],
-    "schemaVersion": 13,
-    "sharedCrosshair": false,
+    "schemaVersion": 14,
     "style": "dark",
     "tags": [
         "services",
-        "reading-infrastructure"
+        "reading-infrastructure",
+        "team-tcb"
     ],
     "templating": {
         "list": []
@@ -231,5 +232,5 @@
     },
     "timezone": "utc",
     "title": "collection_use",
-    "version": 9
+    "version": 10
 }
