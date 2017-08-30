@@ -33,7 +33,7 @@
             "height": "25px",
             "panels": [
                 {
-                    "content": "Shows various basic stats about Wikidata. Many of these are taken directly from Mediawiki.\n\n - **Active Users** - The number of users than have made more than 1, 5 or 100 edits in the past 30 days.\n - **Babel users** - The number of users that have a Babel box on their user page.\n - **Active user languages** - This shows the languages used by the active users and thus represents the general coverage of languages on Wikidata.",
+                    "content": "Shows various basic stats about Wikidata. Many of these are taken directly from Mediawiki.\n\n - **Active Users** - The number of users that have made more than 1, 5 or 100 edits in the past 30 days.\n - **Babel users** - The number of users that have a Babel box on their user page.\n - **Active user languages** - This shows the languages used by the active users and thus represents the general coverage of languages on Wikidata.",
                     "editable": true,
                     "error": false,
                     "id": 17,
