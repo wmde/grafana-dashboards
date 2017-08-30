@@ -1,24 +1,12 @@
 {
     "annotations": {
-        "list": [
-            {
-                "datasource": "graphite",
-                "enable": false,
-                "iconColor": "#C0C6BE",
-                "iconSize": 13,
-                "lineColor": "rgba(255, 96, 96, 0.592157)",
-                "name": "Deployments",
-                "showLine": true,
-                "target": "exclude(aliasByNode(deploy.*.count,-2),\"all\")"
-            }
-        ]
+        "list": []
     },
-    "editMode": false,
     "editable": true,
     "gnetId": null,
-    "graphTooltip": 1,
+    "graphTooltip": 0,
     "hideControls": false,
-    "id": 170,
+    "id": 227,
     "links": [
         {
             "asDropdown": true,
@@ -32,41 +20,17 @@
         {
             "icon": "bolt",
             "tags": [],
-            "title": "Generating script",
+            "title": "Generating code",
             "tooltip": "Open source",
             "type": "link",
-            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/ADES\/browse\/master\/src\/wikidata\/recentChanges.php"
+            "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/EWBA\/browse\/master\/client\/includes\/Changes\/WikiPageUpdater.php"
         }
     ],
-    "refresh": "1m",
+    "refresh": false,
     "rows": [
         {
             "collapse": false,
-            "height": "50px",
-            "panels": [
-                {
-                    "content": "<p>Shows live information about current edits happening on Wikidata. This information is taken from the RecentChanges for Wikidata via the API.<\/p>",
-                    "editable": true,
-                    "error": false,
-                    "id": 8,
-                    "links": [],
-                    "mode": "html",
-                    "span": 12,
-                    "style": [],
-                    "title": "Description",
-                    "type": "text"
-                }
-            ],
-            "repeat": null,
-            "repeatIteration": null,
-            "repeatRowId": null,
-            "showTitle": false,
-            "title": "Description",
-            "titleSize": "h6"
-        },
-        {
-            "collapse": false,
-            "height": "250px",
+            "height": 258,
             "panels": [
                 {
                     "aliasColors": [],
@@ -74,11 +38,12 @@
                     "dashLength": 10,
                     "dashes": false,
                     "datasource": null,
+                    "description": "Calls to WikiPageUpdater methods.\n\nUsed to monitor the amount of cache purges Wikibase does.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
                     "grid": [],
-                    "id": 6,
+                    "id": 2,
                     "legend": {
                         "avg": false,
                         "current": false,
@@ -91,29 +56,27 @@
                     "lines": true,
                     "linewidth": 2,
                     "links": [],
-                    "nullPointMode": "null",
+                    "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
                     "spaceLength": 10,
-                    "span": 12,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot}), 3)",
-                            "textEditor": false
+                            "target": "aliasByNode(scale(MediaWiki.wikibase.client.pageupdates.*.titles.rate, 60), 4)"
                         }
                     ],
                     "thresholds": [],
-                    "timeFrom": "7d",
+                    "timeFrom": null,
                     "timeShift": null,
-                    "title": "Edits",
+                    "title": "PageUpdater titles\/minute",
                     "tooltip": {
-                        "msResolution": false,
                         "shared": true,
                         "sort": 0,
                         "value_type": "cumulative"
@@ -131,7 +94,7 @@
                             "format": "short",
                             "logBase": 1,
                             "max": null,
-                            "min": 0,
+                            "min": null,
                             "show": true
                         },
                         {
@@ -142,18 +105,90 @@
                             "show": true
                         }
                     ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 3,
+                    "legend": {
+                        "avg": true,
+                        "current": true,
+                        "max": true,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(scale(sumSeries(jobrunner.pop.ChangeNotification.ok.*.rate), 60), 'Jobs\/minute')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "ChangeNotification job pop \/ minute",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": false
+                        }
+                    ]
                 }
             ],
             "repeat": null,
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": false,
-            "title": "New row",
+            "title": "Dashboard Row",
             "titleSize": "h6"
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 262,
             "panels": [
                 {
                     "aliasColors": [],
@@ -161,6 +196,7 @@
                     "dashLength": 10,
                     "dashes": false,
                     "datasource": null,
+                    "description": "Calls to WikiPageUpdater methods.\n\nUsed to monitor the amount of cache purges Wikibase does.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
@@ -178,7 +214,7 @@
                     "lines": true,
                     "linewidth": 2,
                     "links": [],
-                    "nullPointMode": "null",
+                    "nullPointMode": "connected",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
@@ -191,16 +227,14 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.{total,bot,anon}), 3)",
-                            "textEditor": false
+                            "target": "aliasByNode(scale(MediaWiki.wikibase.client.pageupdates.*.jobs.rate, 60), 4)"
                         }
                     ],
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Edits",
+                    "title": "PageUpdater jobs\/minute",
                     "tooltip": {
-                        "msResolution": false,
                         "shared": true,
                         "sort": 0,
                         "value_type": "cumulative"
@@ -218,177 +252,7 @@
                             "format": "short",
                             "logBase": 1,
                             "max": null,
-                            "min": 0,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "logBase": 1,
-                            "max": null,
                             "min": null,
-                            "show": true
-                        }
-                    ]
-                },
-                {
-                    "aliasColors": {
-                        "Size change": "#D683CE"
-                    },
-                    "bars": false,
-                    "dashLength": 10,
-                    "dashes": false,
-                    "datasource": null,
-                    "description": "Sum of the change of bytes per minute.\n\nEssentially shows the amount of data being added \/ removed from Wikibase.",
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": [],
-                    "id": 3,
-                    "legend": {
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [],
-                    "nullPointMode": "null as zero",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "spaceLength": 10,
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "alias(wikidata.rc.edits.length, 'Size change')"
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Size change",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "xaxis": {
-                        "buckets": null,
-                        "mode": "time",
-                        "name": null,
-                        "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "bytes",
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        }
-                    ]
-                }
-            ],
-            "repeat": null,
-            "repeatIteration": null,
-            "repeatRowId": null,
-            "showTitle": false,
-            "title": "Row",
-            "titleSize": "h6"
-        },
-        {
-            "collapse": false,
-            "height": "250px",
-            "panels": [
-                {
-                    "aliasColors": {
-                        "Kasper11": "#9AC48A",
-                        "Widar13": "#962D82",
-                        "reCh10": "#614D93"
-                    },
-                    "bars": false,
-                    "dashLength": 10,
-                    "dashes": false,
-                    "datasource": null,
-                    "description": "Edits made through OAuth clients.\n\nIf a number appears instead of an OAuth name the client is new and needs to be added to the metric query.",
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": [],
-                    "id": 2,
-                    "legend": {
-                        "alignAsTable": false,
-                        "avg": false,
-                        "current": false,
-                        "hideEmpty": true,
-                        "max": false,
-                        "min": false,
-                        "show": true,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [],
-                    "nullPointMode": "null",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "spaceLength": 10,
-                    "span": 6,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(aliasSub(aliasSub(aliasSub(sortByMaxima(aliasSub(aliasSub(aliasSub(aliasSub(aliasSub(aliasSub(aliasSub(wikidata.rc.edits.oauth.*, '378', 'Widar14'), '336', 'Kasper11'), '168', 'reCh10'), '619', 'wikishootme'), '408', 'reCh11'), '429', 'PAWS'), '93', 'Widar13')), '484', 'WidarDevFork2'), '843', 'fatmeh'), '699', 'QuickStatements'), 4)"
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Oauth",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "xaxis": {
-                        "buckets": null,
-                        "mode": "time",
-                        "name": null,
-                        "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "short",
-                            "logBase": 1,
-                            "max": null,
-                            "min": 0,
                             "show": true
                         },
                         {
@@ -406,27 +270,20 @@
                     "dashLength": 10,
                     "dashes": false,
                     "datasource": null,
-                    "description": "Number of edits split by type. This is based on the automatic summaries generated by Wikibase.",
-                    "editable": true,
-                    "error": false,
+                    "decimals": null,
                     "fill": 1,
-                    "grid": [],
-                    "height": "",
-                    "id": 4,
+                    "id": 6,
                     "legend": {
-                        "alignAsTable": false,
                         "avg": false,
                         "current": false,
-                        "hideEmpty": true,
                         "max": false,
                         "min": false,
-                        "rightSide": false,
                         "show": true,
                         "total": false,
                         "values": false
                     },
                     "lines": true,
-                    "linewidth": 2,
+                    "linewidth": 1,
                     "links": [],
                     "nullPointMode": "null",
                     "percentage": false,
@@ -441,18 +298,21 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(wikidata.rc.edits.summary.*), 4)"
+                            "target": "alias(MediaWiki.jobqueue.run.ChangeNotification.median, 'median')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(MediaWiki.jobqueue.run.ChangeNotification.upper, 'max')"
                         }
                     ],
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Edit type",
+                    "title": "ChangeNotification run time",
                     "tooltip": {
-                        "msResolution": false,
                         "shared": true,
                         "sort": 0,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
@@ -464,14 +324,16 @@
                     },
                     "yaxes": [
                         {
-                            "format": "short",
+                            "format": "ms",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
-                            "min": 0,
+                            "min": null,
                             "show": true
                         },
                         {
                             "format": "short",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -484,64 +346,137 @@
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": false,
-            "title": "New row",
+            "title": "Row",
             "titleSize": "h6"
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 250,
             "panels": [
                 {
-                    "aliasColors": {
-                        "recent changes": "#1F78C1"
-                    },
+                    "aliasColors": [],
                     "bars": false,
                     "dashLength": 10,
                     "dashes": false,
                     "datasource": null,
-                    "description": "Shows the number of edits for the previous 30 days on a given day.",
-                    "editable": true,
-                    "error": false,
                     "fill": 1,
-                    "grid": [],
-                    "id": 7,
+                    "id": 5,
                     "legend": {
-                        "avg": true,
-                        "current": true,
-                        "max": true,
-                        "min": true,
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": true,
+                        "hideZero": true,
+                        "max": false,
+                        "min": false,
                         "show": true,
                         "total": false,
-                        "values": true
+                        "values": false
                     },
-                    "lines": false,
-                    "linewidth": 2,
+                    "lines": true,
+                    "linewidth": 1,
                     "links": [],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
-                    "points": true,
+                    "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
                     "spaceLength": 10,
-                    "span": 12,
+                    "span": 6,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "scale(jobrunner.pop.ChangeNotification.failed.*.rate, 60)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "ChangeNotification job failures",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "decimals": null,
+                    "fill": 1,
+                    "id": 4,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(daily.wikidata.site_stats.rc.rolling30d, 'recent changes')"
+                            "target": "alias(MediaWiki.jobqueue.pickup_delay.ChangeNotification.median, 'median')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(MediaWiki.jobqueue.pickup_delay.ChangeNotification.upper, 'max')"
                         }
                     ],
                     "thresholds": [],
-                    "timeFrom": "24w",
+                    "timeFrom": null,
                     "timeShift": null,
-                    "title": "Rolling 30day RC count",
+                    "title": "ChangeNotification pickup delay",
                     "tooltip": {
-                        "msResolution": false,
                         "shared": true,
                         "sort": 0,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
@@ -553,7 +488,8 @@
                     },
                     "yaxes": [
                         {
-                            "format": "short",
+                            "format": "ms",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -561,6 +497,7 @@
                         },
                         {
                             "format": "short",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -573,21 +510,22 @@
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": false,
-            "title": "New row",
+            "title": "Dashboard Row",
             "titleSize": "h6"
         }
     ],
     "schemaVersion": 14,
     "style": "dark",
     "tags": [
+        "live",
         "wikidata",
-        "live"
+        "wikibase"
     ],
     "templating": {
         "list": []
     },
     "time": {
-        "from": "now-12h",
+        "from": "now-7d",
         "to": "now"
     },
     "timepicker": {
@@ -617,6 +555,6 @@
         ]
     },
     "timezone": "browser",
-    "title": "Wikidata Edits",
-    "version": 29
+    "title": "WikidataClient change handling (WikiPageUpdater)",
+    "version": 14
 }

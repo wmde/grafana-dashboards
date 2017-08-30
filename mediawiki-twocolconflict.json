@@ -2,6 +2,7 @@
     "annotations": {
         "list": []
     },
+    "editMode": false,
     "editable": true,
     "gnetId": null,
     "graphTooltip": 0,
@@ -11,22 +12,812 @@
     "rows": [
         {
             "collapse": false,
-            "height": "250px",
+            "height": 83,
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "How many people saw the TwoColConflict page (in total).",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "hideTimeOverride": false,
+                    "id": 3,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.sum, '1d', 'sum', false)"
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "TwoColConflict page views",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(0, 0, 255, 0.9)",
+                        "rgba(70, 153, 234, 0.89)",
+                        "rgba(0, 255, 20, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "This will include the conflicts that result in the TwoColConflict page being shown.",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 4,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.sum, '1d', 'sum', false)",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "Total Edit Resolution Page Views",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgb(255, 0, 0)",
+                        "rgb(255, 0, 0)",
+                        "rgb(255, 0, 67)"
+                    ],
+                    "datasource": null,
+                    "description": "Number of TwoColConflict BetaFeature users that have disabled the feature in the last day.",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 5,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "keepLastValue(daily.betafeatures.global_disables.totals.twocolconflict, 100)"
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "BF Disables",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 43,
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.88)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "How many people clicked on \"Publish\" on the TwoColConflict page (in total).",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 6,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.resolved.sum, '1d', 'sum', false)"
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "Conflicts resolved w. TwoColConflict",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(49, 198, 236, 0.9)",
+                        "rgba(70, 153, 234, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "All successful saves after resolving an edit conflict (including the two column conflict ones).",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 9,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.resolved.sum, '1d', 'sum', false)",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "Total Conflicts Resolved",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 40, 40, 0.89)",
+                        "rgba(255, 0, 0, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "Global enables",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 11,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "keepLastValue(daily.betafeatures.global_enables.totals.twocolconflict, 100)"
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "BF Enables",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 32,
+            "panels": [
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 129, 40, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 2,
+                    "description": "Percentage of people who clicked on \"publish\" on the two col conflict page, averaged out for the time period of 1 day.",
+                    "format": "percentunit",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "hideTimeOverride": false,
+                    "id": 7,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.sum, '1d', 'sum', false)",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.resolved.sum, '1d', 'sum', false)"
+                        },
+                        {
+                            "hide": false,
+                            "refId": "C",
+                            "target": "divideSeries(#B, #A)",
+                            "targetFull": "divideSeries(summarize(MediaWiki.TwoColConflict.conflict.resolved.sum, '1d', 'sum', false), summarize(MediaWiki.TwoColConflict.conflict.sum, '1d', 'sum', false))",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "timeShift": null,
+                    "title": "Percent Resolved w. TwoColConflict",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(49, 198, 236, 0.9)",
+                        "rgba(70, 153, 234, 0.89)",
+                        "rgba(50, 172, 45, 0.97)"
+                    ],
+                    "datasource": null,
+                    "decimals": 2,
+                    "description": "Percent of total conflicts resolved, averaged out for the time period of 1 day.",
+                    "format": "percentunit",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "hideTimeOverride": false,
+                    "id": 10,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "bucketAggs": [
+                                {
+                                    "field": "@timestamp",
+                                    "id": "2",
+                                    "settings": {
+                                        "interval": "auto",
+                                        "min_doc_count": 0,
+                                        "trimEdges": 0
+                                    },
+                                    "type": "date_histogram"
+                                }
+                            ],
+                            "dsType": "elasticsearch",
+                            "hide": true,
+                            "metrics": [
+                                {
+                                    "field": "select field",
+                                    "id": "1",
+                                    "type": "count"
+                                }
+                            ],
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.sum, '1d', 'sum', false)",
+                            "timeField": "@timestamp"
+                        },
+                        {
+                            "bucketAggs": [
+                                {
+                                    "field": "@timestamp",
+                                    "id": "2",
+                                    "settings": {
+                                        "interval": "auto",
+                                        "min_doc_count": 0,
+                                        "trimEdges": 0
+                                    },
+                                    "type": "date_histogram"
+                                }
+                            ],
+                            "dsType": "elasticsearch",
+                            "hide": true,
+                            "metrics": [
+                                {
+                                    "field": "select field",
+                                    "id": "1",
+                                    "type": "count"
+                                }
+                            ],
+                            "refId": "B",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.resolved.sum, '1d', 'sum', false)",
+                            "timeField": "@timestamp"
+                        },
+                        {
+                            "hide": false,
+                            "refId": "C",
+                            "target": "divideSeries(#B, #A)",
+                            "targetFull": "divideSeries(summarize(MediaWiki.edit.failures.conflict.resolved.sum, '1d', 'sum', false), summarize(MediaWiki.edit.failures.conflict.sum, '1d', 'sum', false))",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "Percent Conflicts Resolved",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "avg"
+                },
+                {
+                    "cacheTimeout": null,
+                    "colorBackground": true,
+                    "colorValue": false,
+                    "colors": [
+                        "rgba(245, 54, 54, 0.9)",
+                        "rgba(237, 40, 40, 0.89)",
+                        "rgba(255, 0, 0, 0.97)"
+                    ],
+                    "datasource": null,
+                    "description": "Global users",
+                    "format": "none",
+                    "gauge": {
+                        "maxValue": 100,
+                        "minValue": 0,
+                        "show": false,
+                        "thresholdLabels": false,
+                        "thresholdMarkers": true
+                    },
+                    "id": 12,
+                    "interval": null,
+                    "links": [],
+                    "mappingType": 1,
+                    "mappingTypes": [
+                        {
+                            "name": "value to text",
+                            "value": 1
+                        },
+                        {
+                            "name": "range to text",
+                            "value": 2
+                        }
+                    ],
+                    "maxDataPoints": 100,
+                    "nullPointMode": "connected",
+                    "nullText": null,
+                    "postfix": "",
+                    "postfixFontSize": "50%",
+                    "prefix": "",
+                    "prefixFontSize": "50%",
+                    "rangeMaps": [
+                        {
+                            "from": "null",
+                            "text": "N\/A",
+                            "to": "null"
+                        }
+                    ],
+                    "span": 4,
+                    "sparkline": {
+                        "fillColor": "rgba(31, 118, 189, 0.18)",
+                        "full": false,
+                        "lineColor": "rgb(31, 120, 193)",
+                        "show": false
+                    },
+                    "tableColumn": "",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "keepLastValue(daily.betafeatures.global_user_counts.totals.twocolconflict, 100)"
+                        }
+                    ],
+                    "thresholds": "",
+                    "timeFrom": "1d",
+                    "title": "BF Users",
+                    "type": "singlestat",
+                    "valueFontSize": "80%",
+                    "valueMaps": [
+                        {
+                            "op": "=",
+                            "text": "N\/A",
+                            "value": "null"
+                        }
+                    ],
+                    "valueName": "current"
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 199,
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "fill": 1,
                     "id": 1,
                     "legend": {
-                        "avg": false,
+                        "avg": true,
                         "current": false,
                         "max": false,
                         "min": false,
                         "show": true,
-                        "total": false,
-                        "values": false
+                        "total": true,
+                        "values": true
                     },
                     "lines": true,
                     "linewidth": 1,
@@ -37,7 +828,8 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 12,
+                    "spaceLength": 10,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
@@ -57,6 +849,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -68,6 +861,297 @@
                             "label": null,
                             "logBase": 1,
                             "max": null,
+                            "min": "0",
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 13,
+                    "legend": {
+                        "avg": true,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(MediaWiki.TwoColConflict.conflict.resolved.sum, 'conflicts')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "TwoColConflict resolved conflicts",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": "0",
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "global_disables": "#E24D42",
+                        "global_enables": "#508642",
+                        "global_user_counts": "#BA43A9",
+                        "user_counts": "#E5A8E2"
+                    },
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "description": "###### Users\n  - user_counts - The number of individual users that have enabled the beta feature. (If 1 user enabled the feature on 2 wikis they will be counted twice)\n  - global_user_counts - The number of global users that have enabled the beta feature (If 1 user enabled the feature on 2 wikis they will be counted once)\n  - global_disables - The number of global users that were using the feature yesterday, but have disabled it today.\n  - global_enables - The number of global users that were not using the feature yesterday, but have enabled it today.",
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
+                    "id": 2,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 2,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [
+                        {
+                            "alias": "global_enables",
+                            "yaxis": 2
+                        },
+                        {
+                            "alias": "global_disables",
+                            "yaxis": 2
+                        }
+                    ],
+                    "spaceLength": 10,
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(daily.betafeatures.user_counts.totals.twocolconflict, 2)"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(daily.betafeatures.global_user_counts.totals.twocolconflict, 2)"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "aliasByNode(daily.betafeatures.global_enables.totals.twocolconflict, 2)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "D",
+                            "target": "aliasByNode(daily.betafeatures.global_disables.totals.twocolconflict, 2)",
+                            "textEditor": false
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Beta Feature Users",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": 0,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 250,
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 14,
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": true,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 12,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": true,
+                            "refId": "A",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.sum, '1d', 'sum', false)",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "B",
+                            "target": "summarize(MediaWiki.TwoColConflict.conflict.resolved.sum, '1d', 'sum', false)",
+                            "textEditor": false
+                        },
+                        {
+                            "hide": true,
+                            "refId": "C",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.sum, '1d', 'sum', false)"
+                        },
+                        {
+                            "hide": true,
+                            "refId": "D",
+                            "target": "summarize(MediaWiki.edit.failures.conflict.resolved.sum, '1d', 'sum', false)"
+                        },
+                        {
+                            "refId": "E",
+                            "target": "alias(divideSeries(#B, #A), 'TwoColConflict Resolve %')",
+                            "targetFull": "alias(divideSeries(summarize(MediaWiki.TwoColConflict.conflict.resolved.sum, '1d', 'sum', false), summarize(MediaWiki.TwoColConflict.conflict.sum, '1d', 'sum', false)), 'TwoColConflict Resolve %')"
+                        },
+                        {
+                            "refId": "F",
+                            "target": "alias(divideSeries(#C, #D), 'Total Resolve %')",
+                            "targetFull": "alias(divideSeries(summarize(MediaWiki.edit.failures.conflict.sum, '1d', 'sum', false), summarize(MediaWiki.edit.failures.conflict.resolved.sum, '1d', 'sum', false)), 'Total Resolve %')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Resolved %'s over time",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "percentunit",
+                            "label": null,
+                            "logBase": 1,
+                            "max": "1",
                             "min": "0",
                             "show": true
                         },
@@ -100,7 +1184,7 @@
         "list": []
     },
     "time": {
-        "from": "now-7d",
+        "from": "now-30d",
         "to": "now"
     },
     "timepicker": {
@@ -130,5 +1214,5 @@
     },
     "timezone": "utc",
     "title": "Mediawiki TwoColConflict",
-    "version": 0
+    "version": 158
 }

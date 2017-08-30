@@ -82,6 +82,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Stacked usage of key TCB developed features.",
                     "editable": true,
@@ -107,6 +109,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 12,
                     "stack": true,
                     "steppedLine": false,
@@ -145,6 +148,7 @@
                     "transparent": false,
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -181,7 +185,6 @@
     "schemaVersion": 14,
     "style": "dark",
     "tags": [
-        "wikidata",
         "featured"
     ],
     "templating": {
@@ -210,5 +213,5 @@
     },
     "timezone": "browser",
     "title": "Team TCB",
-    "version": 6
+    "version": 7
 }

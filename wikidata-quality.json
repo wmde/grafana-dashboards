@@ -5,7 +5,7 @@
     "description": "",
     "editable": true,
     "gnetId": null,
-    "graphTooltip": 0,
+    "graphTooltip": 1,
     "hideControls": false,
     "id": 344,
     "links": [
@@ -18,24 +18,30 @@
             "url": "https:\/\/phabricator.wikimedia.org\/diffusion\/EBQC\/browse\/master\/includes\/ConstraintCheck\/DelegatingConstraintChecker.php"
         }
     ],
+    "refresh": false,
     "rows": [
         {
             "collapse": false,
-            "height": 376,
+            "height": 349,
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Maximum execution time spent per constraint check.",
                     "fill": 1,
                     "id": 3,
                     "legend": {
-                        "alignAsTable": false,
+                        "alignAsTable": true,
                         "avg": false,
                         "current": false,
+                        "hideEmpty": false,
+                        "hideZero": true,
                         "max": false,
                         "min": false,
+                        "rightSide": true,
                         "show": true,
                         "total": false,
                         "values": false
@@ -43,20 +49,20 @@
                     "lines": true,
                     "linewidth": 1,
                     "links": [],
-                    "nullPointMode": "connected",
+                    "nullPointMode": "null as zero",
                     "percentage": false,
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
-                            "refId": "A",
-                            "target": "aliasByNode(aliasSub(MediaWiki.wikibase.quality.constraints.check.*.sum, 'timing', ''), 5)",
-                            "textEditor": true
+                            "refId": "B",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.check.timing.*.sum, 6)"
                         }
                     ],
                     "thresholds": [],
@@ -65,11 +71,12 @@
                     "title": "Constraint Check Upper Runtime",
                     "tooltip": {
                         "shared": true,
-                        "sort": 0,
+                        "sort": 2,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -104,7 +111,364 @@
         },
         {
             "collapse": false,
-            "height": 489,
+            "height": 250,
+            "panels": [
+                {
+                    "aliasColors": {
+                        "cache hits": "#3F2B5B",
+                        "count": "#6ED0E0",
+                        "mean": "#BA43A9"
+                    },
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "description": "SPARQL executions and timings in ms.",
+                    "fill": 1,
+                    "id": 8,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideZero": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.sparql.timing.*, 6)"
+                        },
+                        {
+                            "refId": "A",
+                            "target": "alias(MediaWiki.wikibase.quality.constraints.sparql.error.count, 'errors')"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(MediaWiki.wikibase.quality.constraints.sparql.cached.count, 'cache hits')"
+                        },
+                        {
+                            "refId": "D",
+                            "target": "alias(MediaWiki.wikibase.quality.constraints.sparql.typeFallback.count, 'type fallback')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Constraint Check  SPARQL executions",
+                    "tooltip": {
+                        "shared": false,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": [
+                            "total"
+                        ]
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "label": "",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "none",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": {
+                        "cache hits": "#3F2B5B",
+                        "count": "#6ED0E0",
+                        "mean": "#BA43A9"
+                    },
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "description": "HTTP codes returned from Wikidata Query in case of an error",
+                    "fill": 1,
+                    "id": 9,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideZero": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "connected",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 6,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.sparql.error.http.*.count, 7)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "SPARQL Error HTTP Codes",
+                    "tooltip": {
+                        "shared": false,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": [
+                            "total"
+                        ]
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "label": "",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "none",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 491,
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "description": "Shows the total hits of API and Special Pages",
+                    "fill": 1,
+                    "id": 6,
+                    "legend": {
+                        "alignAsTable": false,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": false,
+                        "hideZero": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 5,
+                    "stack": false,
+                    "steppedLine": true,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "alias(MediaWiki.wikibase.quality.constraints.api.checkConstraints.execute.count, 'API wbcheckconstraints')"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(MediaWiki.wikibase.quality.constraints.specials.specialConstraintReport.executeCheck.count, 'Special:ConstraintReport')"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "API and Special Pages",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "Hits",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "description": "",
+                    "fill": 1,
+                    "id": 7,
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "hideZero": true,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 7,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.check.timing.*.count, 6)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Constraint Check Executions",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "Executions",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 603,
             "panels": [
                 {
                     "aliasColors": [],
@@ -124,22 +488,36 @@
                     "maxDataPoints": 3,
                     "nullPointMode": "connected",
                     "pieType": "pie",
-                    "span": 6,
+                    "span": 12,
                     "strokeWidth": 1,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(aliasSub(MediaWiki.wikibase.quality.constraints.check.*.sum, 'timing', ''), 5)",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.check.timing.Q*_*.sum, 6)",
                             "textEditor": false
                         }
                     ],
                     "title": "Constraint Check Mean Runtime",
                     "type": "grafana-piechart-panel",
                     "valueName": "avg"
-                },
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 402,
+            "panels": [
                 {
                     "aliasColors": [],
                     "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "fill": 1,
                     "id": 1,
@@ -152,7 +530,7 @@
                         "max": false,
                         "min": false,
                         "rightSide": true,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -165,13 +543,14 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
+                    "spaceLength": 10,
+                    "span": 12,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasSub(aliasByNode(sortByMaxima(MediaWiki.wikibase.quality.constraints.check.*.sum), 5), 'timing', '')",
+                            "target": "aliasByNode(sortByMaxima(MediaWiki.wikibase.quality.constraints.check.timing.Q*_*.sum), 6)",
                             "textEditor": false
                         }
                     ],
@@ -187,9 +566,10 @@
                     "transparent": false,
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "series",
                         "name": null,
-                        "show": true,
+                        "show": false,
                         "values": [
                             "avg"
                         ]
@@ -228,6 +608,8 @@
                 {
                     "aliasColors": [],
                     "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "fill": 1,
                     "id": 4,
@@ -238,7 +620,7 @@
                         "max": false,
                         "min": false,
                         "rightSide": true,
-                        "show": false,
+                        "show": true,
                         "total": false,
                         "values": false
                     },
@@ -251,13 +633,14 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasSub(aliasByNode(sortByMaxima(MediaWiki.wikibase.quality.constraints.check.*.count), 5), 'timing', '')",
+                            "target": "aliasByNode(sortByMaxima(MediaWiki.wikibase.quality.constraints.check.timing.Q*_*.count), 6)",
                             "textEditor": false
                         }
                     ],
@@ -272,9 +655,10 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "series",
                         "name": null,
-                        "show": true,
+                        "show": false,
                         "values": [
                             "avg"
                         ]
@@ -308,7 +692,7 @@
         },
         {
             "collapse": false,
-            "height": 515,
+            "height": 473,
             "panels": [
                 {
                     "columns": [
@@ -329,6 +713,7 @@
                             "value": "count"
                         }
                     ],
+                    "filterNull": false,
                     "fontSize": "100%",
                     "id": 5,
                     "links": [],
@@ -365,7 +750,7 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasSub(aliasByNode(MediaWiki.wikibase.quality.constraints.check.*.sum, 5), 'timing', '')",
+                            "target": "aliasByNode(MediaWiki.wikibase.quality.constraints.check.timing.Q*_*.sum, 6)",
                             "textEditor": false
                         }
                     ],
@@ -392,8 +777,8 @@
         "list": []
     },
     "time": {
-        "from": "now-12h",
-        "to": "now"
+        "from": "now\/d",
+        "to": "now\/d"
     },
     "timepicker": {
         "refresh_intervals": [
@@ -422,5 +807,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Quality",
-    "version": 29
+    "version": 51
 }

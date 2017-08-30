@@ -10,7 +10,6 @@ $dashboards = array(
 	'wikidata',
 	'wikidata-api',
 	'wikibase-api-error-rate',
-	'wikidata-api-wbsetclaim',
 	'wikibase-api-wbgetentities',
 	'wikidata-ci',
 	'wikidata-datamodel',
@@ -34,7 +33,7 @@ $dashboards = array(
 	'wikidata-tasks',
 	'wikidata-top-page-views',
 	'wikidata-webpagetest',
-	'wikipageupdater-calls',
+	'wikidataclient-change-handling-wikipageupdater',
 	// TCB related
 	'team-tcb',
 	'collection_use',

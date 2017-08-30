@@ -2,6 +2,7 @@
     "annotations": {
         "list": []
     },
+    "editMode": false,
     "editable": true,
     "gnetId": null,
     "graphTooltip": 0,
@@ -40,7 +41,7 @@
             "height": "25px",
             "panels": [
                 {
-                    "content": "Data about the usage of entities on client wikis. This data is taken from the SQL database.\n\n - **Total Entity Usage Flags** - Total number of flags for usage that are recorded in the database. (note: a single page can have multiple flags, and a single usage can cause multiple flags)\n - **Total Entity Usage Pages** - The number of distinct pages that have at least 1 entity usage flag recorded for them. This is a fairly accurate representation of the number of Wikimedia pages using or potentially using data from Wikidata.",
+                    "content": "Data about the usage of entities on client wikis. This data is taken from the SQL database.\n\n - **Total Entity Usage Flags** - Total number of flags for usage that are recorded in the database. (note: a single page can have multiple flags, and a single usage can cause multiple flags)\n - **Total Entity Usage Pages** - The number of distinct pages that have at least 1 entity usage flag recorded for them. This is a fairly accurate representation of the number of Wikimedia pages using or potentially using data from Wikidata.\n\nFor each project select in the drop down box in the top left a new \"row\" will be added to this dashboard. The row is made up of many panels, the headings of the rows can be hard to spot so look closely!",
                     "editable": true,
                     "error": false,
                     "id": 36,
@@ -138,6 +139,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -169,6 +172,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -189,6 +193,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -216,6 +221,8 @@
                         "S": "#EAB839"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -247,6 +254,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -267,6 +275,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -294,6 +303,8 @@
                         "T": "#6ED0E0"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -325,6 +336,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -345,6 +357,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -372,6 +385,8 @@
                         "O": "#EF843C"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -403,6 +418,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -423,6 +439,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -450,6 +467,8 @@
                         "X": "#E24D42"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -481,6 +500,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -501,6 +521,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -528,6 +549,8 @@
                         "flags": "#806EB7"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -559,6 +582,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -579,6 +603,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -604,6 +629,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -635,6 +662,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -681,6 +709,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -708,6 +737,8 @@
                         "Total entity flags": "#806EB7"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -739,6 +770,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -759,6 +791,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -786,6 +819,8 @@
                         "Pages": "#D683CE"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -819,6 +854,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -839,6 +875,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -961,6 +998,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -992,6 +1031,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1012,6 +1052,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1039,6 +1080,8 @@
                         "S": "#EAB839"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1070,6 +1113,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1090,6 +1134,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1117,6 +1162,8 @@
                         "T": "#6ED0E0"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1148,6 +1195,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1168,6 +1216,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1195,6 +1244,8 @@
                         "O": "#EF843C"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1226,6 +1277,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1246,6 +1298,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1273,6 +1326,8 @@
                         "X": "#E24D42"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1304,6 +1359,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1324,6 +1380,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1351,6 +1408,8 @@
                         "flags": "#806EB7"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1382,6 +1441,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 2,
                     "stack": false,
                     "steppedLine": false,
@@ -1402,6 +1462,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1427,6 +1488,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1458,6 +1521,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1504,6 +1568,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1531,6 +1596,8 @@
                         "Total entity flags": "#806EB7"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1562,6 +1629,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1582,6 +1650,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1609,6 +1678,8 @@
                         "Pages": "#D683CE"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1642,6 +1713,7 @@
                         }
                     },
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1662,6 +1734,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1771,7 +1844,7 @@
                 }
             ],
             "repeat": null,
-            "repeatIteration": 1489775815226,
+            "repeatIteration": 1503510447375,
             "repeatRowId": 2,
             "showTitle": true,
             "title": "$project",
@@ -1848,5 +1921,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Entity Usage Project",
-    "version": 8
+    "version": 9
 }

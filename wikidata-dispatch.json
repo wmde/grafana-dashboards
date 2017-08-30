@@ -13,6 +13,7 @@
             }
         ]
     },
+    "editMode": false,
     "editable": true,
     "gnetId": null,
     "graphTooltip": 1,
@@ -79,6 +80,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -107,6 +110,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -128,6 +132,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -154,6 +159,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -181,6 +188,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -202,6 +210,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -283,6 +292,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -360,14 +370,15 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "wikidata.dispatch.average.lag"
+                            "target": "wikidata.dispatch.median.lag"
                         }
                     ],
                     "thresholds": "60,300",
-                    "title": "Current Average Lag",
+                    "title": "Current Median Lag",
                     "type": "singlestat",
                     "valueFontSize": "80%",
                     "valueMaps": [
@@ -436,10 +447,12 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "wikidata.dispatch.stalest.lag"
+                            "target": "wikidata.dispatch.stalest.lag",
+                            "textEditor": true
                         }
                     ],
                     "thresholds": "60,300",
@@ -512,6 +525,7 @@
                         "lineColor": "rgb(193, 139, 31)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -588,6 +602,7 @@
                         "lineColor": "rgb(193, 173, 31)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -664,6 +679,7 @@
                         "lineColor": "rgb(193, 152, 31)",
                         "show": true
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -698,6 +714,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -724,6 +742,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -745,6 +764,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -783,6 +803,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -809,6 +831,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 12,
                     "stack": false,
                     "steppedLine": false,
@@ -821,7 +844,7 @@
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Dispatch Pending",
+                    "title": "Dispatch Pending Changes",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
@@ -830,6 +853,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -868,6 +892,252 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
+                    "id": 3,
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 4,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "hide": false,
+                            "refId": "A",
+                            "target": "sumSeries(jobrunner.pop.wikibase-addUsagesForPage.ok.*.count)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "addUsagesForPage job pop ok",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "jobs \/ minute",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "editable": true,
+                    "error": false,
+                    "fill": 1,
+                    "grid": [],
+                    "id": 12,
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": false,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 4,
+                    "stack": true,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "sumSeries(jobrunner.pop.ChangeNotification.ok.*.count)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "ChangeNotification job pop ok",
+                    "tooltip": {
+                        "msResolution": false,
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "cumulative"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": "jobs \/ minute",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 19,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 4,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "MediaWiki.jobqueue.pickup_delay.ChangeNotification.median"
+                        },
+                        {
+                            "refId": "B",
+                            "target": "MediaWiki.jobqueue.pickup_delay.ChangeNotification.upper"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "ChangeNotification job delay",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 0,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "ms",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Jobs",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": "250px",
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -894,6 +1164,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -923,6 +1194,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -949,10 +1221,12 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
-                    "fill": 1,
+                    "fill": 3,
                     "grid": [],
                     "id": 10,
                     "legend": {
@@ -967,7 +1241,7 @@
                         "values": false
                     },
                     "lines": true,
-                    "linewidth": 2,
+                    "linewidth": 1,
                     "links": [],
                     "nullPointMode": "connected",
                     "percentage": false,
@@ -975,8 +1249,9 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
-                    "stack": false,
+                    "stack": true,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -992,10 +1267,11 @@
                         "msResolution": false,
                         "shared": true,
                         "sort": 0,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1029,100 +1305,25 @@
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 250,
             "panels": [
                 {
-                    "aliasColors": [],
-                    "bars": false,
+                    "aliasColors": {
+                        "10 minutes decreased": "#7EB26D",
+                        "10 minutes increased": "#E24D42"
+                    },
+                    "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": [],
-                    "id": 3,
+                    "fill": 4,
+                    "id": 20,
                     "legend": {
-                        "alignAsTable": true,
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
-                        "rightSide": true,
-                        "show": false,
-                        "total": false,
-                        "values": false
-                    },
-                    "lines": true,
-                    "linewidth": 1,
-                    "links": [],
-                    "maxDataPoints": "",
-                    "nullPointMode": "null",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "span": 6,
-                    "stack": true,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "hide": false,
-                            "refId": "A",
-                            "target": "sumSeries(jobrunner.pop.wikibase-addUsagesForPage.ok.*.count)"
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "addUsagesForPage job pop ok",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "xaxis": {
-                        "mode": "time",
-                        "name": null,
                         "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "short",
-                            "label": "jobs \/ minute",
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        }
-                    ]
-                },
-                {
-                    "aliasColors": [],
-                    "bars": false,
-                    "datasource": null,
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": [],
-                    "id": 12,
-                    "legend": {
-                        "alignAsTable": true,
-                        "avg": false,
-                        "current": false,
-                        "max": false,
-                        "min": false,
-                        "rightSide": true,
-                        "show": false,
                         "total": false,
                         "values": false
                     },
@@ -1135,27 +1336,34 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
-                    "stack": true,
+                    "spaceLength": 10,
+                    "span": 12,
+                    "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "sumSeries(jobrunner.pop.ChangeNotification.ok.*.count)"
+                            "target": "alias(removeBelowValue(derivative(summarize(wikidata.dispatch.stalest.lag, '10m', 'avg', false)), 0), '10 minutes increased')",
+                            "textEditor": true
+                        },
+                        {
+                            "refId": "B",
+                            "target": "alias(removeAboveValue(derivative(summarize(wikidata.dispatch.stalest.lag, '10m', 'avg', false)), 0), '10 minutes decreased')",
+                            "textEditor": true
                         }
                     ],
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "ChangeNotification job pop ok",
+                    "title": "Stalest dispatch derivative",
                     "tooltip": {
-                        "msResolution": false,
                         "shared": true,
                         "sort": 0,
-                        "value_type": "cumulative"
+                        "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1163,8 +1371,8 @@
                     },
                     "yaxes": [
                         {
-                            "format": "short",
-                            "label": "jobs \/ minute",
+                            "format": "s",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -1172,6 +1380,7 @@
                         },
                         {
                             "format": "short",
+                            "label": null,
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -1184,7 +1393,7 @@
             "repeatIteration": null,
             "repeatRowId": null,
             "showTitle": false,
-            "title": "Jobs",
+            "title": "Dashboard Row",
             "titleSize": "h6"
         }
     ],
@@ -1198,7 +1407,7 @@
         "list": []
     },
     "time": {
-        "from": "now-30d",
+        "from": "now-12h",
         "to": "now"
     },
     "timepicker": {
@@ -1229,5 +1438,5 @@
     },
     "timezone": "browser",
     "title": "Wikidata Dispatch",
-    "version": 18
+    "version": 26
 }

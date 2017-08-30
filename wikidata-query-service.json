@@ -87,6 +87,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -111,6 +113,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -132,6 +135,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -157,6 +161,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -181,6 +187,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -202,6 +209,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -239,6 +247,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -263,6 +273,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -284,6 +295,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -309,6 +321,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -333,6 +347,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -354,6 +369,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -379,6 +395,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "decimals": null,
                     "description": "Lag per server.\n\nBased on the query:\n\nSELECT * WHERE { <http:\/\/www.wikidata.org> schema:dateModified ?y }",
@@ -405,6 +423,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -441,6 +460,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -479,6 +499,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -502,6 +524,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -524,6 +547,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -551,6 +575,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of triples on each query service server.\n\nUsing the following query:\n\nSELECT ( COUNT( * ) AS ?count ) { ?s ?p ?o }",
                     "editable": true,
@@ -576,6 +602,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -597,6 +624,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -634,6 +662,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -658,6 +688,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -687,6 +718,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -712,6 +744,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -753,6 +787,7 @@
                             "yaxis": 2
                         }
                     ],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -774,6 +809,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -799,6 +835,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -823,6 +861,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -844,6 +883,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -869,6 +909,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -893,6 +935,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -914,6 +957,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -951,6 +995,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -975,13 +1021,19 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.5xx.rate, 3)",
+                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.5xx.rate, 3, 4)",
+                            "textEditor": false
+                        },
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(varnish.*.backends.be_wdqs*.4xx.rate, 3, 4)",
                             "textEditor": false
                         }
                     ],
@@ -997,6 +1049,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1022,6 +1075,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1046,6 +1101,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -1081,6 +1137,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1106,6 +1163,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1130,13 +1189,14 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(sumSeriesWithWildcards(varnish.eqiad.backends.be_wdqs*.*xx.rate, 4), 3)"
+                            "target": "aliasByNode(sumSeriesWithWildcards(varnish.*.backends.be_wdqs*.*xx.rate, 4), 3)"
                         }
                     ],
                     "thresholds": [],
@@ -1151,6 +1211,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1189,6 +1250,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "editable": true,
                     "error": false,
@@ -1212,20 +1275,26 @@
                     "pointradius": 5,
                     "points": false,
                     "renderer": "flot",
-                    "seriesOverrides": [],
+                    "seriesOverrides": [
+                        {
+                            "alias": "\/Young_Generation\/",
+                            "yaxis": 2
+                        }
+                    ],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "B",
-                            "target": "aliasByNode(derivative(servers.wdqs*.BlazegraphCollector.JVM.Memory.Garbage_Collectors.*.Collection_Count), 1, 6)"
+                            "target": "aliasByNode(perSecond(servers.wdqs*.BlazegraphCollector.JVM.Memory.Garbage_Collectors.*.Collection_Count), 1, 6)"
                         }
                     ],
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "GC Count Blazegraph",
+                    "title": "GC Count per second Blazegraph",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
@@ -1234,6 +1303,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1241,14 +1311,14 @@
                     },
                     "yaxes": [
                         {
-                            "format": "short",
+                            "format": "hertz",
                             "logBase": 1,
                             "max": null,
                             "min": null,
                             "show": true
                         },
                         {
-                            "format": "short",
+                            "format": "hertz",
                             "logBase": 1,
                             "max": null,
                             "min": null,
@@ -1259,6 +1329,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "fill": 1,
                     "id": 20,
@@ -1286,6 +1358,7 @@
                             "yaxis": 2
                         }
                     ],
+                    "spaceLength": 10,
                     "span": 6,
                     "stack": false,
                     "steppedLine": false,
@@ -1306,6 +1379,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1381,5 +1455,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Query Service",
-    "version": 39
+    "version": 46
 }

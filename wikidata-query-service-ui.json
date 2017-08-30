@@ -105,6 +105,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -179,6 +180,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -253,6 +255,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -327,6 +330,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -401,6 +405,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -475,6 +480,7 @@
                         "lineColor": "rgb(31, 120, 193)",
                         "show": false
                     },
+                    "tableColumn": "",
                     "targets": [
                         {
                             "refId": "A",
@@ -508,9 +514,13 @@
             "panels": [
                 {
                     "aliasColors": {
-                        "Embed Loads": "#447EBC"
+                        "Embed Loads": "#447EBC",
+                        "First Query Run": "#E24D42",
+                        "Page Loads with query execution": "#E24D42"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of times the query service has been loaded, broken down by main interface loads and embed page loads.",
                     "editable": true,
@@ -536,6 +546,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -543,6 +554,10 @@
                         {
                             "refId": "A",
                             "target": "alias(summarize(wikibase.queryService.ui.app.init.sum, '$interval', 'sum', false), 'Page Loads')"
+                        },
+                        {
+                            "refId": "C",
+                            "target": "alias(summarize(sumSeries(wikibase.queryService.ui.app.firstQuery.sum), '$interval', 'sum', false), 'Page Loads with Query Execution')"
                         },
                         {
                             "hide": false,
@@ -562,6 +577,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -589,6 +605,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Breakdown of the number of rows returned by queries.",
                     "editable": true,
@@ -614,6 +632,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -646,6 +665,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -673,6 +693,8 @@
                 {
                     "aliasColors": [],
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Breakdown of the time spent waiting for a query to return results.",
                     "editable": true,
@@ -698,6 +720,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 4,
                     "stack": false,
                     "steppedLine": false,
@@ -740,6 +763,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -774,13 +798,15 @@
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 301,
             "panels": [
                 {
                     "aliasColors": {
                         "unknown": "#E24D42"
                     },
                     "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of successful requests.",
                     "editable": true,
@@ -806,6 +832,7 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
+                    "spaceLength": 10,
                     "span": 3,
                     "stack": false,
                     "steppedLine": false,
@@ -827,81 +854,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
-                        "mode": "time",
-                        "name": null,
-                        "show": true,
-                        "values": []
-                    },
-                    "yaxes": [
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": 0,
-                            "show": true
-                        },
-                        {
-                            "format": "short",
-                            "label": null,
-                            "logBase": 1,
-                            "max": null,
-                            "min": null,
-                            "show": true
-                        }
-                    ]
-                },
-                {
-                    "aliasColors": {
-                        "unknown": "#E24D42"
-                    },
-                    "bars": false,
-                    "datasource": null,
-                    "description": "Number of requests that result in errors, broken down by type.",
-                    "editable": true,
-                    "error": false,
-                    "fill": 1,
-                    "grid": [],
-                    "id": 11,
-                    "legend": {
-                        "avg": true,
-                        "current": false,
-                        "max": true,
-                        "min": false,
-                        "show": true,
-                        "total": true,
-                        "values": true
-                    },
-                    "lines": true,
-                    "linewidth": 2,
-                    "links": [],
-                    "nullPointMode": "null as zero",
-                    "percentage": false,
-                    "pointradius": 5,
-                    "points": false,
-                    "renderer": "flot",
-                    "seriesOverrides": [],
-                    "span": 3,
-                    "stack": false,
-                    "steppedLine": false,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.error.*.sum, '$interval', 'sum', false), 6)"
-                        }
-                    ],
-                    "thresholds": [],
-                    "timeFrom": null,
-                    "timeShift": null,
-                    "title": "Result Errors",
-                    "tooltip": {
-                        "msResolution": false,
-                        "shared": true,
-                        "sort": 0,
-                        "value_type": "cumulative"
-                    },
-                    "type": "graph",
-                    "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -966,92 +919,18 @@
                 },
                 {
                     "aliasColors": {
-                        "unknown": "#1F78C1",
-                        "wdqs-action-timeout": "#614D93"
+                        "unknown": "#E24D42"
                     },
-                    "cacheTimeout": null,
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
-                    "description": "Breakdown of the reasons for query errors based on error codes returned.",
-                    "editable": true,
-                    "error": false,
-                    "fontSize": "80%",
-                    "format": "short",
-                    "id": 21,
-                    "interval": null,
-                    "legend": {
-                        "show": true,
-                        "values": true
-                    },
-                    "legendType": "Under graph",
-                    "links": [],
-                    "maxDataPoints": "",
-                    "nullPointMode": "connected",
-                    "pieType": "pie",
-                    "span": 2,
-                    "strokeWidth": 1,
-                    "targets": [
-                        {
-                            "refId": "B",
-                            "target": "aliasByNode(wikibase.queryService.ui.app.result.error.*.sum, 6)"
-                        }
-                    ],
-                    "title": "Errors breakdown",
-                    "type": "grafana-piechart-panel",
-                    "valueName": "total"
-                },
-                {
-                    "aliasColors": [],
-                    "cacheTimeout": null,
-                    "datasource": null,
-                    "description": "Breakdown of result views used in query results.",
-                    "editable": true,
-                    "error": false,
-                    "fontSize": "80%",
-                    "format": "short",
-                    "id": 2,
-                    "interval": null,
-                    "legend": {
-                        "show": true,
-                        "values": true
-                    },
-                    "legendType": "Under graph",
-                    "links": [],
-                    "maxDataPoints": "",
-                    "nullPointMode": "connected",
-                    "pieType": "pie",
-                    "span": 2,
-                    "strokeWidth": 1,
-                    "targets": [
-                        {
-                            "refId": "A",
-                            "target": "aliasByNode(sortByMaxima(wikibase.queryService.ui.app.result.browser.*.sum), 6)"
-                        }
-                    ],
-                    "title": "Result Views",
-                    "type": "grafana-piechart-panel",
-                    "valueName": "total"
-                }
-            ],
-            "repeat": null,
-            "repeatIteration": null,
-            "repeatRowId": null,
-            "showTitle": true,
-            "title": "Results",
-            "titleSize": "h6"
-        },
-        {
-            "collapse": false,
-            "height": "250px",
-            "panels": [
-                {
-                    "aliasColors": [],
-                    "bars": true,
-                    "datasource": null,
+                    "description": "Number of requests that result in errors, broken down by type.",
                     "editable": true,
                     "error": false,
                     "fill": 1,
                     "grid": [],
-                    "id": 10,
+                    "id": 11,
                     "legend": {
                         "avg": true,
                         "current": false,
@@ -1061,7 +940,7 @@
                         "total": true,
                         "values": true
                     },
-                    "lines": false,
+                    "lines": true,
                     "linewidth": 2,
                     "links": [],
                     "nullPointMode": "null as zero",
@@ -1070,19 +949,20 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
+                    "spaceLength": 10,
+                    "span": 4,
                     "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "alias(summarize(sumSeries(wikibase.queryService.ui.embed.*.sum), '$interval', 'sum', false), 'Loads')"
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.app.result.error.*.sum, '$interval', 'sum', false), 6)"
                         }
                     ],
                     "thresholds": [],
                     "timeFrom": null,
                     "timeShift": null,
-                    "title": "Embed Loads",
+                    "title": "Result Errors",
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
@@ -1091,6 +971,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1116,6 +997,53 @@
                     ]
                 },
                 {
+                    "aliasColors": {
+                        "unknown": "#1F78C1",
+                        "wdqs-action-timeout": "#614D93"
+                    },
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "description": "Breakdown of the reasons for query errors based on error codes returned.",
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 21,
+                    "interval": null,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Under graph",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 3,
+                    "strokeWidth": 1,
+                    "targets": [
+                        {
+                            "refId": "B",
+                            "target": "aliasByNode(wikibase.queryService.ui.app.result.error.*.sum, 6)"
+                        }
+                    ],
+                    "title": "Errors breakdown",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": true,
+            "title": "Results",
+            "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 592,
+            "panels": [
+                {
                     "aliasColors": [],
                     "cacheTimeout": null,
                     "datasource": null,
@@ -1130,7 +1058,39 @@
                         "show": true,
                         "values": true
                     },
-                    "legendType": "Under graph",
+                    "legendType": "Right side",
+                    "links": [],
+                    "maxDataPoints": "",
+                    "nullPointMode": "connected",
+                    "pieType": "pie",
+                    "span": 6,
+                    "strokeWidth": "1",
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(wikibase.queryService.ui.embed.*.sum, 4)"
+                        }
+                    ],
+                    "title": "Embed Views",
+                    "type": "grafana-piechart-panel",
+                    "valueName": "total"
+                },
+                {
+                    "aliasColors": [],
+                    "cacheTimeout": null,
+                    "datasource": null,
+                    "description": "Breakdown of result views used in query results.",
+                    "editable": true,
+                    "error": false,
+                    "fontSize": "80%",
+                    "format": "short",
+                    "id": 2,
+                    "interval": null,
+                    "legend": {
+                        "show": true,
+                        "values": true
+                    },
+                    "legendType": "Right side",
                     "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
@@ -1140,10 +1100,10 @@
                     "targets": [
                         {
                             "refId": "A",
-                            "target": "aliasByNode(wikibase.queryService.ui.embed.*.sum, 4)"
+                            "target": "aliasByNode(sortByMaxima(wikibase.queryService.ui.app.result.browser.*.sum), 6)"
                         }
                     ],
-                    "title": "Embed Views",
+                    "title": "Result Views",
                     "type": "grafana-piechart-panel",
                     "valueName": "total"
                 }
@@ -1157,11 +1117,13 @@
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 252,
             "panels": [
                 {
                     "aliasColors": [],
                     "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of times results are downloaded broken down by type of download.",
                     "editable": true,
@@ -1187,7 +1149,8 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
+                    "spaceLength": 10,
+                    "span": 7,
                     "stack": true,
                     "steppedLine": false,
                     "targets": [
@@ -1208,6 +1171,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1250,12 +1214,12 @@
                         "show": true,
                         "values": true
                     },
-                    "legendType": "Under graph",
+                    "legendType": "Right side",
                     "links": [],
                     "maxDataPoints": "",
                     "nullPointMode": "connected",
                     "pieType": "pie",
-                    "span": 6,
+                    "span": 5,
                     "strokeWidth": 1,
                     "targets": [
                         {
@@ -1277,11 +1241,13 @@
         },
         {
             "collapse": false,
-            "height": "250px",
+            "height": 310,
             "panels": [
                 {
                     "aliasColors": [],
-                    "bars": true,
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of interface button clicks.",
                     "editable": true,
@@ -1290,16 +1256,18 @@
                     "grid": [],
                     "id": 12,
                     "legend": {
+                        "alignAsTable": true,
                         "avg": false,
                         "current": false,
                         "max": false,
                         "min": false,
+                        "rightSide": true,
                         "show": true,
-                        "total": false,
-                        "values": false
+                        "total": true,
+                        "values": true
                     },
-                    "lines": false,
-                    "linewidth": 2,
+                    "lines": true,
+                    "linewidth": 1,
                     "links": [],
                     "nullPointMode": "null as zero",
                     "percentage": false,
@@ -1307,8 +1275,9 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
-                    "stack": true,
+                    "spaceLength": 10,
+                    "span": 7,
+                    "stack": false,
                     "steppedLine": false,
                     "targets": [
                         {
@@ -1323,11 +1292,12 @@
                     "tooltip": {
                         "msResolution": false,
                         "shared": true,
-                        "sort": 0,
+                        "sort": 2,
                         "value_type": "individual"
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1355,6 +1325,8 @@
                 {
                     "aliasColors": [],
                     "bars": true,
+                    "dashLength": 10,
+                    "dashes": false,
                     "datasource": null,
                     "description": "Number of times the view type is changed in the interface, broken down by the type of view changed to.",
                     "editable": true,
@@ -1380,7 +1352,8 @@
                     "points": false,
                     "renderer": "flot",
                     "seriesOverrides": [],
-                    "span": 6,
+                    "spaceLength": 10,
+                    "span": 5,
                     "stack": true,
                     "steppedLine": false,
                     "targets": [
@@ -1401,6 +1374,7 @@
                     },
                     "type": "graph",
                     "xaxis": {
+                        "buckets": null,
                         "mode": "time",
                         "name": null,
                         "show": true,
@@ -1432,6 +1406,166 @@
             "showTitle": false,
             "title": "Button Clicks",
             "titleSize": "h6"
+        },
+        {
+            "collapse": false,
+            "height": 306,
+            "panels": [
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 23,
+                    "legend": {
+                        "alignAsTable": true,
+                        "avg": false,
+                        "current": false,
+                        "hideEmpty": true,
+                        "hideZero": false,
+                        "max": false,
+                        "min": false,
+                        "rightSide": true,
+                        "show": true,
+                        "total": true,
+                        "values": true
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 7,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.examples.select.category.*.sum, '$interval', 'sum', false), 6)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Example Dialog Category Selected",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 2,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "none",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": false
+                        }
+                    ]
+                },
+                {
+                    "aliasColors": [],
+                    "bars": false,
+                    "dashLength": 10,
+                    "dashes": false,
+                    "datasource": null,
+                    "fill": 1,
+                    "id": 22,
+                    "legend": {
+                        "avg": false,
+                        "current": false,
+                        "max": false,
+                        "min": false,
+                        "show": true,
+                        "total": false,
+                        "values": false
+                    },
+                    "lines": true,
+                    "linewidth": 1,
+                    "links": [],
+                    "nullPointMode": "null as zero",
+                    "percentage": false,
+                    "pointradius": 5,
+                    "points": false,
+                    "renderer": "flot",
+                    "seriesOverrides": [],
+                    "spaceLength": 10,
+                    "span": 5,
+                    "stack": false,
+                    "steppedLine": false,
+                    "targets": [
+                        {
+                            "refId": "A",
+                            "target": "aliasByNode(summarize(wikibase.queryService.ui.examples.*.sum, '$interval', 'sum', false), 4)"
+                        }
+                    ],
+                    "thresholds": [],
+                    "timeFrom": null,
+                    "timeShift": null,
+                    "title": "Example Dialog Events",
+                    "tooltip": {
+                        "shared": true,
+                        "sort": 2,
+                        "value_type": "individual"
+                    },
+                    "type": "graph",
+                    "xaxis": {
+                        "buckets": null,
+                        "mode": "time",
+                        "name": null,
+                        "show": true,
+                        "values": []
+                    },
+                    "yaxes": [
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        },
+                        {
+                            "format": "short",
+                            "label": null,
+                            "logBase": 1,
+                            "max": null,
+                            "min": null,
+                            "show": true
+                        }
+                    ]
+                }
+            ],
+            "repeat": null,
+            "repeatIteration": null,
+            "repeatRowId": null,
+            "showTitle": false,
+            "title": "Dashboard Row",
+            "titleSize": "h6"
         }
     ],
     "schemaVersion": 14,
@@ -1448,8 +1582,8 @@
                 "auto_count": 30,
                 "auto_min": "10s",
                 "current": {
-                    "text": "1m",
-                    "value": "1m"
+                    "text": "1d",
+                    "value": "1d"
                 },
                 "datasource": null,
                 "hide": 0,
@@ -1459,7 +1593,7 @@
                 "name": "interval",
                 "options": [
                     {
-                        "selected": true,
+                        "selected": false,
                         "text": "1m",
                         "value": "1m"
                     },
@@ -1489,7 +1623,7 @@
                         "value": "12h"
                     },
                     {
-                        "selected": false,
+                        "selected": true,
                         "text": "1d",
                         "value": "1d"
                     },
@@ -1516,7 +1650,7 @@
         ]
     },
     "time": {
-        "from": "now-24h",
+        "from": "now-30d",
         "to": "now"
     },
     "timepicker": {
@@ -1546,5 +1680,5 @@
     },
     "timezone": "utc",
     "title": "Wikidata Query Service UI",
-    "version": 27
+    "version": 34
 }
